@@ -1,0 +1,17 @@
+export default [
+  { name: 'distance_km', label: 'Distance (km)', type: 'number', step: 0.1, defaultValue: 420 },
+  { name: 'vehicle_type', label: 'Type véhicule', type: 'select', options: ['Truck', 'Van', 'Tractor + Trailer', 'Rigid Truck'], defaultValue: 'Tractor + Trailer' },
+  { name: 'total_weight_kg', label: 'Poids total (kg)', type: 'number', step: 0.1, defaultValue: 1250 },
+  { name: 'total_volume_m3', label: 'Volume total (m³)', type: 'number', step: 0.1, defaultValue: 8.5 },
+  { name: 'region', label: 'Région client', type: 'text', defaultValue: 'Paris' },
+  { name: 'driver_code', label: 'Code chauffeur', type: 'text', defaultValue: 'DRV-FR-001' },
+  { name: 'experience_years', label: 'Expérience (ans)', type: 'number', step: 1, defaultValue: 8 },
+  { name: 'day_name', label: 'Jour de semaine', type: 'select', options: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], defaultValue: 'Friday' },
+  { name: 'month_num', label: 'Mois', type: 'number', step: 1, min: 1, max: 12, defaultValue: 7 },
+  { name: 'is_weekend', label: 'Weekend', type: 'select', options: [{ value: '0', label: 'Non' }, { value: '1', label: 'Oui' }], defaultValue: '0' },
+  { name: 'client_type', label: 'Type client', type: 'select', options: ['B2B', 'B2C'], defaultValue: 'B2B' },
+  { name: 'priority_level', label: 'Priorité', type: 'select', options: ['Low', 'Medium', 'High', 'Critical'], defaultValue: 'Critical' },
+  { name: 'difficulty_level', label: 'Difficulté route', type: 'select', options: ['Low', 'Medium', 'High'], defaultValue: 'Medium' },
+  { name: 'zone_type', label: 'Zone', type: 'select', options: ['Domestic', 'Cross-border'], defaultValue: 'Domestic' },
+  { name: 'planned_time_hours', label: 'Temps planifié (h)', type: 'number', step: 0.1, defaultValue: 5.4 },
+];

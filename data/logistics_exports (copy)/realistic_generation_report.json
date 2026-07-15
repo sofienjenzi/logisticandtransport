@@ -1,0 +1,14 @@
+{
+  "seed": 20260721,
+  "rows_per_fact": 2400,
+  "business_logic": [
+    "country demand/service/cost profiles",
+    "product-specific margins, demand and stock risk",
+    "client segment discounts and service expectations",
+    "supplier reliability drives purchase delays",
+    "route difficulty and carrier performance drive delivery delays",
+    "vehicle age and odometer drive breakdown risk",
+    "satisfaction depends on delivery delay, stockout, incidents and returns"
+  ],
+  "generated_at": "2026-07-01T20:07:54"
+}

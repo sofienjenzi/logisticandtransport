@@ -1,0 +1,13 @@
+sk_vehicle,vehicle_id,plate_number,vehicle_type,brand,model,model_year,capacity_weight_kg,capacity_volume_m3,fuel_type,avg_consumption_l_100km,odometer_km,last_maintenance_date,next_maintenance_date,status
+1,VEH-FR-001,FR-1000X0,Tractor + Trailer,Volvo,FH16,2018,24000.0,90.0,Diesel,29.0,119617.0,2025-06-21,2026-06-21,Active
+2,VEH-FR-002,FR-1001X1,Tractor + Trailer,Mercedes-Benz,Actros,2021,24000.0,90.0,Diesel,28.0,148565.0,2025-10-19,2026-10-19,Active
+3,VEH-FR-003,FR-1002X2,Rigid Truck,MAN,TGS,2024,12000.0,45.0,Diesel,22.0,197906.0,2025-11-08,2026-11-08,Active
+4,VEH-FR-004,FR-1003X3,Van,Iveco,Daily,2022,3500.0,18.0,Diesel,12.0,237810.0,2025-11-26,2026-11-26,Active
+5,VEH-DE-001,DE-1000X0,Tractor + Trailer,Volvo,FH16,2024,24000.0,90.0,Diesel,29.0,238311.0,2025-04-22,2026-04-22,Active
+6,VEH-DE-002,DE-1001X1,Tractor + Trailer,Mercedes-Benz,Actros,2021,24000.0,90.0,Diesel,28.0,101946.0,2025-11-14,2026-11-14,Active
+7,VEH-DE-003,DE-1002X2,Rigid Truck,MAN,TGS,2018,12000.0,45.0,Diesel,22.0,188783.0,2025-08-14,2026-08-14,Active
+8,VEH-DE-004,DE-1003X3,Van,Iveco,Daily,2019,3500.0,18.0,Diesel,12.0,94509.0,2025-06-27,2026-06-27,Active
+9,VEH-ES-001,ES-1000X0,Tractor + Trailer,Volvo,FH16,2022,24000.0,90.0,Diesel,29.0,207931.0,2025-08-26,2026-08-26,Active
+10,VEH-ES-002,ES-1001X1,Tractor + Trailer,Mercedes-Benz,Actros,2020,24000.0,90.0,Diesel,28.0,191509.0,2025-02-14,2026-02-14,Active
+11,VEH-ES-003,ES-1002X2,Rigid Truck,MAN,TGS,2019,12000.0,45.0,Diesel,22.0,122961.0,2025-06-12,2026-06-12,Active
+12,VEH-ES-004,ES-1003X3,Van,Iveco,Daily,2018,3500.0,18.0,Diesel,12.0,139972.0,2025-09-21,2026-09-21,Active

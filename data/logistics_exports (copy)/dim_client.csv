@@ -1,0 +1,31 @@
+sk_client,client_code,client_name,client_type,sector_activity,city,region,country_code,latitude,longitude,creation_date,loyalty_level,credit_limit,credit_score,satisfaction_score,segment
+1,CLI-FR-001,Carrefour,B2B,E-commerce,Paris,Paris,FR,48.85341,2.3488,2020-11-11,Silver,400000.0,698,4.8,Growth
+2,CLI-FR-002,Decathlon,B2B,Retail,Lyon,Lyon,FR,45.74906,4.84789,2018-07-22,Gold,400000.0,706,4.1,Key
+3,CLI-FR-003,Leroy Merlin,B2B,Wholesale,Marseille,Marseille,FR,43.29695,5.38107,2021-12-27,Bronze,250000.0,799,4.9,Standard
+4,CLI-FR-004,Aldi,B2B,E-commerce,Lille,Lille,FR,50.63391,3.05512,2022-02-05,Silver,150000.0,661,3.6,Growth
+5,CLI-FR-005,Lidl,B2B,Retail,Bordeaux,Bordeaux,FR,44.84124,-0.58046,2024-04-07,Gold,450000.0,683,3.8,Key
+6,CLI-FR-006,El Corte Ingles,B2B,E-commerce,Paris,Paris,FR,48.85341,2.3488,2020-11-02,Silver,400000.0,762,4.2,Growth
+7,CLI-FR-007,Mercadona,B2B,E-commerce,Lyon,Lyon,FR,45.74906,4.84789,2024-05-05,Silver,300000.0,624,3.9,Growth
+8,CLI-FR-008,MediaMarkt,B2B,Retail,Marseille,Marseille,FR,43.29695,5.38107,2020-01-13,Gold,300000.0,632,4.7,Key
+9,CLI-FR-009,Zalando,B2B,E-commerce,Lille,Lille,FR,50.63391,3.05512,2020-05-17,Silver,100000.0,708,4.8,Growth
+10,CLI-FR-010,Metro AG,B2B,Wholesale,Bordeaux,Bordeaux,FR,44.84124,-0.58046,2019-06-27,Bronze,350000.0,689,4.9,Standard
+11,CLI-DE-001,Carrefour,B2B,E-commerce,Berlin,Berlin,DE,52.52437,13.41053,2021-11-08,Silver,200000.0,630,4.5,Growth
+12,CLI-DE-002,Decathlon,B2B,E-commerce,Hamburg,Hamburg,DE,53.55073,9.99302,2022-02-20,Silver,350000.0,657,4.2,Growth
+13,CLI-DE-003,Leroy Merlin,B2B,Retail,Munich,Munich,DE,48.13743,11.57549,2020-01-07,Gold,100000.0,700,3.5,Key
+14,CLI-DE-004,Aldi,B2B,Retail,Frankfurt,Frankfurt,DE,50.11552,8.68417,2024-01-04,Gold,300000.0,704,4.4,Key
+15,CLI-DE-005,Lidl,B2B,E-commerce,Cologne,Cologne,DE,50.93333,6.95,2024-11-02,Silver,400000.0,818,4.8,Growth
+16,CLI-DE-006,El Corte Ingles,B2B,E-commerce,Berlin,Berlin,DE,52.52437,13.41053,2020-02-02,Silver,350000.0,713,4.8,Growth
+17,CLI-DE-007,Mercadona,B2B,Wholesale,Hamburg,Hamburg,DE,53.55073,9.99302,2020-03-09,Bronze,400000.0,698,4.3,Standard
+18,CLI-DE-008,MediaMarkt,B2B,E-commerce,Munich,Munich,DE,48.13743,11.57549,2023-02-20,Silver,350000.0,785,4.5,Growth
+19,CLI-DE-009,Zalando,B2B,E-commerce,Frankfurt,Frankfurt,DE,50.11552,8.68417,2018-08-26,Silver,450000.0,683,4.8,Growth
+20,CLI-DE-010,Metro AG,B2B,Wholesale,Cologne,Cologne,DE,50.93333,6.95,2024-12-09,Bronze,250000.0,719,4.9,Standard
+21,CLI-ES-001,Carrefour,B2B,E-commerce,Madrid,Madrid,ES,40.4165,-3.70256,2024-08-20,Silver,250000.0,775,4.5,Growth
+22,CLI-ES-002,Decathlon,B2B,Retail,Barcelona,Barcelona,ES,41.38879,2.15899,2023-04-01,Gold,450000.0,819,4.4,Key
+23,CLI-ES-003,Leroy Merlin,B2B,Retail,Valencia,Valencia,ES,39.47391,-0.37966,2018-07-07,Gold,200000.0,750,3.5,Key
+24,CLI-ES-004,Aldi,B2B,E-commerce,Seville,Seville,ES,37.38283,-5.97317,2024-02-14,Silver,150000.0,693,4.8,Growth
+25,CLI-ES-005,Lidl,B2B,E-commerce,Bilbao,Bilbao,ES,43.26271,-2.92528,2024-11-17,Silver,200000.0,622,4.2,Growth
+26,CLI-ES-006,El Corte Ingles,B2B,Retail,Madrid,Madrid,ES,40.4165,-3.70256,2022-01-04,Gold,300000.0,640,3.5,Key
+27,CLI-ES-007,Mercadona,B2B,Wholesale,Barcelona,Barcelona,ES,41.38879,2.15899,2024-06-09,Bronze,350000.0,697,3.7,Standard
+28,CLI-ES-008,MediaMarkt,B2B,Wholesale,Valencia,Valencia,ES,39.47391,-0.37966,2022-09-03,Bronze,100000.0,628,4.3,Standard
+29,CLI-ES-009,Zalando,B2B,Retail,Seville,Seville,ES,37.38283,-5.97317,2023-04-04,Gold,450000.0,635,3.5,Key
+30,CLI-ES-010,Metro AG,B2B,Wholesale,Bilbao,Bilbao,ES,43.26271,-2.92528,2021-12-18,Bronze,250000.0,759,4.9,Standard

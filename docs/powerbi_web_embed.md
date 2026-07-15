@@ -1,6 +1,6 @@
 # Power BI Embed in Website (Next Step)
 
-This project already provides a dynamic analytics website in [site/index.html](../site/index.html).
+This project already provides a dynamic analytics website — a React SPA in [frontend/](../frontend/), served together with the API by [src/ml/app.py](../src/ml/app.py).
 
 If you want to embed real Power BI reports in the same website, use this professional pattern.
 

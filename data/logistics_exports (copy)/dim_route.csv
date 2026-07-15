@@ -1,0 +1,13 @@
+sk_route,route_code,departure_city,arrival_city,country_code,distance_km,planned_time_hours,toll_count,difficulty_level,zone_type
+1,RTE-FR-001,Paris,Lyon,FR,465.31,4.94,7,Medium,Domestic
+2,RTE-FR-002,Lyon,Marseille,FR,313.63,3.44,2,High,Domestic
+3,RTE-FR-003,Marseille,Lille,FR,1000.99,10.25,2,Low,Domestic
+4,RTE-FR-004,Lille,Bordeaux,FR,805.11,8.35,7,Medium,Domestic
+5,RTE-DE-001,Berlin,Hamburg,DE,288.95,2.96,6,Low,Domestic
+6,RTE-DE-002,Hamburg,Munich,DE,776.28,7.77,1,Low,Domestic
+7,RTE-DE-003,Munich,Frankfurt,DE,394.06,3.95,6,Medium,Domestic
+8,RTE-DE-004,Frankfurt,Cologne,DE,190.14,2.06,1,Medium,Domestic
+9,RTE-ES-001,Madrid,Barcelona,ES,616.1,6.81,4,High,Domestic
+10,RTE-ES-002,Barcelona,Valencia,ES,349.86,4.05,5,High,Domestic
+11,RTE-ES-003,Valencia,Seville,ES,654.72,7.16,4,High,Domestic
+12,RTE-ES-004,Seville,Bilbao,ES,862.03,9.29,6,High,Domestic

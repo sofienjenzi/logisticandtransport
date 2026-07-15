@@ -1,0 +1,25 @@
+sk_supplier,supplier_code,supplier_name,supplier_type,city,region,country_code,contact_name,phone,email,reliability_score,avg_delivery_days,on_time_delivery_rate,status
+1,SUP-FR-001,DHL Supply Chain,Logistics Provider,Paris,Paris,FR,Contact 1,+336000000,contact1@dhlsupplychain.com,83,4.8,0.9,Active
+2,SUP-FR-002,DB Schenker,Logistics Provider,Lyon,Lyon,FR,Contact 2,+336000001,contact2@dbschenker.com,77,3.7,0.84,Active
+3,SUP-FR-003,Geodis,Logistics Provider,Marseille,Marseille,FR,Contact 3,+336000002,contact3@geodis.com,92,3.2,0.94,Active
+4,SUP-FR-004,FM Logistic,Logistics Provider,Lille,Lille,FR,Contact 4,+336000003,contact4@fmlogistic.com,76,2.1,0.93,Active
+5,SUP-FR-005,Kuehne+Nagel,Logistics Provider,Bordeaux,Bordeaux,FR,Contact 5,+336000004,contact5@kuehnenagel.com,90,1.0,0.82,Active
+6,SUP-FR-006,XPO Logistics,Logistics Provider,Paris,Paris,FR,Contact 6,+336000005,contact6@xpologistics.com,90,1.5,0.92,Active
+7,SUP-FR-007,ID Logistics,Logistics Provider,Lyon,Lyon,FR,Contact 7,+336000006,contact7@idlogistics.com,76,2.1,0.83,Active
+8,SUP-FR-008,Rhenus Logistics,Logistics Provider,Marseille,Marseille,FR,Contact 8,+336000007,contact8@rhenuslogistics.com,75,1.0,0.92,Active
+9,SUP-DE-001,DHL Supply Chain,Logistics Provider,Berlin,Berlin,DE,Contact 1,+496000000,contact1@dhlsupplychain.com,87,3.7,0.84,Active
+10,SUP-DE-002,DB Schenker,Logistics Provider,Hamburg,Hamburg,DE,Contact 2,+496000001,contact2@dbschenker.com,80,1.5,0.92,Active
+11,SUP-DE-003,Geodis,Logistics Provider,Munich,Munich,DE,Contact 3,+496000002,contact3@geodis.com,98,4.8,0.95,Active
+12,SUP-DE-004,FM Logistic,Logistics Provider,Frankfurt,Frankfurt,DE,Contact 4,+496000003,contact4@fmlogistic.com,83,4.8,0.9,Active
+13,SUP-DE-005,Kuehne+Nagel,Logistics Provider,Cologne,Cologne,DE,Contact 5,+496000004,contact5@kuehnenagel.com,82,3.2,0.94,Active
+14,SUP-DE-006,XPO Logistics,Logistics Provider,Berlin,Berlin,DE,Contact 6,+496000005,contact6@xpologistics.com,90,1.5,0.92,Active
+15,SUP-DE-007,ID Logistics,Logistics Provider,Hamburg,Hamburg,DE,Contact 7,+496000006,contact7@idlogistics.com,75,1.5,0.87,Active
+16,SUP-DE-008,Rhenus Logistics,Logistics Provider,Munich,Munich,DE,Contact 8,+496000007,contact8@rhenuslogistics.com,75,1.5,0.82,Active
+17,SUP-ES-001,DHL Supply Chain,Logistics Provider,Madrid,Madrid,ES,Contact 1,+346000000,contact1@dhlsupplychain.com,76,2.6,0.88,Active
+18,SUP-ES-002,DB Schenker,Logistics Provider,Barcelona,Barcelona,ES,Contact 2,+346000001,contact2@dbschenker.com,79,5.9,0.91,Active
+19,SUP-ES-003,Geodis,Logistics Provider,Valencia,Valencia,ES,Contact 3,+346000002,contact3@geodis.com,93,4.8,0.9,Active
+20,SUP-ES-004,FM Logistic,Logistics Provider,Seville,Seville,ES,Contact 4,+346000003,contact4@fmlogistic.com,77,3.7,0.89,Active
+21,SUP-ES-005,Kuehne+Nagel,Logistics Provider,Bilbao,Bilbao,ES,Contact 5,+346000004,contact5@kuehnenagel.com,76,2.1,0.88,Active
+22,SUP-ES-006,XPO Logistics,Logistics Provider,Madrid,Madrid,ES,Contact 6,+346000005,contact6@xpologistics.com,83,4.3,0.95,Active
+23,SUP-ES-007,ID Logistics,Logistics Provider,Barcelona,Barcelona,ES,Contact 7,+346000006,contact7@idlogistics.com,75,1.0,0.92,Active
+24,SUP-ES-008,Rhenus Logistics,Logistics Provider,Valencia,Valencia,ES,Contact 8,+346000007,contact8@rhenuslogistics.com,94,5.4,0.96,Active

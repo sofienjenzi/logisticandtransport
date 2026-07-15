@@ -72,33 +72,43 @@ python src/etl/data_quality.py
 
 This refreshes `data/curated/fact_*.csv` and `data/logistics_exports.zip` with diversified, coherent values. See [docs/data_realism_logic.md](docs/data_realism_logic.md).
 
-## Website dashboards (ITESLAB8LOGISTIC8ANALITYCS)
+## Website dashboards (React frontend)
 
-Launch a local web server from the project root:
+The frontend is a React + Vite single-page app in `frontend/`, served together with the API by the same Flask process — there is no more static-only mode (`python -m http.server`), since the ML pages always need the API and client-side routes (e.g. `/dashboard/executif`) need Flask's SPA fallback to resolve correctly.
+
+**Development** (hot reload, talks to the API via a dev-server proxy):
 
 ```bash
-python -m http.server 8501
+python src/ml/app.py        # terminal 1 — API + data on :8501
+cd frontend && npm install && npm run dev   # terminal 2 — dev server on :5173
 ```
 
-Open:
-- `http://localhost:8501/site/`
+Open `http://localhost:5173/`.
 
-The website includes:
-- Dynamic global filters (country, year, client, product)
-- One standalone page per dashboard
-- Navigation buttons between dashboards
+**Production build** (single server, what's actually deployed):
+
+```bash
+cd frontend && npm run build   # outputs frontend/dist/
+python src/ml/app.py           # serves frontend/dist/ + the API, both on :8501
+```
+
+Open `http://localhost:8501/`.
+
+The app includes:
+- Dynamic global filters (country, year, client, product, etc. — vary per dashboard)
+- One route per dashboard (`/dashboard/:key`), all driven by a shared data model loaded once per session
+- Navigation via the shared navbar/breadcrumbs
 - Executive, Sales, Purchases, Stock, Delivery, Transport, Vehicles, Drivers, Incidents, Satisfaction dashboards
 - Professional charts powered by `data/logistics_exports.zip`
-- A new IA & ML page with delivery delay prediction, client classification and predictive maintenance
+- An IA & ML section with delivery delay prediction, client classification and predictive maintenance
 
-### IA & ML layer added to the website
+### IA & ML layer
 
 New files:
 - `src/ml/train_models.py`
 - `src/ml/inference.py`
 - `src/ml/app.py`
-- `site/dashboard-ml.html`
-- `site/js/ml-dashboard.js`
+- `frontend/src/pages/MlOverviewPage.jsx`, `MlDeliveryPage.jsx`, `MlClientPage.jsx`, `MlMaintenancePage.jsx`
 - `data/ml/*.joblib` and `data/ml/model_report.json` (generated after training)
 
 Run the ML training:
@@ -107,26 +117,17 @@ Run the ML training:
 python src/ml/train_models.py
 ```
 
-Launch the website with API and all existing dashboards:
-
-```bash
-python src/ml/app.py
-```
-
-Open:
-- `http://localhost:8501/`
-- `http://localhost:8501/dashboard-ml.html`
+Then rebuild the frontend and launch the site with the API as described above.
 
 Notes:
 - The ML models are trained on the fields that already exist in the warehouse.
 - Requested fields not yet present in the project data (traffic, weather, departure hour, returns, payment, sensor IoT variables) are exposed as future extensions and are documented in the ML report.
 
 Files:
-- `site/index.html`
-- `site/styles.css`
-- `site/app.js`
-- `site/dashboard-*.html`
-- `site/js/dashboard-page.js`
+- `frontend/src/pages/` — one component per route (landing, dashboards, ML pages)
+- `frontend/src/dashboards/` — one config module per dashboard (KPIs + charts as data)
+- `frontend/src/lib/` — data loading (`model.js`), chart helpers (`charts.js`), formatters (`format.js`)
+- `frontend/src/styles/` — the merged design system (tokens, base, dashboard, ml, landing)
 
 Power BI build guide:
 - [docs/powerbi_dashboard_spec.md](docs/powerbi_dashboard_spec.md)

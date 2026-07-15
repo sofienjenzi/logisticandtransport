@@ -6,7 +6,7 @@ from pathlib import Path
 from flask import Flask, jsonify, request, send_from_directory
 
 ROOT = Path(__file__).resolve().parents[2]
-SITE_DIR = ROOT / "site"
+SITE_DIR = ROOT / "frontend" / "dist"
 DATA_DIR = ROOT / "data"
 
 if str(ROOT) not in sys.path:
@@ -14,7 +14,7 @@ if str(ROOT) not in sys.path:
 
 from src.ml.inference import ModelService  # noqa: E402
 
-app = Flask(__name__, static_folder=str(SITE_DIR), static_url_path="")
+app = Flask(__name__, static_folder=None)
 service = ModelService()
 
 

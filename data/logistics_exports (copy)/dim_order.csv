@@ -1,0 +1,2501 @@
+sk_order,order_number,order_type,priority_level,sales_channel,order_status
+1,ORD-0000001,Standard,High,B2B,Delivered
+2,ORD-0000002,Backorder,Low,EDI,Delivered
+3,ORD-0000003,Backorder,Critical,EDI,Delivered
+4,ORD-0000004,Express,Low,E-commerce,Delivered
+5,ORD-0000005,Backorder,High,EDI,In Transit
+6,ORD-0000006,Express,Medium,E-commerce,In Transit
+7,ORD-0000007,Express,Medium,E-commerce,In Transit
+8,ORD-0000008,Express,Medium,E-commerce,Delivered
+9,ORD-0000009,Backorder,High,EDI,Delivered
+10,ORD-0000010,Backorder,Critical,EDI,Delivered
+11,ORD-0000011,Backorder,Medium,EDI,Delivered
+12,ORD-0000012,Express,Medium,E-commerce,In Transit
+13,ORD-0000013,Express,High,E-commerce,Delivered
+14,ORD-0000014,Backorder,Medium,EDI,In Transit
+15,ORD-0000015,Backorder,Medium,EDI,Delivered
+16,ORD-0000016,Backorder,Critical,EDI,Delivered
+17,ORD-0000017,Backorder,Low,EDI,Delivered
+18,ORD-0000018,Standard,Low,B2B,Returned
+19,ORD-0000019,Standard,Critical,B2B,Delivered
+20,ORD-0000020,Express,Critical,E-commerce,Delivered
+21,ORD-0000021,Standard,Medium,B2B,Delivered
+22,ORD-0000022,Express,Medium,E-commerce,Delivered
+23,ORD-0000023,Backorder,High,EDI,Delivered
+24,ORD-0000024,Standard,High,B2B,In Transit
+25,ORD-0000025,Backorder,High,EDI,Delivered
+26,ORD-0000026,Backorder,High,EDI,In Transit
+27,ORD-0000027,Backorder,High,EDI,Delivered
+28,ORD-0000028,Express,Critical,E-commerce,Delivered
+29,ORD-0000029,Backorder,High,EDI,In Transit
+30,ORD-0000030,Backorder,Low,EDI,Delivered
+31,ORD-0000031,Standard,Low,B2B,In Transit
+32,ORD-0000032,Backorder,High,EDI,Delivered
+33,ORD-0000033,Backorder,Critical,EDI,In Transit
+34,ORD-0000034,Standard,Low,B2B,Delivered
+35,ORD-0000035,Backorder,Medium,EDI,Delivered
+36,ORD-0000036,Backorder,Medium,EDI,Delivered
+37,ORD-0000037,Standard,Medium,B2B,Delivered
+38,ORD-0000038,Backorder,High,EDI,Cancelled
+39,ORD-0000039,Backorder,Medium,EDI,Delivered
+40,ORD-0000040,Standard,High,B2B,Delivered
+41,ORD-0000041,Standard,Medium,B2B,Delivered
+42,ORD-0000042,Backorder,Low,EDI,Returned
+43,ORD-0000043,Standard,High,B2B,Delivered
+44,ORD-0000044,Standard,Low,B2B,Delivered
+45,ORD-0000045,Standard,Critical,B2B,Delivered
+46,ORD-0000046,Backorder,Medium,EDI,Delivered
+47,ORD-0000047,Express,High,E-commerce,Delivered
+48,ORD-0000048,Standard,Low,B2B,Delivered
+49,ORD-0000049,Standard,High,B2B,Delivered
+50,ORD-0000050,Express,High,E-commerce,Cancelled
+51,ORD-0000051,Express,High,E-commerce,Delivered
+52,ORD-0000052,Standard,Critical,B2B,Delivered
+53,ORD-0000053,Backorder,Critical,EDI,Cancelled
+54,ORD-0000054,Backorder,High,EDI,Cancelled
+55,ORD-0000055,Express,Low,E-commerce,Delivered
+56,ORD-0000056,Standard,Critical,B2B,Delivered
+57,ORD-0000057,Backorder,High,EDI,Cancelled
+58,ORD-0000058,Standard,High,B2B,Delivered
+59,ORD-0000059,Express,High,E-commerce,Delivered
+60,ORD-0000060,Express,Medium,E-commerce,Delivered
+61,ORD-0000061,Standard,High,B2B,Delivered
+62,ORD-0000062,Backorder,Low,EDI,Delivered
+63,ORD-0000063,Backorder,Medium,EDI,Delivered
+64,ORD-0000064,Standard,Critical,B2B,Delivered
+65,ORD-0000065,Standard,Critical,B2B,Delivered
+66,ORD-0000066,Backorder,High,EDI,Delivered
+67,ORD-0000067,Backorder,Critical,EDI,Delivered
+68,ORD-0000068,Express,Medium,E-commerce,In Transit
+69,ORD-0000069,Backorder,Medium,EDI,Delivered
+70,ORD-0000070,Express,Critical,E-commerce,Delivered
+71,ORD-0000071,Backorder,Critical,EDI,Delivered
+72,ORD-0000072,Backorder,Critical,EDI,Delivered
+73,ORD-0000073,Backorder,Low,EDI,In Transit
+74,ORD-0000074,Express,Medium,E-commerce,Delivered
+75,ORD-0000075,Backorder,Critical,EDI,Delivered
+76,ORD-0000076,Standard,High,B2B,Delivered
+77,ORD-0000077,Backorder,Critical,EDI,In Transit
+78,ORD-0000078,Backorder,High,EDI,Delivered
+79,ORD-0000079,Standard,Medium,B2B,Delivered
+80,ORD-0000080,Express,Medium,E-commerce,Returned
+81,ORD-0000081,Standard,High,B2B,In Transit
+82,ORD-0000082,Express,Low,E-commerce,Delivered
+83,ORD-0000083,Express,Medium,E-commerce,Delivered
+84,ORD-0000084,Standard,Low,B2B,Delivered
+85,ORD-0000085,Backorder,High,EDI,Delivered
+86,ORD-0000086,Standard,Medium,B2B,Delivered
+87,ORD-0000087,Express,High,E-commerce,Delivered
+88,ORD-0000088,Express,Medium,E-commerce,Delivered
+89,ORD-0000089,Express,High,E-commerce,Delivered
+90,ORD-0000090,Backorder,High,EDI,Delivered
+91,ORD-0000091,Express,Low,E-commerce,Delivered
+92,ORD-0000092,Backorder,Critical,EDI,Delivered
+93,ORD-0000093,Standard,Medium,B2B,In Transit
+94,ORD-0000094,Express,High,E-commerce,In Transit
+95,ORD-0000095,Standard,Critical,B2B,Delivered
+96,ORD-0000096,Standard,High,B2B,Delivered
+97,ORD-0000097,Standard,High,B2B,In Transit
+98,ORD-0000098,Express,Medium,E-commerce,In Transit
+99,ORD-0000099,Standard,High,B2B,Cancelled
+100,ORD-0000100,Express,Medium,E-commerce,Delivered
+101,ORD-0000101,Express,Medium,E-commerce,Delivered
+102,ORD-0000102,Standard,Low,B2B,In Transit
+103,ORD-0000103,Standard,Critical,B2B,Delivered
+104,ORD-0000104,Standard,Medium,B2B,Delivered
+105,ORD-0000105,Backorder,Low,EDI,Delivered
+106,ORD-0000106,Standard,Medium,B2B,Delivered
+107,ORD-0000107,Backorder,Critical,EDI,Delivered
+108,ORD-0000108,Express,Medium,E-commerce,Delivered
+109,ORD-0000109,Backorder,Medium,EDI,Delivered
+110,ORD-0000110,Backorder,High,EDI,Delivered
+111,ORD-0000111,Backorder,Critical,EDI,Delivered
+112,ORD-0000112,Express,Critical,E-commerce,Delivered
+113,ORD-0000113,Standard,Critical,B2B,Delivered
+114,ORD-0000114,Express,Low,E-commerce,Delivered
+115,ORD-0000115,Express,High,E-commerce,Delivered
+116,ORD-0000116,Express,Low,E-commerce,Delivered
+117,ORD-0000117,Standard,Low,B2B,In Transit
+118,ORD-0000118,Backorder,High,EDI,Delivered
+119,ORD-0000119,Backorder,High,EDI,Delivered
+120,ORD-0000120,Express,Critical,E-commerce,Delivered
+121,ORD-0000121,Standard,Low,B2B,In Transit
+122,ORD-0000122,Standard,Critical,B2B,Delivered
+123,ORD-0000123,Standard,Critical,B2B,Delivered
+124,ORD-0000124,Express,Medium,E-commerce,Delivered
+125,ORD-0000125,Backorder,Critical,EDI,Delivered
+126,ORD-0000126,Express,Medium,E-commerce,Delivered
+127,ORD-0000127,Backorder,Low,EDI,In Transit
+128,ORD-0000128,Standard,Medium,B2B,Delivered
+129,ORD-0000129,Express,Low,E-commerce,Delivered
+130,ORD-0000130,Express,Medium,E-commerce,In Transit
+131,ORD-0000131,Express,Low,E-commerce,In Transit
+132,ORD-0000132,Express,Medium,E-commerce,Delivered
+133,ORD-0000133,Backorder,Critical,EDI,In Transit
+134,ORD-0000134,Express,High,E-commerce,Delivered
+135,ORD-0000135,Standard,Medium,B2B,In Transit
+136,ORD-0000136,Standard,High,B2B,Delivered
+137,ORD-0000137,Express,Medium,E-commerce,In Transit
+138,ORD-0000138,Standard,Medium,B2B,Delivered
+139,ORD-0000139,Standard,Medium,B2B,Delivered
+140,ORD-0000140,Express,High,E-commerce,In Transit
+141,ORD-0000141,Standard,High,B2B,Cancelled
+142,ORD-0000142,Standard,Low,B2B,Delivered
+143,ORD-0000143,Express,Critical,E-commerce,Delivered
+144,ORD-0000144,Backorder,Medium,EDI,Delivered
+145,ORD-0000145,Backorder,High,EDI,Cancelled
+146,ORD-0000146,Standard,Medium,B2B,Delivered
+147,ORD-0000147,Standard,High,B2B,In Transit
+148,ORD-0000148,Standard,High,B2B,Delivered
+149,ORD-0000149,Standard,Medium,B2B,In Transit
+150,ORD-0000150,Express,Medium,E-commerce,Delivered
+151,ORD-0000151,Backorder,Low,EDI,Delivered
+152,ORD-0000152,Backorder,Critical,EDI,Delivered
+153,ORD-0000153,Standard,High,B2B,Delivered
+154,ORD-0000154,Express,Low,E-commerce,In Transit
+155,ORD-0000155,Standard,Medium,B2B,Delivered
+156,ORD-0000156,Standard,High,B2B,Delivered
+157,ORD-0000157,Standard,Low,B2B,Delivered
+158,ORD-0000158,Backorder,Medium,EDI,Delivered
+159,ORD-0000159,Backorder,High,EDI,Delivered
+160,ORD-0000160,Backorder,Medium,EDI,Delivered
+161,ORD-0000161,Backorder,High,EDI,Delivered
+162,ORD-0000162,Express,Low,E-commerce,Delivered
+163,ORD-0000163,Express,Low,E-commerce,Delivered
+164,ORD-0000164,Backorder,High,EDI,Delivered
+165,ORD-0000165,Standard,Medium,B2B,Delivered
+166,ORD-0000166,Backorder,Low,EDI,Delivered
+167,ORD-0000167,Standard,High,B2B,Delivered
+168,ORD-0000168,Express,Low,E-commerce,Delivered
+169,ORD-0000169,Backorder,Critical,EDI,Delivered
+170,ORD-0000170,Standard,Critical,B2B,In Transit
+171,ORD-0000171,Standard,Low,B2B,Delivered
+172,ORD-0000172,Backorder,Medium,EDI,Delivered
+173,ORD-0000173,Express,Low,E-commerce,Delivered
+174,ORD-0000174,Backorder,Critical,EDI,Delivered
+175,ORD-0000175,Backorder,Low,EDI,Delivered
+176,ORD-0000176,Backorder,Low,EDI,Delivered
+177,ORD-0000177,Backorder,Medium,EDI,Delivered
+178,ORD-0000178,Standard,Medium,B2B,Delivered
+179,ORD-0000179,Standard,Medium,B2B,Delivered
+180,ORD-0000180,Backorder,Critical,EDI,Returned
+181,ORD-0000181,Standard,Medium,B2B,Delivered
+182,ORD-0000182,Standard,Critical,B2B,In Transit
+183,ORD-0000183,Backorder,High,EDI,Delivered
+184,ORD-0000184,Backorder,Medium,EDI,Delivered
+185,ORD-0000185,Standard,Low,B2B,Delivered
+186,ORD-0000186,Standard,Critical,B2B,In Transit
+187,ORD-0000187,Standard,High,B2B,Delivered
+188,ORD-0000188,Standard,Low,B2B,Returned
+189,ORD-0000189,Express,Critical,E-commerce,Delivered
+190,ORD-0000190,Backorder,Low,EDI,Delivered
+191,ORD-0000191,Standard,High,B2B,In Transit
+192,ORD-0000192,Standard,High,B2B,Delivered
+193,ORD-0000193,Backorder,Critical,EDI,Delivered
+194,ORD-0000194,Express,High,E-commerce,Delivered
+195,ORD-0000195,Express,High,E-commerce,Delivered
+196,ORD-0000196,Express,Medium,E-commerce,Delivered
+197,ORD-0000197,Backorder,Critical,EDI,Delivered
+198,ORD-0000198,Standard,Medium,B2B,Delivered
+199,ORD-0000199,Express,Critical,E-commerce,Delivered
+200,ORD-0000200,Express,Critical,E-commerce,Delivered
+201,ORD-0000201,Express,High,E-commerce,Delivered
+202,ORD-0000202,Standard,Medium,B2B,Delivered
+203,ORD-0000203,Standard,Medium,B2B,Delivered
+204,ORD-0000204,Express,Medium,E-commerce,Delivered
+205,ORD-0000205,Standard,Low,B2B,Delivered
+206,ORD-0000206,Backorder,Medium,EDI,Delivered
+207,ORD-0000207,Standard,Medium,B2B,Delivered
+208,ORD-0000208,Backorder,Critical,EDI,Delivered
+209,ORD-0000209,Backorder,Low,EDI,Delivered
+210,ORD-0000210,Backorder,Low,EDI,Delivered
+211,ORD-0000211,Express,High,E-commerce,Delivered
+212,ORD-0000212,Standard,Medium,B2B,Delivered
+213,ORD-0000213,Express,Critical,E-commerce,Delivered
+214,ORD-0000214,Standard,Medium,B2B,Delivered
+215,ORD-0000215,Standard,Medium,B2B,In Transit
+216,ORD-0000216,Backorder,Low,EDI,Delivered
+217,ORD-0000217,Backorder,High,EDI,In Transit
+218,ORD-0000218,Standard,High,B2B,Delivered
+219,ORD-0000219,Backorder,Medium,EDI,Returned
+220,ORD-0000220,Backorder,High,EDI,Delivered
+221,ORD-0000221,Standard,High,B2B,Delivered
+222,ORD-0000222,Express,Critical,E-commerce,Delivered
+223,ORD-0000223,Backorder,Low,EDI,Delivered
+224,ORD-0000224,Express,Critical,E-commerce,Delivered
+225,ORD-0000225,Backorder,High,EDI,Delivered
+226,ORD-0000226,Backorder,Critical,EDI,Returned
+227,ORD-0000227,Backorder,High,EDI,Delivered
+228,ORD-0000228,Backorder,High,EDI,Delivered
+229,ORD-0000229,Standard,Medium,B2B,Delivered
+230,ORD-0000230,Standard,Low,B2B,Delivered
+231,ORD-0000231,Backorder,Critical,EDI,Delivered
+232,ORD-0000232,Express,High,E-commerce,Delivered
+233,ORD-0000233,Backorder,Critical,EDI,In Transit
+234,ORD-0000234,Standard,Critical,B2B,Cancelled
+235,ORD-0000235,Standard,Critical,B2B,Delivered
+236,ORD-0000236,Express,Low,E-commerce,Delivered
+237,ORD-0000237,Express,Medium,E-commerce,Delivered
+238,ORD-0000238,Backorder,Medium,EDI,Delivered
+239,ORD-0000239,Standard,High,B2B,Delivered
+240,ORD-0000240,Express,Critical,E-commerce,Delivered
+241,ORD-0000241,Backorder,Medium,EDI,Delivered
+242,ORD-0000242,Express,Low,E-commerce,Delivered
+243,ORD-0000243,Express,Medium,E-commerce,Returned
+244,ORD-0000244,Backorder,Low,EDI,Delivered
+245,ORD-0000245,Backorder,Critical,EDI,Delivered
+246,ORD-0000246,Express,Low,E-commerce,Delivered
+247,ORD-0000247,Backorder,Medium,EDI,Delivered
+248,ORD-0000248,Standard,Medium,B2B,Delivered
+249,ORD-0000249,Standard,High,B2B,Delivered
+250,ORD-0000250,Express,Critical,E-commerce,Delivered
+251,ORD-0000251,Backorder,Low,EDI,Delivered
+252,ORD-0000252,Backorder,High,EDI,Delivered
+253,ORD-0000253,Standard,High,B2B,Delivered
+254,ORD-0000254,Standard,Critical,B2B,Delivered
+255,ORD-0000255,Backorder,Critical,EDI,Delivered
+256,ORD-0000256,Express,High,E-commerce,Delivered
+257,ORD-0000257,Standard,High,B2B,Delivered
+258,ORD-0000258,Standard,Critical,B2B,Delivered
+259,ORD-0000259,Express,Critical,E-commerce,Delivered
+260,ORD-0000260,Standard,High,B2B,Delivered
+261,ORD-0000261,Express,Medium,E-commerce,Delivered
+262,ORD-0000262,Standard,Critical,B2B,Delivered
+263,ORD-0000263,Express,Critical,E-commerce,Delivered
+264,ORD-0000264,Backorder,Critical,EDI,Delivered
+265,ORD-0000265,Standard,Medium,B2B,Delivered
+266,ORD-0000266,Express,Critical,E-commerce,Delivered
+267,ORD-0000267,Backorder,Low,EDI,Delivered
+268,ORD-0000268,Standard,Critical,B2B,Delivered
+269,ORD-0000269,Backorder,High,EDI,Delivered
+270,ORD-0000270,Standard,High,B2B,Delivered
+271,ORD-0000271,Standard,Critical,B2B,Delivered
+272,ORD-0000272,Backorder,Critical,EDI,In Transit
+273,ORD-0000273,Standard,Critical,B2B,Delivered
+274,ORD-0000274,Backorder,High,EDI,Delivered
+275,ORD-0000275,Standard,High,B2B,Delivered
+276,ORD-0000276,Backorder,Low,EDI,Delivered
+277,ORD-0000277,Standard,Critical,B2B,Delivered
+278,ORD-0000278,Standard,Low,B2B,Delivered
+279,ORD-0000279,Backorder,Low,EDI,Delivered
+280,ORD-0000280,Standard,Critical,B2B,Delivered
+281,ORD-0000281,Backorder,Low,EDI,Delivered
+282,ORD-0000282,Express,Critical,E-commerce,Delivered
+283,ORD-0000283,Backorder,Critical,EDI,In Transit
+284,ORD-0000284,Standard,High,B2B,Delivered
+285,ORD-0000285,Standard,High,B2B,Delivered
+286,ORD-0000286,Backorder,Critical,EDI,Delivered
+287,ORD-0000287,Standard,High,B2B,Delivered
+288,ORD-0000288,Express,Medium,E-commerce,Delivered
+289,ORD-0000289,Backorder,Medium,EDI,Delivered
+290,ORD-0000290,Backorder,Critical,EDI,Delivered
+291,ORD-0000291,Standard,Low,B2B,Delivered
+292,ORD-0000292,Standard,Low,B2B,Delivered
+293,ORD-0000293,Backorder,Medium,EDI,Delivered
+294,ORD-0000294,Backorder,High,EDI,In Transit
+295,ORD-0000295,Backorder,Low,EDI,Delivered
+296,ORD-0000296,Express,Low,E-commerce,Delivered
+297,ORD-0000297,Express,Medium,E-commerce,Delivered
+298,ORD-0000298,Backorder,Low,EDI,Delivered
+299,ORD-0000299,Express,Medium,E-commerce,Delivered
+300,ORD-0000300,Standard,Medium,B2B,Delivered
+301,ORD-0000301,Standard,Critical,B2B,In Transit
+302,ORD-0000302,Standard,Low,B2B,Delivered
+303,ORD-0000303,Standard,Low,B2B,In Transit
+304,ORD-0000304,Backorder,Low,EDI,Delivered
+305,ORD-0000305,Backorder,Low,EDI,Delivered
+306,ORD-0000306,Express,Low,E-commerce,In Transit
+307,ORD-0000307,Standard,Critical,B2B,Delivered
+308,ORD-0000308,Standard,Low,B2B,Delivered
+309,ORD-0000309,Express,High,E-commerce,In Transit
+310,ORD-0000310,Standard,Medium,B2B,Delivered
+311,ORD-0000311,Standard,Low,B2B,Delivered
+312,ORD-0000312,Backorder,Medium,EDI,Delivered
+313,ORD-0000313,Standard,Medium,B2B,Delivered
+314,ORD-0000314,Standard,High,B2B,In Transit
+315,ORD-0000315,Express,Medium,E-commerce,Delivered
+316,ORD-0000316,Standard,Medium,B2B,Delivered
+317,ORD-0000317,Standard,Medium,B2B,Delivered
+318,ORD-0000318,Backorder,Low,EDI,Delivered
+319,ORD-0000319,Backorder,Critical,EDI,Delivered
+320,ORD-0000320,Standard,Critical,B2B,Delivered
+321,ORD-0000321,Standard,Critical,B2B,Delivered
+322,ORD-0000322,Standard,Medium,B2B,Delivered
+323,ORD-0000323,Standard,Medium,B2B,Delivered
+324,ORD-0000324,Backorder,High,EDI,Delivered
+325,ORD-0000325,Standard,Medium,B2B,Delivered
+326,ORD-0000326,Backorder,Medium,EDI,Delivered
+327,ORD-0000327,Standard,Low,B2B,In Transit
+328,ORD-0000328,Express,Critical,E-commerce,Delivered
+329,ORD-0000329,Backorder,Medium,EDI,Delivered
+330,ORD-0000330,Standard,Low,B2B,Delivered
+331,ORD-0000331,Express,Low,E-commerce,Delivered
+332,ORD-0000332,Standard,Medium,B2B,Delivered
+333,ORD-0000333,Standard,High,B2B,Delivered
+334,ORD-0000334,Express,High,E-commerce,Delivered
+335,ORD-0000335,Standard,Low,B2B,Delivered
+336,ORD-0000336,Standard,Low,B2B,Returned
+337,ORD-0000337,Backorder,Critical,EDI,Delivered
+338,ORD-0000338,Standard,High,B2B,Delivered
+339,ORD-0000339,Backorder,High,EDI,In Transit
+340,ORD-0000340,Standard,High,B2B,Delivered
+341,ORD-0000341,Express,Critical,E-commerce,Delivered
+342,ORD-0000342,Backorder,High,EDI,Delivered
+343,ORD-0000343,Express,Medium,E-commerce,Delivered
+344,ORD-0000344,Standard,Critical,B2B,Delivered
+345,ORD-0000345,Standard,Critical,B2B,In Transit
+346,ORD-0000346,Backorder,Critical,EDI,Delivered
+347,ORD-0000347,Express,Low,E-commerce,In Transit
+348,ORD-0000348,Express,Low,E-commerce,Delivered
+349,ORD-0000349,Backorder,Low,EDI,Delivered
+350,ORD-0000350,Backorder,High,EDI,Delivered
+351,ORD-0000351,Express,High,E-commerce,Delivered
+352,ORD-0000352,Backorder,Medium,EDI,Delivered
+353,ORD-0000353,Standard,Critical,B2B,In Transit
+354,ORD-0000354,Backorder,Critical,EDI,Delivered
+355,ORD-0000355,Standard,Critical,B2B,Delivered
+356,ORD-0000356,Backorder,High,EDI,Delivered
+357,ORD-0000357,Standard,Medium,B2B,Delivered
+358,ORD-0000358,Standard,High,B2B,Delivered
+359,ORD-0000359,Express,Critical,E-commerce,In Transit
+360,ORD-0000360,Standard,High,B2B,Delivered
+361,ORD-0000361,Express,High,E-commerce,Delivered
+362,ORD-0000362,Express,High,E-commerce,Delivered
+363,ORD-0000363,Backorder,Critical,EDI,Delivered
+364,ORD-0000364,Standard,Low,B2B,Delivered
+365,ORD-0000365,Standard,High,B2B,Delivered
+366,ORD-0000366,Backorder,High,EDI,Delivered
+367,ORD-0000367,Express,Critical,E-commerce,Delivered
+368,ORD-0000368,Standard,Critical,B2B,Delivered
+369,ORD-0000369,Express,Critical,E-commerce,Delivered
+370,ORD-0000370,Express,Medium,E-commerce,In Transit
+371,ORD-0000371,Standard,Critical,B2B,Delivered
+372,ORD-0000372,Standard,Critical,B2B,Delivered
+373,ORD-0000373,Standard,Critical,B2B,Delivered
+374,ORD-0000374,Backorder,Critical,EDI,Delivered
+375,ORD-0000375,Express,Low,E-commerce,Delivered
+376,ORD-0000376,Express,Low,E-commerce,Delivered
+377,ORD-0000377,Backorder,Low,EDI,Delivered
+378,ORD-0000378,Standard,Critical,B2B,Delivered
+379,ORD-0000379,Backorder,High,EDI,In Transit
+380,ORD-0000380,Standard,Critical,B2B,Cancelled
+381,ORD-0000381,Express,High,E-commerce,Delivered
+382,ORD-0000382,Standard,Critical,B2B,Delivered
+383,ORD-0000383,Standard,Medium,B2B,Delivered
+384,ORD-0000384,Express,Low,E-commerce,Delivered
+385,ORD-0000385,Express,Critical,E-commerce,In Transit
+386,ORD-0000386,Express,Critical,E-commerce,In Transit
+387,ORD-0000387,Backorder,Critical,EDI,Delivered
+388,ORD-0000388,Standard,Low,B2B,Delivered
+389,ORD-0000389,Express,Low,E-commerce,Delivered
+390,ORD-0000390,Backorder,Low,EDI,In Transit
+391,ORD-0000391,Backorder,Low,EDI,Delivered
+392,ORD-0000392,Express,High,E-commerce,In Transit
+393,ORD-0000393,Express,Critical,E-commerce,In Transit
+394,ORD-0000394,Backorder,High,EDI,Delivered
+395,ORD-0000395,Backorder,Medium,EDI,Delivered
+396,ORD-0000396,Express,Critical,E-commerce,Delivered
+397,ORD-0000397,Express,Medium,E-commerce,Delivered
+398,ORD-0000398,Backorder,Low,EDI,Delivered
+399,ORD-0000399,Express,Low,E-commerce,Delivered
+400,ORD-0000400,Standard,Medium,B2B,In Transit
+401,ORD-0000401,Express,Critical,E-commerce,Delivered
+402,ORD-0000402,Backorder,Critical,EDI,Delivered
+403,ORD-0000403,Standard,Low,B2B,Delivered
+404,ORD-0000404,Backorder,Low,EDI,Delivered
+405,ORD-0000405,Express,Medium,E-commerce,Delivered
+406,ORD-0000406,Backorder,High,EDI,Delivered
+407,ORD-0000407,Backorder,Low,EDI,Delivered
+408,ORD-0000408,Express,Medium,E-commerce,Delivered
+409,ORD-0000409,Backorder,Low,EDI,Delivered
+410,ORD-0000410,Backorder,Critical,EDI,Returned
+411,ORD-0000411,Standard,High,B2B,In Transit
+412,ORD-0000412,Backorder,High,EDI,Delivered
+413,ORD-0000413,Standard,Medium,B2B,Delivered
+414,ORD-0000414,Express,Critical,E-commerce,Cancelled
+415,ORD-0000415,Backorder,Critical,EDI,Delivered
+416,ORD-0000416,Express,Critical,E-commerce,Delivered
+417,ORD-0000417,Backorder,High,EDI,In Transit
+418,ORD-0000418,Backorder,Critical,EDI,Delivered
+419,ORD-0000419,Standard,High,B2B,Delivered
+420,ORD-0000420,Express,Critical,E-commerce,Delivered
+421,ORD-0000421,Express,High,E-commerce,Delivered
+422,ORD-0000422,Standard,Low,B2B,Delivered
+423,ORD-0000423,Backorder,High,EDI,Cancelled
+424,ORD-0000424,Express,Critical,E-commerce,Cancelled
+425,ORD-0000425,Backorder,Medium,EDI,Delivered
+426,ORD-0000426,Backorder,Critical,EDI,Delivered
+427,ORD-0000427,Backorder,High,EDI,Delivered
+428,ORD-0000428,Backorder,Low,EDI,In Transit
+429,ORD-0000429,Express,Critical,E-commerce,Delivered
+430,ORD-0000430,Backorder,High,EDI,In Transit
+431,ORD-0000431,Express,Medium,E-commerce,Delivered
+432,ORD-0000432,Express,High,E-commerce,Delivered
+433,ORD-0000433,Backorder,Critical,EDI,Delivered
+434,ORD-0000434,Standard,Critical,B2B,Delivered
+435,ORD-0000435,Express,High,E-commerce,Delivered
+436,ORD-0000436,Standard,High,B2B,Delivered
+437,ORD-0000437,Express,Low,E-commerce,In Transit
+438,ORD-0000438,Express,Low,E-commerce,Delivered
+439,ORD-0000439,Backorder,Critical,EDI,In Transit
+440,ORD-0000440,Backorder,High,EDI,Delivered
+441,ORD-0000441,Express,Medium,E-commerce,In Transit
+442,ORD-0000442,Standard,Critical,B2B,Delivered
+443,ORD-0000443,Backorder,Low,EDI,Delivered
+444,ORD-0000444,Express,High,E-commerce,In Transit
+445,ORD-0000445,Standard,Low,B2B,Delivered
+446,ORD-0000446,Backorder,High,EDI,Delivered
+447,ORD-0000447,Standard,Critical,B2B,Delivered
+448,ORD-0000448,Express,Medium,E-commerce,Delivered
+449,ORD-0000449,Backorder,Medium,EDI,Delivered
+450,ORD-0000450,Standard,High,B2B,Delivered
+451,ORD-0000451,Standard,High,B2B,Delivered
+452,ORD-0000452,Backorder,Low,EDI,Delivered
+453,ORD-0000453,Express,Medium,E-commerce,Delivered
+454,ORD-0000454,Backorder,Low,EDI,Delivered
+455,ORD-0000455,Standard,Low,B2B,Delivered
+456,ORD-0000456,Standard,Critical,B2B,Delivered
+457,ORD-0000457,Backorder,Low,EDI,Delivered
+458,ORD-0000458,Express,High,E-commerce,In Transit
+459,ORD-0000459,Express,Critical,E-commerce,Delivered
+460,ORD-0000460,Express,Medium,E-commerce,Delivered
+461,ORD-0000461,Backorder,Medium,EDI,Delivered
+462,ORD-0000462,Standard,Medium,B2B,In Transit
+463,ORD-0000463,Standard,Critical,B2B,Delivered
+464,ORD-0000464,Express,Medium,E-commerce,In Transit
+465,ORD-0000465,Express,Low,E-commerce,In Transit
+466,ORD-0000466,Backorder,Critical,EDI,Delivered
+467,ORD-0000467,Standard,Critical,B2B,Returned
+468,ORD-0000468,Standard,High,B2B,Delivered
+469,ORD-0000469,Backorder,High,EDI,Delivered
+470,ORD-0000470,Express,Low,E-commerce,In Transit
+471,ORD-0000471,Backorder,Medium,EDI,In Transit
+472,ORD-0000472,Backorder,Critical,EDI,Delivered
+473,ORD-0000473,Standard,Medium,B2B,Delivered
+474,ORD-0000474,Standard,Critical,B2B,Delivered
+475,ORD-0000475,Backorder,Critical,EDI,In Transit
+476,ORD-0000476,Backorder,Low,EDI,Delivered
+477,ORD-0000477,Standard,High,B2B,In Transit
+478,ORD-0000478,Backorder,High,EDI,In Transit
+479,ORD-0000479,Backorder,High,EDI,In Transit
+480,ORD-0000480,Express,High,E-commerce,Delivered
+481,ORD-0000481,Backorder,Critical,EDI,Delivered
+482,ORD-0000482,Backorder,Medium,EDI,Delivered
+483,ORD-0000483,Backorder,High,EDI,Delivered
+484,ORD-0000484,Standard,Low,B2B,Delivered
+485,ORD-0000485,Standard,Low,B2B,Delivered
+486,ORD-0000486,Standard,High,B2B,Delivered
+487,ORD-0000487,Standard,Medium,B2B,Delivered
+488,ORD-0000488,Standard,Medium,B2B,Delivered
+489,ORD-0000489,Express,Low,E-commerce,Delivered
+490,ORD-0000490,Standard,Medium,B2B,Delivered
+491,ORD-0000491,Express,Low,E-commerce,Delivered
+492,ORD-0000492,Express,Critical,E-commerce,Delivered
+493,ORD-0000493,Express,Medium,E-commerce,Delivered
+494,ORD-0000494,Backorder,Medium,EDI,Delivered
+495,ORD-0000495,Backorder,High,EDI,In Transit
+496,ORD-0000496,Express,High,E-commerce,In Transit
+497,ORD-0000497,Backorder,Critical,EDI,Delivered
+498,ORD-0000498,Standard,Critical,B2B,In Transit
+499,ORD-0000499,Standard,High,B2B,Delivered
+500,ORD-0000500,Backorder,High,EDI,Delivered
+501,ORD-0000501,Standard,Medium,B2B,Delivered
+502,ORD-0000502,Standard,High,B2B,Delivered
+503,ORD-0000503,Backorder,High,EDI,Delivered
+504,ORD-0000504,Express,Critical,E-commerce,Delivered
+505,ORD-0000505,Backorder,Low,EDI,In Transit
+506,ORD-0000506,Standard,Medium,B2B,Delivered
+507,ORD-0000507,Backorder,Critical,EDI,Cancelled
+508,ORD-0000508,Backorder,Medium,EDI,Delivered
+509,ORD-0000509,Express,High,E-commerce,In Transit
+510,ORD-0000510,Backorder,Low,EDI,Delivered
+511,ORD-0000511,Backorder,Low,EDI,Delivered
+512,ORD-0000512,Backorder,Critical,EDI,Delivered
+513,ORD-0000513,Standard,Critical,B2B,In Transit
+514,ORD-0000514,Backorder,Medium,EDI,Delivered
+515,ORD-0000515,Express,Medium,E-commerce,Delivered
+516,ORD-0000516,Express,Critical,E-commerce,Delivered
+517,ORD-0000517,Express,Low,E-commerce,In Transit
+518,ORD-0000518,Backorder,Medium,EDI,Delivered
+519,ORD-0000519,Express,Medium,E-commerce,In Transit
+520,ORD-0000520,Express,Critical,E-commerce,Delivered
+521,ORD-0000521,Standard,Critical,B2B,Delivered
+522,ORD-0000522,Backorder,Critical,EDI,Delivered
+523,ORD-0000523,Standard,Low,B2B,Delivered
+524,ORD-0000524,Express,Critical,E-commerce,Delivered
+525,ORD-0000525,Express,High,E-commerce,Delivered
+526,ORD-0000526,Standard,Medium,B2B,In Transit
+527,ORD-0000527,Backorder,High,EDI,Delivered
+528,ORD-0000528,Backorder,Medium,EDI,Delivered
+529,ORD-0000529,Backorder,Critical,EDI,Delivered
+530,ORD-0000530,Express,Low,E-commerce,Delivered
+531,ORD-0000531,Express,Critical,E-commerce,Delivered
+532,ORD-0000532,Standard,Low,B2B,Delivered
+533,ORD-0000533,Standard,Medium,B2B,Delivered
+534,ORD-0000534,Standard,Medium,B2B,Delivered
+535,ORD-0000535,Standard,Critical,B2B,Cancelled
+536,ORD-0000536,Express,Low,E-commerce,Delivered
+537,ORD-0000537,Backorder,Critical,EDI,In Transit
+538,ORD-0000538,Express,Medium,E-commerce,Delivered
+539,ORD-0000539,Express,High,E-commerce,Delivered
+540,ORD-0000540,Standard,Low,B2B,Delivered
+541,ORD-0000541,Standard,High,B2B,Delivered
+542,ORD-0000542,Express,Critical,E-commerce,In Transit
+543,ORD-0000543,Standard,Low,B2B,Delivered
+544,ORD-0000544,Express,Critical,E-commerce,Delivered
+545,ORD-0000545,Standard,High,B2B,Delivered
+546,ORD-0000546,Express,Critical,E-commerce,Delivered
+547,ORD-0000547,Backorder,Low,EDI,Delivered
+548,ORD-0000548,Express,Critical,E-commerce,In Transit
+549,ORD-0000549,Standard,Medium,B2B,Delivered
+550,ORD-0000550,Standard,Critical,B2B,Delivered
+551,ORD-0000551,Express,Low,E-commerce,Delivered
+552,ORD-0000552,Standard,Critical,B2B,Cancelled
+553,ORD-0000553,Standard,High,B2B,Delivered
+554,ORD-0000554,Standard,Medium,B2B,Delivered
+555,ORD-0000555,Backorder,Critical,EDI,Delivered
+556,ORD-0000556,Standard,High,B2B,Cancelled
+557,ORD-0000557,Standard,Low,B2B,Delivered
+558,ORD-0000558,Backorder,Medium,EDI,Delivered
+559,ORD-0000559,Backorder,Medium,EDI,Delivered
+560,ORD-0000560,Standard,Medium,B2B,Delivered
+561,ORD-0000561,Standard,Low,B2B,Delivered
+562,ORD-0000562,Express,Medium,E-commerce,Delivered
+563,ORD-0000563,Express,High,E-commerce,Delivered
+564,ORD-0000564,Backorder,Medium,EDI,Delivered
+565,ORD-0000565,Backorder,Low,EDI,Delivered
+566,ORD-0000566,Backorder,Low,EDI,In Transit
+567,ORD-0000567,Backorder,Medium,EDI,In Transit
+568,ORD-0000568,Standard,High,B2B,Delivered
+569,ORD-0000569,Express,Low,E-commerce,In Transit
+570,ORD-0000570,Standard,High,B2B,In Transit
+571,ORD-0000571,Express,Medium,E-commerce,Delivered
+572,ORD-0000572,Standard,High,B2B,In Transit
+573,ORD-0000573,Backorder,Medium,EDI,In Transit
+574,ORD-0000574,Express,Critical,E-commerce,Delivered
+575,ORD-0000575,Backorder,Medium,EDI,Delivered
+576,ORD-0000576,Backorder,Low,EDI,In Transit
+577,ORD-0000577,Backorder,Critical,EDI,In Transit
+578,ORD-0000578,Express,Critical,E-commerce,Delivered
+579,ORD-0000579,Backorder,Low,EDI,Delivered
+580,ORD-0000580,Standard,Medium,B2B,Delivered
+581,ORD-0000581,Standard,Critical,B2B,Delivered
+582,ORD-0000582,Standard,Medium,B2B,Delivered
+583,ORD-0000583,Backorder,Critical,EDI,In Transit
+584,ORD-0000584,Express,High,E-commerce,Delivered
+585,ORD-0000585,Express,High,E-commerce,Delivered
+586,ORD-0000586,Standard,Critical,B2B,Delivered
+587,ORD-0000587,Backorder,Low,EDI,Delivered
+588,ORD-0000588,Backorder,Medium,EDI,Delivered
+589,ORD-0000589,Express,Medium,E-commerce,Delivered
+590,ORD-0000590,Backorder,Critical,EDI,Delivered
+591,ORD-0000591,Standard,High,B2B,Delivered
+592,ORD-0000592,Express,Medium,E-commerce,Delivered
+593,ORD-0000593,Standard,High,B2B,Delivered
+594,ORD-0000594,Express,Low,E-commerce,Delivered
+595,ORD-0000595,Standard,Medium,B2B,Delivered
+596,ORD-0000596,Standard,Low,B2B,In Transit
+597,ORD-0000597,Express,High,E-commerce,Delivered
+598,ORD-0000598,Standard,Critical,B2B,Returned
+599,ORD-0000599,Standard,High,B2B,Delivered
+600,ORD-0000600,Standard,Medium,B2B,Delivered
+601,ORD-0000601,Standard,Medium,B2B,Delivered
+602,ORD-0000602,Standard,Medium,B2B,Delivered
+603,ORD-0000603,Express,High,E-commerce,Delivered
+604,ORD-0000604,Express,Low,E-commerce,Delivered
+605,ORD-0000605,Express,Medium,E-commerce,Delivered
+606,ORD-0000606,Standard,High,B2B,Delivered
+607,ORD-0000607,Backorder,Critical,EDI,Cancelled
+608,ORD-0000608,Backorder,Low,EDI,Delivered
+609,ORD-0000609,Express,High,E-commerce,In Transit
+610,ORD-0000610,Express,High,E-commerce,In Transit
+611,ORD-0000611,Standard,Medium,B2B,Delivered
+612,ORD-0000612,Express,Critical,E-commerce,Returned
+613,ORD-0000613,Backorder,Medium,EDI,Delivered
+614,ORD-0000614,Backorder,High,EDI,Delivered
+615,ORD-0000615,Standard,Medium,B2B,Delivered
+616,ORD-0000616,Express,High,E-commerce,Delivered
+617,ORD-0000617,Express,High,E-commerce,Delivered
+618,ORD-0000618,Express,Low,E-commerce,Delivered
+619,ORD-0000619,Backorder,Medium,EDI,Delivered
+620,ORD-0000620,Standard,High,B2B,In Transit
+621,ORD-0000621,Standard,Critical,B2B,Delivered
+622,ORD-0000622,Standard,Low,B2B,In Transit
+623,ORD-0000623,Backorder,High,EDI,Delivered
+624,ORD-0000624,Express,Medium,E-commerce,In Transit
+625,ORD-0000625,Express,Low,E-commerce,Delivered
+626,ORD-0000626,Backorder,High,EDI,Delivered
+627,ORD-0000627,Backorder,High,EDI,Cancelled
+628,ORD-0000628,Standard,Medium,B2B,Delivered
+629,ORD-0000629,Standard,Low,B2B,Delivered
+630,ORD-0000630,Backorder,Low,EDI,Delivered
+631,ORD-0000631,Standard,High,B2B,Delivered
+632,ORD-0000632,Standard,Critical,B2B,Delivered
+633,ORD-0000633,Backorder,Medium,EDI,Delivered
+634,ORD-0000634,Backorder,Critical,EDI,Delivered
+635,ORD-0000635,Backorder,High,EDI,In Transit
+636,ORD-0000636,Backorder,Critical,EDI,Delivered
+637,ORD-0000637,Express,Low,E-commerce,Delivered
+638,ORD-0000638,Express,High,E-commerce,Delivered
+639,ORD-0000639,Standard,Low,B2B,Delivered
+640,ORD-0000640,Standard,Medium,B2B,Delivered
+641,ORD-0000641,Standard,Critical,B2B,Returned
+642,ORD-0000642,Standard,Low,B2B,Delivered
+643,ORD-0000643,Express,Medium,E-commerce,Delivered
+644,ORD-0000644,Express,Low,E-commerce,Delivered
+645,ORD-0000645,Standard,Medium,B2B,Delivered
+646,ORD-0000646,Backorder,Medium,EDI,In Transit
+647,ORD-0000647,Standard,Critical,B2B,Delivered
+648,ORD-0000648,Standard,Medium,B2B,Delivered
+649,ORD-0000649,Backorder,Critical,EDI,Delivered
+650,ORD-0000650,Backorder,Medium,EDI,Delivered
+651,ORD-0000651,Backorder,Low,EDI,Delivered
+652,ORD-0000652,Backorder,High,EDI,In Transit
+653,ORD-0000653,Express,High,E-commerce,Cancelled
+654,ORD-0000654,Express,High,E-commerce,Delivered
+655,ORD-0000655,Express,Critical,E-commerce,Delivered
+656,ORD-0000656,Express,Medium,E-commerce,Delivered
+657,ORD-0000657,Standard,Critical,B2B,Returned
+658,ORD-0000658,Express,High,E-commerce,In Transit
+659,ORD-0000659,Standard,Critical,B2B,Delivered
+660,ORD-0000660,Backorder,High,EDI,Delivered
+661,ORD-0000661,Express,Critical,E-commerce,Delivered
+662,ORD-0000662,Backorder,High,EDI,In Transit
+663,ORD-0000663,Standard,Low,B2B,Delivered
+664,ORD-0000664,Standard,Medium,B2B,Delivered
+665,ORD-0000665,Standard,Low,B2B,In Transit
+666,ORD-0000666,Express,High,E-commerce,In Transit
+667,ORD-0000667,Standard,Critical,B2B,In Transit
+668,ORD-0000668,Standard,Medium,B2B,In Transit
+669,ORD-0000669,Backorder,Critical,EDI,Delivered
+670,ORD-0000670,Standard,Low,B2B,Delivered
+671,ORD-0000671,Express,Critical,E-commerce,In Transit
+672,ORD-0000672,Standard,Low,B2B,Delivered
+673,ORD-0000673,Backorder,Critical,EDI,Delivered
+674,ORD-0000674,Backorder,Medium,EDI,Delivered
+675,ORD-0000675,Standard,Medium,B2B,Delivered
+676,ORD-0000676,Express,Low,E-commerce,In Transit
+677,ORD-0000677,Backorder,Critical,EDI,Delivered
+678,ORD-0000678,Backorder,Medium,EDI,Delivered
+679,ORD-0000679,Express,Low,E-commerce,In Transit
+680,ORD-0000680,Standard,Low,B2B,Delivered
+681,ORD-0000681,Standard,Critical,B2B,Delivered
+682,ORD-0000682,Standard,Critical,B2B,In Transit
+683,ORD-0000683,Standard,Low,B2B,Delivered
+684,ORD-0000684,Express,Critical,E-commerce,Delivered
+685,ORD-0000685,Standard,Medium,B2B,Delivered
+686,ORD-0000686,Standard,High,B2B,Delivered
+687,ORD-0000687,Backorder,Low,EDI,Delivered
+688,ORD-0000688,Backorder,High,EDI,Delivered
+689,ORD-0000689,Backorder,Low,EDI,Delivered
+690,ORD-0000690,Backorder,Low,EDI,Delivered
+691,ORD-0000691,Standard,Critical,B2B,Delivered
+692,ORD-0000692,Express,Low,E-commerce,In Transit
+693,ORD-0000693,Standard,Medium,B2B,Delivered
+694,ORD-0000694,Standard,High,B2B,Delivered
+695,ORD-0000695,Express,Low,E-commerce,Delivered
+696,ORD-0000696,Express,Critical,E-commerce,Delivered
+697,ORD-0000697,Standard,Critical,B2B,Delivered
+698,ORD-0000698,Express,Critical,E-commerce,Delivered
+699,ORD-0000699,Express,Medium,E-commerce,Delivered
+700,ORD-0000700,Backorder,Low,EDI,Delivered
+701,ORD-0000701,Backorder,High,EDI,Delivered
+702,ORD-0000702,Backorder,Low,EDI,Delivered
+703,ORD-0000703,Standard,Medium,B2B,Delivered
+704,ORD-0000704,Backorder,High,EDI,Delivered
+705,ORD-0000705,Express,Low,E-commerce,Delivered
+706,ORD-0000706,Backorder,Low,EDI,Delivered
+707,ORD-0000707,Backorder,Medium,EDI,Delivered
+708,ORD-0000708,Backorder,Critical,EDI,In Transit
+709,ORD-0000709,Backorder,High,EDI,In Transit
+710,ORD-0000710,Backorder,High,EDI,Delivered
+711,ORD-0000711,Express,High,E-commerce,In Transit
+712,ORD-0000712,Backorder,High,EDI,Delivered
+713,ORD-0000713,Standard,Medium,B2B,Delivered
+714,ORD-0000714,Backorder,Medium,EDI,Delivered
+715,ORD-0000715,Standard,Medium,B2B,Delivered
+716,ORD-0000716,Express,Critical,E-commerce,Delivered
+717,ORD-0000717,Express,Medium,E-commerce,Delivered
+718,ORD-0000718,Backorder,Medium,EDI,Delivered
+719,ORD-0000719,Standard,Critical,B2B,Delivered
+720,ORD-0000720,Express,Low,E-commerce,Delivered
+721,ORD-0000721,Express,Low,E-commerce,Delivered
+722,ORD-0000722,Backorder,Medium,EDI,Delivered
+723,ORD-0000723,Standard,Medium,B2B,Delivered
+724,ORD-0000724,Standard,Medium,B2B,Delivered
+725,ORD-0000725,Express,High,E-commerce,Delivered
+726,ORD-0000726,Express,Medium,E-commerce,Delivered
+727,ORD-0000727,Express,Critical,E-commerce,Delivered
+728,ORD-0000728,Standard,High,B2B,In Transit
+729,ORD-0000729,Backorder,Critical,EDI,Delivered
+730,ORD-0000730,Backorder,Low,EDI,Delivered
+731,ORD-0000731,Backorder,Critical,EDI,Delivered
+732,ORD-0000732,Standard,Low,B2B,Delivered
+733,ORD-0000733,Standard,Critical,B2B,In Transit
+734,ORD-0000734,Standard,Critical,B2B,Delivered
+735,ORD-0000735,Backorder,Low,EDI,Delivered
+736,ORD-0000736,Standard,Medium,B2B,Delivered
+737,ORD-0000737,Express,Low,E-commerce,Delivered
+738,ORD-0000738,Express,Critical,E-commerce,Delivered
+739,ORD-0000739,Express,Critical,E-commerce,Delivered
+740,ORD-0000740,Express,Critical,E-commerce,Delivered
+741,ORD-0000741,Backorder,High,EDI,Delivered
+742,ORD-0000742,Express,Critical,E-commerce,Returned
+743,ORD-0000743,Standard,Critical,B2B,Delivered
+744,ORD-0000744,Express,Critical,E-commerce,Delivered
+745,ORD-0000745,Express,Critical,E-commerce,Delivered
+746,ORD-0000746,Standard,Critical,B2B,Delivered
+747,ORD-0000747,Standard,Low,B2B,Delivered
+748,ORD-0000748,Express,Medium,E-commerce,Delivered
+749,ORD-0000749,Backorder,Critical,EDI,Delivered
+750,ORD-0000750,Backorder,Medium,EDI,Delivered
+751,ORD-0000751,Backorder,Medium,EDI,Delivered
+752,ORD-0000752,Backorder,High,EDI,In Transit
+753,ORD-0000753,Standard,Low,B2B,Delivered
+754,ORD-0000754,Express,Low,E-commerce,Delivered
+755,ORD-0000755,Standard,Critical,B2B,Delivered
+756,ORD-0000756,Express,Medium,E-commerce,In Transit
+757,ORD-0000757,Express,High,E-commerce,Delivered
+758,ORD-0000758,Standard,Low,B2B,Delivered
+759,ORD-0000759,Backorder,Low,EDI,Delivered
+760,ORD-0000760,Backorder,Low,EDI,In Transit
+761,ORD-0000761,Standard,Medium,B2B,Delivered
+762,ORD-0000762,Express,Critical,E-commerce,Delivered
+763,ORD-0000763,Express,Low,E-commerce,Delivered
+764,ORD-0000764,Express,Critical,E-commerce,Returned
+765,ORD-0000765,Backorder,Critical,EDI,Delivered
+766,ORD-0000766,Backorder,Critical,EDI,Delivered
+767,ORD-0000767,Backorder,Medium,EDI,Delivered
+768,ORD-0000768,Backorder,Medium,EDI,Delivered
+769,ORD-0000769,Standard,Medium,B2B,Delivered
+770,ORD-0000770,Express,Low,E-commerce,Delivered
+771,ORD-0000771,Standard,Low,B2B,In Transit
+772,ORD-0000772,Express,Medium,E-commerce,Delivered
+773,ORD-0000773,Standard,Low,B2B,Delivered
+774,ORD-0000774,Standard,Medium,B2B,Delivered
+775,ORD-0000775,Express,Medium,E-commerce,Delivered
+776,ORD-0000776,Backorder,High,EDI,In Transit
+777,ORD-0000777,Backorder,Low,EDI,In Transit
+778,ORD-0000778,Express,High,E-commerce,In Transit
+779,ORD-0000779,Standard,Medium,B2B,Delivered
+780,ORD-0000780,Backorder,Low,EDI,Delivered
+781,ORD-0000781,Standard,Low,B2B,Returned
+782,ORD-0000782,Express,Medium,E-commerce,Delivered
+783,ORD-0000783,Express,Critical,E-commerce,Delivered
+784,ORD-0000784,Standard,Critical,B2B,Delivered
+785,ORD-0000785,Standard,Critical,B2B,Delivered
+786,ORD-0000786,Standard,Critical,B2B,Delivered
+787,ORD-0000787,Express,Critical,E-commerce,Delivered
+788,ORD-0000788,Express,Medium,E-commerce,Delivered
+789,ORD-0000789,Express,Critical,E-commerce,In Transit
+790,ORD-0000790,Express,Medium,E-commerce,In Transit
+791,ORD-0000791,Express,High,E-commerce,Delivered
+792,ORD-0000792,Express,Medium,E-commerce,Delivered
+793,ORD-0000793,Standard,Low,B2B,Delivered
+794,ORD-0000794,Standard,High,B2B,Cancelled
+795,ORD-0000795,Express,High,E-commerce,Delivered
+796,ORD-0000796,Backorder,Low,EDI,Delivered
+797,ORD-0000797,Express,Critical,E-commerce,Delivered
+798,ORD-0000798,Backorder,Critical,EDI,Delivered
+799,ORD-0000799,Standard,Low,B2B,Delivered
+800,ORD-0000800,Express,Low,E-commerce,Delivered
+801,ORD-0000801,Standard,Critical,B2B,Cancelled
+802,ORD-0000802,Backorder,Low,EDI,Delivered
+803,ORD-0000803,Express,Medium,E-commerce,Delivered
+804,ORD-0000804,Backorder,Medium,EDI,Delivered
+805,ORD-0000805,Backorder,High,EDI,Delivered
+806,ORD-0000806,Standard,Critical,B2B,Delivered
+807,ORD-0000807,Backorder,Low,EDI,Delivered
+808,ORD-0000808,Backorder,Low,EDI,Delivered
+809,ORD-0000809,Backorder,High,EDI,Delivered
+810,ORD-0000810,Express,High,E-commerce,Delivered
+811,ORD-0000811,Standard,High,B2B,Delivered
+812,ORD-0000812,Standard,Medium,B2B,Returned
+813,ORD-0000813,Standard,Medium,B2B,In Transit
+814,ORD-0000814,Standard,Low,B2B,Returned
+815,ORD-0000815,Backorder,Medium,EDI,Delivered
+816,ORD-0000816,Standard,Medium,B2B,Delivered
+817,ORD-0000817,Express,Medium,E-commerce,Delivered
+818,ORD-0000818,Standard,Critical,B2B,Delivered
+819,ORD-0000819,Backorder,Medium,EDI,Delivered
+820,ORD-0000820,Express,Low,E-commerce,Delivered
+821,ORD-0000821,Express,Low,E-commerce,Delivered
+822,ORD-0000822,Express,Low,E-commerce,Delivered
+823,ORD-0000823,Express,High,E-commerce,Delivered
+824,ORD-0000824,Backorder,Low,EDI,Delivered
+825,ORD-0000825,Express,Low,E-commerce,In Transit
+826,ORD-0000826,Standard,Critical,B2B,Delivered
+827,ORD-0000827,Standard,Medium,B2B,In Transit
+828,ORD-0000828,Express,Critical,E-commerce,Delivered
+829,ORD-0000829,Standard,Critical,B2B,In Transit
+830,ORD-0000830,Backorder,Critical,EDI,In Transit
+831,ORD-0000831,Express,Low,E-commerce,Delivered
+832,ORD-0000832,Express,Critical,E-commerce,Cancelled
+833,ORD-0000833,Express,Critical,E-commerce,Delivered
+834,ORD-0000834,Express,Low,E-commerce,Delivered
+835,ORD-0000835,Standard,Low,B2B,Delivered
+836,ORD-0000836,Standard,Low,B2B,Delivered
+837,ORD-0000837,Backorder,Medium,EDI,Delivered
+838,ORD-0000838,Backorder,Critical,EDI,Delivered
+839,ORD-0000839,Standard,High,B2B,In Transit
+840,ORD-0000840,Backorder,High,EDI,Delivered
+841,ORD-0000841,Standard,Low,B2B,Delivered
+842,ORD-0000842,Standard,Medium,B2B,Delivered
+843,ORD-0000843,Standard,Medium,B2B,Delivered
+844,ORD-0000844,Backorder,High,EDI,Delivered
+845,ORD-0000845,Standard,Low,B2B,Delivered
+846,ORD-0000846,Express,Low,E-commerce,Delivered
+847,ORD-0000847,Express,Low,E-commerce,In Transit
+848,ORD-0000848,Backorder,Low,EDI,Delivered
+849,ORD-0000849,Standard,Medium,B2B,Delivered
+850,ORD-0000850,Backorder,Medium,EDI,Delivered
+851,ORD-0000851,Standard,High,B2B,Delivered
+852,ORD-0000852,Backorder,Critical,EDI,In Transit
+853,ORD-0000853,Standard,Critical,B2B,Delivered
+854,ORD-0000854,Standard,Medium,B2B,Delivered
+855,ORD-0000855,Express,High,E-commerce,Delivered
+856,ORD-0000856,Express,Medium,E-commerce,Delivered
+857,ORD-0000857,Standard,Critical,B2B,Delivered
+858,ORD-0000858,Standard,Critical,B2B,Delivered
+859,ORD-0000859,Express,Low,E-commerce,Delivered
+860,ORD-0000860,Standard,High,B2B,Delivered
+861,ORD-0000861,Backorder,Critical,EDI,Delivered
+862,ORD-0000862,Standard,High,B2B,Delivered
+863,ORD-0000863,Backorder,Medium,EDI,Delivered
+864,ORD-0000864,Standard,Low,B2B,Delivered
+865,ORD-0000865,Express,High,E-commerce,Delivered
+866,ORD-0000866,Backorder,Low,EDI,Delivered
+867,ORD-0000867,Standard,Critical,B2B,Delivered
+868,ORD-0000868,Backorder,Critical,EDI,Delivered
+869,ORD-0000869,Backorder,High,EDI,Delivered
+870,ORD-0000870,Backorder,Low,EDI,Delivered
+871,ORD-0000871,Standard,High,B2B,Delivered
+872,ORD-0000872,Standard,High,B2B,Delivered
+873,ORD-0000873,Backorder,Medium,EDI,Delivered
+874,ORD-0000874,Express,Low,E-commerce,In Transit
+875,ORD-0000875,Express,Low,E-commerce,Delivered
+876,ORD-0000876,Standard,Medium,B2B,Delivered
+877,ORD-0000877,Backorder,Low,EDI,Delivered
+878,ORD-0000878,Express,Medium,E-commerce,Delivered
+879,ORD-0000879,Express,High,E-commerce,Delivered
+880,ORD-0000880,Standard,Medium,B2B,Returned
+881,ORD-0000881,Standard,Critical,B2B,Delivered
+882,ORD-0000882,Standard,Low,B2B,Delivered
+883,ORD-0000883,Express,Low,E-commerce,Delivered
+884,ORD-0000884,Backorder,Critical,EDI,Delivered
+885,ORD-0000885,Backorder,High,EDI,In Transit
+886,ORD-0000886,Backorder,Medium,EDI,Delivered
+887,ORD-0000887,Express,Critical,E-commerce,Delivered
+888,ORD-0000888,Standard,High,B2B,Delivered
+889,ORD-0000889,Express,High,E-commerce,Delivered
+890,ORD-0000890,Express,High,E-commerce,Delivered
+891,ORD-0000891,Express,Critical,E-commerce,Delivered
+892,ORD-0000892,Standard,Critical,B2B,In Transit
+893,ORD-0000893,Standard,Low,B2B,Delivered
+894,ORD-0000894,Express,Medium,E-commerce,Delivered
+895,ORD-0000895,Backorder,Low,EDI,In Transit
+896,ORD-0000896,Standard,Low,B2B,Delivered
+897,ORD-0000897,Backorder,Medium,EDI,Delivered
+898,ORD-0000898,Express,Low,E-commerce,Delivered
+899,ORD-0000899,Express,Medium,E-commerce,Delivered
+900,ORD-0000900,Express,Low,E-commerce,Delivered
+901,ORD-0000901,Backorder,Low,EDI,Delivered
+902,ORD-0000902,Backorder,Critical,EDI,Delivered
+903,ORD-0000903,Standard,Critical,B2B,Delivered
+904,ORD-0000904,Standard,Medium,B2B,Delivered
+905,ORD-0000905,Express,Critical,E-commerce,Delivered
+906,ORD-0000906,Standard,Critical,B2B,Delivered
+907,ORD-0000907,Standard,Critical,B2B,In Transit
+908,ORD-0000908,Backorder,High,EDI,Delivered
+909,ORD-0000909,Express,Low,E-commerce,Delivered
+910,ORD-0000910,Express,Low,E-commerce,Delivered
+911,ORD-0000911,Standard,High,B2B,Delivered
+912,ORD-0000912,Backorder,Critical,EDI,Delivered
+913,ORD-0000913,Express,Medium,E-commerce,Delivered
+914,ORD-0000914,Backorder,Low,EDI,Delivered
+915,ORD-0000915,Standard,Medium,B2B,Delivered
+916,ORD-0000916,Backorder,Low,EDI,Delivered
+917,ORD-0000917,Backorder,Critical,EDI,Cancelled
+918,ORD-0000918,Standard,Critical,B2B,Delivered
+919,ORD-0000919,Backorder,Low,EDI,Delivered
+920,ORD-0000920,Standard,Medium,B2B,Delivered
+921,ORD-0000921,Backorder,High,EDI,Delivered
+922,ORD-0000922,Standard,Medium,B2B,Delivered
+923,ORD-0000923,Backorder,Medium,EDI,Delivered
+924,ORD-0000924,Backorder,Medium,EDI,Delivered
+925,ORD-0000925,Standard,Low,B2B,Delivered
+926,ORD-0000926,Express,High,E-commerce,In Transit
+927,ORD-0000927,Express,Low,E-commerce,Delivered
+928,ORD-0000928,Express,Low,E-commerce,Delivered
+929,ORD-0000929,Standard,Critical,B2B,Delivered
+930,ORD-0000930,Backorder,Critical,EDI,Delivered
+931,ORD-0000931,Express,Medium,E-commerce,Delivered
+932,ORD-0000932,Standard,Critical,B2B,Delivered
+933,ORD-0000933,Standard,Low,B2B,Delivered
+934,ORD-0000934,Standard,High,B2B,Delivered
+935,ORD-0000935,Standard,Critical,B2B,In Transit
+936,ORD-0000936,Standard,High,B2B,Delivered
+937,ORD-0000937,Standard,Low,B2B,Delivered
+938,ORD-0000938,Standard,Low,B2B,Delivered
+939,ORD-0000939,Express,Medium,E-commerce,Returned
+940,ORD-0000940,Standard,Critical,B2B,Delivered
+941,ORD-0000941,Standard,Low,B2B,Delivered
+942,ORD-0000942,Express,High,E-commerce,Delivered
+943,ORD-0000943,Backorder,Medium,EDI,Delivered
+944,ORD-0000944,Backorder,Low,EDI,In Transit
+945,ORD-0000945,Backorder,Medium,EDI,In Transit
+946,ORD-0000946,Backorder,Low,EDI,Delivered
+947,ORD-0000947,Backorder,High,EDI,Delivered
+948,ORD-0000948,Standard,High,B2B,Delivered
+949,ORD-0000949,Backorder,Critical,EDI,Delivered
+950,ORD-0000950,Standard,Critical,B2B,Delivered
+951,ORD-0000951,Standard,Medium,B2B,Delivered
+952,ORD-0000952,Backorder,Critical,EDI,Delivered
+953,ORD-0000953,Express,Low,E-commerce,Delivered
+954,ORD-0000954,Express,Low,E-commerce,Delivered
+955,ORD-0000955,Backorder,High,EDI,Delivered
+956,ORD-0000956,Standard,High,B2B,Delivered
+957,ORD-0000957,Standard,Medium,B2B,Delivered
+958,ORD-0000958,Backorder,Medium,EDI,Delivered
+959,ORD-0000959,Standard,Critical,B2B,Delivered
+960,ORD-0000960,Express,High,E-commerce,Delivered
+961,ORD-0000961,Express,Critical,E-commerce,Delivered
+962,ORD-0000962,Standard,Critical,B2B,Delivered
+963,ORD-0000963,Standard,Medium,B2B,Delivered
+964,ORD-0000964,Standard,High,B2B,Delivered
+965,ORD-0000965,Backorder,Critical,EDI,Delivered
+966,ORD-0000966,Express,Low,E-commerce,Delivered
+967,ORD-0000967,Backorder,High,EDI,In Transit
+968,ORD-0000968,Standard,Low,B2B,Delivered
+969,ORD-0000969,Express,High,E-commerce,Cancelled
+970,ORD-0000970,Backorder,Critical,EDI,Delivered
+971,ORD-0000971,Backorder,Low,EDI,Delivered
+972,ORD-0000972,Express,Medium,E-commerce,In Transit
+973,ORD-0000973,Standard,Medium,B2B,In Transit
+974,ORD-0000974,Backorder,Critical,EDI,Delivered
+975,ORD-0000975,Standard,Medium,B2B,Delivered
+976,ORD-0000976,Express,Low,E-commerce,Delivered
+977,ORD-0000977,Express,Critical,E-commerce,In Transit
+978,ORD-0000978,Standard,Medium,B2B,Delivered
+979,ORD-0000979,Express,Medium,E-commerce,Delivered
+980,ORD-0000980,Backorder,Critical,EDI,Delivered
+981,ORD-0000981,Express,Critical,E-commerce,Delivered
+982,ORD-0000982,Standard,High,B2B,Delivered
+983,ORD-0000983,Backorder,High,EDI,Cancelled
+984,ORD-0000984,Standard,Low,B2B,Delivered
+985,ORD-0000985,Express,Low,E-commerce,In Transit
+986,ORD-0000986,Express,Low,E-commerce,Delivered
+987,ORD-0000987,Standard,Medium,B2B,Delivered
+988,ORD-0000988,Standard,Critical,B2B,Delivered
+989,ORD-0000989,Standard,Critical,B2B,Delivered
+990,ORD-0000990,Backorder,Low,EDI,Delivered
+991,ORD-0000991,Express,High,E-commerce,Delivered
+992,ORD-0000992,Standard,Medium,B2B,Returned
+993,ORD-0000993,Standard,Low,B2B,Delivered
+994,ORD-0000994,Standard,Low,B2B,Delivered
+995,ORD-0000995,Express,Critical,E-commerce,Delivered
+996,ORD-0000996,Express,Medium,E-commerce,Delivered
+997,ORD-0000997,Standard,Medium,B2B,Delivered
+998,ORD-0000998,Backorder,Critical,EDI,Cancelled
+999,ORD-0000999,Standard,High,B2B,Delivered
+1000,ORD-0001000,Standard,Critical,B2B,Delivered
+1001,ORD-0001001,Express,High,E-commerce,Delivered
+1002,ORD-0001002,Standard,Low,B2B,Delivered
+1003,ORD-0001003,Standard,Low,B2B,Delivered
+1004,ORD-0001004,Standard,Critical,B2B,Delivered
+1005,ORD-0001005,Backorder,Critical,EDI,Delivered
+1006,ORD-0001006,Backorder,Medium,EDI,Delivered
+1007,ORD-0001007,Backorder,High,EDI,Delivered
+1008,ORD-0001008,Standard,Low,B2B,Delivered
+1009,ORD-0001009,Backorder,Critical,EDI,Cancelled
+1010,ORD-0001010,Backorder,Critical,EDI,In Transit
+1011,ORD-0001011,Express,Medium,E-commerce,In Transit
+1012,ORD-0001012,Express,Medium,E-commerce,Delivered
+1013,ORD-0001013,Express,Critical,E-commerce,Delivered
+1014,ORD-0001014,Backorder,Low,EDI,Delivered
+1015,ORD-0001015,Backorder,Low,EDI,Delivered
+1016,ORD-0001016,Express,Critical,E-commerce,Delivered
+1017,ORD-0001017,Backorder,Medium,EDI,Delivered
+1018,ORD-0001018,Standard,High,B2B,Delivered
+1019,ORD-0001019,Backorder,Critical,EDI,In Transit
+1020,ORD-0001020,Backorder,High,EDI,Delivered
+1021,ORD-0001021,Standard,Medium,B2B,Delivered
+1022,ORD-0001022,Backorder,Low,EDI,Delivered
+1023,ORD-0001023,Express,Low,E-commerce,Delivered
+1024,ORD-0001024,Express,High,E-commerce,In Transit
+1025,ORD-0001025,Standard,Critical,B2B,In Transit
+1026,ORD-0001026,Backorder,High,EDI,Delivered
+1027,ORD-0001027,Standard,Medium,B2B,Delivered
+1028,ORD-0001028,Backorder,Low,EDI,Delivered
+1029,ORD-0001029,Express,Critical,E-commerce,Cancelled
+1030,ORD-0001030,Express,Medium,E-commerce,Delivered
+1031,ORD-0001031,Backorder,High,EDI,Delivered
+1032,ORD-0001032,Backorder,High,EDI,Delivered
+1033,ORD-0001033,Backorder,High,EDI,Delivered
+1034,ORD-0001034,Standard,High,B2B,Delivered
+1035,ORD-0001035,Standard,High,B2B,Delivered
+1036,ORD-0001036,Standard,Low,B2B,Delivered
+1037,ORD-0001037,Express,Low,E-commerce,In Transit
+1038,ORD-0001038,Express,Medium,E-commerce,Delivered
+1039,ORD-0001039,Express,Critical,E-commerce,Delivered
+1040,ORD-0001040,Backorder,Medium,EDI,Delivered
+1041,ORD-0001041,Standard,Critical,B2B,Delivered
+1042,ORD-0001042,Standard,Critical,B2B,Delivered
+1043,ORD-0001043,Standard,Critical,B2B,Delivered
+1044,ORD-0001044,Backorder,Critical,EDI,Delivered
+1045,ORD-0001045,Express,Critical,E-commerce,Delivered
+1046,ORD-0001046,Standard,Critical,B2B,Delivered
+1047,ORD-0001047,Express,Low,E-commerce,In Transit
+1048,ORD-0001048,Backorder,Low,EDI,Delivered
+1049,ORD-0001049,Backorder,High,EDI,In Transit
+1050,ORD-0001050,Express,Critical,E-commerce,Cancelled
+1051,ORD-0001051,Backorder,High,EDI,Delivered
+1052,ORD-0001052,Express,Low,E-commerce,Delivered
+1053,ORD-0001053,Express,High,E-commerce,In Transit
+1054,ORD-0001054,Express,High,E-commerce,In Transit
+1055,ORD-0001055,Backorder,High,EDI,Delivered
+1056,ORD-0001056,Backorder,High,EDI,Delivered
+1057,ORD-0001057,Express,Medium,E-commerce,Delivered
+1058,ORD-0001058,Backorder,Medium,EDI,Delivered
+1059,ORD-0001059,Express,Low,E-commerce,Delivered
+1060,ORD-0001060,Backorder,Low,EDI,Delivered
+1061,ORD-0001061,Standard,Low,B2B,Delivered
+1062,ORD-0001062,Backorder,Low,EDI,Returned
+1063,ORD-0001063,Backorder,High,EDI,Delivered
+1064,ORD-0001064,Express,Critical,E-commerce,Delivered
+1065,ORD-0001065,Backorder,Critical,EDI,Delivered
+1066,ORD-0001066,Backorder,Low,EDI,Delivered
+1067,ORD-0001067,Backorder,High,EDI,Delivered
+1068,ORD-0001068,Express,Medium,E-commerce,Delivered
+1069,ORD-0001069,Standard,Low,B2B,Delivered
+1070,ORD-0001070,Standard,Low,B2B,In Transit
+1071,ORD-0001071,Standard,Critical,B2B,Cancelled
+1072,ORD-0001072,Backorder,High,EDI,Delivered
+1073,ORD-0001073,Express,High,E-commerce,Delivered
+1074,ORD-0001074,Backorder,Critical,EDI,Delivered
+1075,ORD-0001075,Express,Critical,E-commerce,Delivered
+1076,ORD-0001076,Express,Medium,E-commerce,Delivered
+1077,ORD-0001077,Standard,Critical,B2B,Delivered
+1078,ORD-0001078,Standard,High,B2B,Delivered
+1079,ORD-0001079,Backorder,Low,EDI,In Transit
+1080,ORD-0001080,Express,Critical,E-commerce,Delivered
+1081,ORD-0001081,Backorder,Low,EDI,Delivered
+1082,ORD-0001082,Express,Low,E-commerce,Delivered
+1083,ORD-0001083,Standard,Critical,B2B,Delivered
+1084,ORD-0001084,Express,Low,E-commerce,Delivered
+1085,ORD-0001085,Backorder,Medium,EDI,In Transit
+1086,ORD-0001086,Express,High,E-commerce,Delivered
+1087,ORD-0001087,Standard,Low,B2B,Delivered
+1088,ORD-0001088,Standard,High,B2B,Cancelled
+1089,ORD-0001089,Express,High,E-commerce,Delivered
+1090,ORD-0001090,Backorder,Critical,EDI,Delivered
+1091,ORD-0001091,Standard,Medium,B2B,Returned
+1092,ORD-0001092,Standard,Critical,B2B,Delivered
+1093,ORD-0001093,Express,Low,E-commerce,Delivered
+1094,ORD-0001094,Backorder,High,EDI,Delivered
+1095,ORD-0001095,Standard,Low,B2B,Delivered
+1096,ORD-0001096,Backorder,High,EDI,Delivered
+1097,ORD-0001097,Standard,Low,B2B,In Transit
+1098,ORD-0001098,Standard,High,B2B,Delivered
+1099,ORD-0001099,Express,High,E-commerce,Delivered
+1100,ORD-0001100,Backorder,Critical,EDI,Delivered
+1101,ORD-0001101,Standard,Medium,B2B,Delivered
+1102,ORD-0001102,Express,Medium,E-commerce,Delivered
+1103,ORD-0001103,Backorder,High,EDI,Delivered
+1104,ORD-0001104,Standard,Medium,B2B,Delivered
+1105,ORD-0001105,Express,Low,E-commerce,Delivered
+1106,ORD-0001106,Standard,High,B2B,Delivered
+1107,ORD-0001107,Standard,Low,B2B,In Transit
+1108,ORD-0001108,Standard,Low,B2B,Delivered
+1109,ORD-0001109,Backorder,Medium,EDI,In Transit
+1110,ORD-0001110,Standard,High,B2B,Delivered
+1111,ORD-0001111,Standard,Critical,B2B,Delivered
+1112,ORD-0001112,Backorder,High,EDI,In Transit
+1113,ORD-0001113,Standard,Low,B2B,Delivered
+1114,ORD-0001114,Backorder,Critical,EDI,Delivered
+1115,ORD-0001115,Standard,Low,B2B,Delivered
+1116,ORD-0001116,Express,Low,E-commerce,In Transit
+1117,ORD-0001117,Express,Critical,E-commerce,Delivered
+1118,ORD-0001118,Backorder,Low,EDI,Delivered
+1119,ORD-0001119,Express,High,E-commerce,Delivered
+1120,ORD-0001120,Express,Critical,E-commerce,Delivered
+1121,ORD-0001121,Standard,Low,B2B,Delivered
+1122,ORD-0001122,Backorder,Low,EDI,Delivered
+1123,ORD-0001123,Backorder,High,EDI,Delivered
+1124,ORD-0001124,Express,Low,E-commerce,Delivered
+1125,ORD-0001125,Express,Low,E-commerce,Delivered
+1126,ORD-0001126,Standard,Medium,B2B,In Transit
+1127,ORD-0001127,Backorder,Low,EDI,In Transit
+1128,ORD-0001128,Express,High,E-commerce,Delivered
+1129,ORD-0001129,Backorder,High,EDI,In Transit
+1130,ORD-0001130,Standard,Low,B2B,Delivered
+1131,ORD-0001131,Backorder,Critical,EDI,Delivered
+1132,ORD-0001132,Standard,Low,B2B,Delivered
+1133,ORD-0001133,Express,Critical,E-commerce,Delivered
+1134,ORD-0001134,Express,Critical,E-commerce,Delivered
+1135,ORD-0001135,Standard,Medium,B2B,Delivered
+1136,ORD-0001136,Express,Critical,E-commerce,Delivered
+1137,ORD-0001137,Standard,Low,B2B,In Transit
+1138,ORD-0001138,Express,Low,E-commerce,In Transit
+1139,ORD-0001139,Express,High,E-commerce,Delivered
+1140,ORD-0001140,Backorder,High,EDI,Delivered
+1141,ORD-0001141,Standard,Low,B2B,Delivered
+1142,ORD-0001142,Backorder,Low,EDI,Delivered
+1143,ORD-0001143,Backorder,Critical,EDI,Delivered
+1144,ORD-0001144,Backorder,Critical,EDI,Delivered
+1145,ORD-0001145,Standard,Critical,B2B,Delivered
+1146,ORD-0001146,Standard,Critical,B2B,Delivered
+1147,ORD-0001147,Express,Low,E-commerce,In Transit
+1148,ORD-0001148,Express,Low,E-commerce,In Transit
+1149,ORD-0001149,Express,Medium,E-commerce,Delivered
+1150,ORD-0001150,Backorder,Low,EDI,Delivered
+1151,ORD-0001151,Standard,High,B2B,In Transit
+1152,ORD-0001152,Standard,Medium,B2B,Delivered
+1153,ORD-0001153,Standard,Low,B2B,Delivered
+1154,ORD-0001154,Standard,Low,B2B,Delivered
+1155,ORD-0001155,Express,Medium,E-commerce,Delivered
+1156,ORD-0001156,Standard,Medium,B2B,Delivered
+1157,ORD-0001157,Backorder,Medium,EDI,Delivered
+1158,ORD-0001158,Backorder,Medium,EDI,Delivered
+1159,ORD-0001159,Standard,Critical,B2B,Delivered
+1160,ORD-0001160,Backorder,Low,EDI,Delivered
+1161,ORD-0001161,Standard,High,B2B,Delivered
+1162,ORD-0001162,Express,Critical,E-commerce,Delivered
+1163,ORD-0001163,Backorder,High,EDI,In Transit
+1164,ORD-0001164,Standard,Low,B2B,Delivered
+1165,ORD-0001165,Standard,Critical,B2B,Delivered
+1166,ORD-0001166,Backorder,Low,EDI,In Transit
+1167,ORD-0001167,Express,Medium,E-commerce,Delivered
+1168,ORD-0001168,Express,Critical,E-commerce,Delivered
+1169,ORD-0001169,Standard,Medium,B2B,Delivered
+1170,ORD-0001170,Standard,High,B2B,Delivered
+1171,ORD-0001171,Backorder,Low,EDI,Delivered
+1172,ORD-0001172,Standard,High,B2B,Delivered
+1173,ORD-0001173,Standard,Critical,B2B,In Transit
+1174,ORD-0001174,Standard,Low,B2B,Delivered
+1175,ORD-0001175,Express,Low,E-commerce,Delivered
+1176,ORD-0001176,Standard,Low,B2B,Delivered
+1177,ORD-0001177,Standard,High,B2B,Delivered
+1178,ORD-0001178,Backorder,Critical,EDI,Returned
+1179,ORD-0001179,Standard,High,B2B,Delivered
+1180,ORD-0001180,Backorder,Medium,EDI,In Transit
+1181,ORD-0001181,Standard,Critical,B2B,Delivered
+1182,ORD-0001182,Standard,Medium,B2B,Delivered
+1183,ORD-0001183,Standard,Critical,B2B,Delivered
+1184,ORD-0001184,Standard,Medium,B2B,Delivered
+1185,ORD-0001185,Standard,Low,B2B,Delivered
+1186,ORD-0001186,Backorder,Critical,EDI,Delivered
+1187,ORD-0001187,Backorder,Medium,EDI,Returned
+1188,ORD-0001188,Backorder,Critical,EDI,Returned
+1189,ORD-0001189,Backorder,Critical,EDI,Delivered
+1190,ORD-0001190,Standard,Medium,B2B,Delivered
+1191,ORD-0001191,Standard,Low,B2B,Delivered
+1192,ORD-0001192,Backorder,Low,EDI,Delivered
+1193,ORD-0001193,Backorder,High,EDI,In Transit
+1194,ORD-0001194,Backorder,Medium,EDI,Delivered
+1195,ORD-0001195,Standard,High,B2B,Delivered
+1196,ORD-0001196,Standard,Medium,B2B,Delivered
+1197,ORD-0001197,Standard,Medium,B2B,Delivered
+1198,ORD-0001198,Standard,High,B2B,Delivered
+1199,ORD-0001199,Standard,Critical,B2B,In Transit
+1200,ORD-0001200,Express,Critical,E-commerce,In Transit
+1201,ORD-0001201,Standard,Medium,B2B,Delivered
+1202,ORD-0001202,Backorder,High,EDI,Delivered
+1203,ORD-0001203,Standard,High,B2B,Delivered
+1204,ORD-0001204,Express,Low,E-commerce,Delivered
+1205,ORD-0001205,Express,Medium,E-commerce,Delivered
+1206,ORD-0001206,Standard,Critical,B2B,Delivered
+1207,ORD-0001207,Standard,Critical,B2B,Delivered
+1208,ORD-0001208,Express,Low,E-commerce,Delivered
+1209,ORD-0001209,Standard,High,B2B,In Transit
+1210,ORD-0001210,Standard,High,B2B,Delivered
+1211,ORD-0001211,Express,Medium,E-commerce,Delivered
+1212,ORD-0001212,Standard,High,B2B,Delivered
+1213,ORD-0001213,Express,Critical,E-commerce,Delivered
+1214,ORD-0001214,Express,Low,E-commerce,Delivered
+1215,ORD-0001215,Standard,High,B2B,Delivered
+1216,ORD-0001216,Standard,High,B2B,Delivered
+1217,ORD-0001217,Backorder,Critical,EDI,In Transit
+1218,ORD-0001218,Standard,Low,B2B,Delivered
+1219,ORD-0001219,Standard,Critical,B2B,Delivered
+1220,ORD-0001220,Standard,Medium,B2B,Delivered
+1221,ORD-0001221,Express,Low,E-commerce,Delivered
+1222,ORD-0001222,Backorder,High,EDI,In Transit
+1223,ORD-0001223,Backorder,Critical,EDI,Delivered
+1224,ORD-0001224,Backorder,Low,EDI,Delivered
+1225,ORD-0001225,Standard,Critical,B2B,Delivered
+1226,ORD-0001226,Backorder,Critical,EDI,Delivered
+1227,ORD-0001227,Standard,Medium,B2B,Delivered
+1228,ORD-0001228,Express,Critical,E-commerce,Delivered
+1229,ORD-0001229,Express,Medium,E-commerce,Returned
+1230,ORD-0001230,Standard,Low,B2B,Delivered
+1231,ORD-0001231,Backorder,Low,EDI,Returned
+1232,ORD-0001232,Backorder,Medium,EDI,In Transit
+1233,ORD-0001233,Express,High,E-commerce,Delivered
+1234,ORD-0001234,Backorder,Critical,EDI,Cancelled
+1235,ORD-0001235,Backorder,High,EDI,Delivered
+1236,ORD-0001236,Standard,Critical,B2B,Delivered
+1237,ORD-0001237,Standard,High,B2B,In Transit
+1238,ORD-0001238,Backorder,Medium,EDI,Delivered
+1239,ORD-0001239,Express,Critical,E-commerce,Delivered
+1240,ORD-0001240,Standard,Low,B2B,In Transit
+1241,ORD-0001241,Standard,Critical,B2B,Delivered
+1242,ORD-0001242,Standard,Low,B2B,Delivered
+1243,ORD-0001243,Backorder,Critical,EDI,Delivered
+1244,ORD-0001244,Backorder,High,EDI,Delivered
+1245,ORD-0001245,Backorder,Low,EDI,Delivered
+1246,ORD-0001246,Express,Critical,E-commerce,Delivered
+1247,ORD-0001247,Express,Low,E-commerce,Delivered
+1248,ORD-0001248,Standard,Low,B2B,Returned
+1249,ORD-0001249,Standard,Low,B2B,Delivered
+1250,ORD-0001250,Backorder,Critical,EDI,Delivered
+1251,ORD-0001251,Backorder,Low,EDI,Delivered
+1252,ORD-0001252,Express,Medium,E-commerce,Delivered
+1253,ORD-0001253,Standard,Critical,B2B,Delivered
+1254,ORD-0001254,Express,Medium,E-commerce,Delivered
+1255,ORD-0001255,Backorder,Low,EDI,Delivered
+1256,ORD-0001256,Express,Critical,E-commerce,In Transit
+1257,ORD-0001257,Express,Medium,E-commerce,Delivered
+1258,ORD-0001258,Express,Medium,E-commerce,Delivered
+1259,ORD-0001259,Standard,Critical,B2B,Delivered
+1260,ORD-0001260,Standard,Low,B2B,Delivered
+1261,ORD-0001261,Standard,Low,B2B,Delivered
+1262,ORD-0001262,Standard,Medium,B2B,Delivered
+1263,ORD-0001263,Express,High,E-commerce,Delivered
+1264,ORD-0001264,Standard,Medium,B2B,Delivered
+1265,ORD-0001265,Backorder,Critical,EDI,Delivered
+1266,ORD-0001266,Backorder,Medium,EDI,In Transit
+1267,ORD-0001267,Express,High,E-commerce,In Transit
+1268,ORD-0001268,Backorder,Low,EDI,Delivered
+1269,ORD-0001269,Backorder,Critical,EDI,Delivered
+1270,ORD-0001270,Express,Medium,E-commerce,Delivered
+1271,ORD-0001271,Express,Critical,E-commerce,Delivered
+1272,ORD-0001272,Express,Low,E-commerce,In Transit
+1273,ORD-0001273,Express,Low,E-commerce,Delivered
+1274,ORD-0001274,Standard,Critical,B2B,Delivered
+1275,ORD-0001275,Standard,High,B2B,Delivered
+1276,ORD-0001276,Backorder,Medium,EDI,In Transit
+1277,ORD-0001277,Backorder,High,EDI,Delivered
+1278,ORD-0001278,Backorder,Critical,EDI,Delivered
+1279,ORD-0001279,Express,Medium,E-commerce,Delivered
+1280,ORD-0001280,Backorder,High,EDI,In Transit
+1281,ORD-0001281,Backorder,Low,EDI,Delivered
+1282,ORD-0001282,Backorder,Critical,EDI,In Transit
+1283,ORD-0001283,Standard,Low,B2B,Delivered
+1284,ORD-0001284,Standard,Critical,B2B,Delivered
+1285,ORD-0001285,Express,Medium,E-commerce,Delivered
+1286,ORD-0001286,Backorder,Critical,EDI,In Transit
+1287,ORD-0001287,Backorder,Medium,EDI,Delivered
+1288,ORD-0001288,Standard,Low,B2B,In Transit
+1289,ORD-0001289,Backorder,Medium,EDI,Delivered
+1290,ORD-0001290,Standard,High,B2B,Delivered
+1291,ORD-0001291,Standard,Low,B2B,In Transit
+1292,ORD-0001292,Backorder,High,EDI,In Transit
+1293,ORD-0001293,Standard,Medium,B2B,Delivered
+1294,ORD-0001294,Express,Medium,E-commerce,Delivered
+1295,ORD-0001295,Backorder,Low,EDI,Delivered
+1296,ORD-0001296,Express,Low,E-commerce,Delivered
+1297,ORD-0001297,Backorder,High,EDI,In Transit
+1298,ORD-0001298,Backorder,Critical,EDI,Delivered
+1299,ORD-0001299,Express,Critical,E-commerce,In Transit
+1300,ORD-0001300,Express,Medium,E-commerce,Delivered
+1301,ORD-0001301,Express,Medium,E-commerce,In Transit
+1302,ORD-0001302,Standard,Low,B2B,Delivered
+1303,ORD-0001303,Standard,Medium,B2B,Delivered
+1304,ORD-0001304,Standard,High,B2B,Delivered
+1305,ORD-0001305,Standard,Critical,B2B,Cancelled
+1306,ORD-0001306,Standard,Low,B2B,In Transit
+1307,ORD-0001307,Express,Low,E-commerce,Delivered
+1308,ORD-0001308,Standard,Low,B2B,Delivered
+1309,ORD-0001309,Standard,Low,B2B,Delivered
+1310,ORD-0001310,Backorder,Medium,EDI,Delivered
+1311,ORD-0001311,Express,High,E-commerce,Delivered
+1312,ORD-0001312,Backorder,Low,EDI,In Transit
+1313,ORD-0001313,Standard,Medium,B2B,Delivered
+1314,ORD-0001314,Express,Medium,E-commerce,In Transit
+1315,ORD-0001315,Standard,Critical,B2B,Delivered
+1316,ORD-0001316,Express,Critical,E-commerce,Delivered
+1317,ORD-0001317,Backorder,High,EDI,Delivered
+1318,ORD-0001318,Express,Low,E-commerce,In Transit
+1319,ORD-0001319,Express,Critical,E-commerce,Delivered
+1320,ORD-0001320,Backorder,High,EDI,In Transit
+1321,ORD-0001321,Backorder,Medium,EDI,Delivered
+1322,ORD-0001322,Standard,Low,B2B,Delivered
+1323,ORD-0001323,Express,Medium,E-commerce,Delivered
+1324,ORD-0001324,Standard,Critical,B2B,Delivered
+1325,ORD-0001325,Standard,Critical,B2B,Delivered
+1326,ORD-0001326,Backorder,Low,EDI,Delivered
+1327,ORD-0001327,Standard,Critical,B2B,Delivered
+1328,ORD-0001328,Backorder,Medium,EDI,Delivered
+1329,ORD-0001329,Backorder,Medium,EDI,Delivered
+1330,ORD-0001330,Express,Medium,E-commerce,Delivered
+1331,ORD-0001331,Backorder,Low,EDI,Delivered
+1332,ORD-0001332,Express,Medium,E-commerce,Delivered
+1333,ORD-0001333,Standard,Medium,B2B,Delivered
+1334,ORD-0001334,Standard,Low,B2B,In Transit
+1335,ORD-0001335,Standard,Low,B2B,Delivered
+1336,ORD-0001336,Standard,Low,B2B,Returned
+1337,ORD-0001337,Backorder,High,EDI,In Transit
+1338,ORD-0001338,Standard,Medium,B2B,Delivered
+1339,ORD-0001339,Express,High,E-commerce,Delivered
+1340,ORD-0001340,Backorder,Medium,EDI,Delivered
+1341,ORD-0001341,Express,High,E-commerce,Delivered
+1342,ORD-0001342,Backorder,High,EDI,Delivered
+1343,ORD-0001343,Standard,High,B2B,Delivered
+1344,ORD-0001344,Backorder,Critical,EDI,Delivered
+1345,ORD-0001345,Backorder,Low,EDI,Delivered
+1346,ORD-0001346,Standard,High,B2B,Delivered
+1347,ORD-0001347,Backorder,Low,EDI,Delivered
+1348,ORD-0001348,Backorder,Critical,EDI,Delivered
+1349,ORD-0001349,Standard,Low,B2B,Delivered
+1350,ORD-0001350,Backorder,High,EDI,Delivered
+1351,ORD-0001351,Express,High,E-commerce,In Transit
+1352,ORD-0001352,Standard,High,B2B,Delivered
+1353,ORD-0001353,Standard,Critical,B2B,Delivered
+1354,ORD-0001354,Backorder,High,EDI,Delivered
+1355,ORD-0001355,Backorder,Low,EDI,Delivered
+1356,ORD-0001356,Backorder,High,EDI,Delivered
+1357,ORD-0001357,Express,Low,E-commerce,Delivered
+1358,ORD-0001358,Express,Low,E-commerce,Delivered
+1359,ORD-0001359,Express,Medium,E-commerce,Delivered
+1360,ORD-0001360,Backorder,Medium,EDI,Delivered
+1361,ORD-0001361,Standard,Medium,B2B,Delivered
+1362,ORD-0001362,Standard,Low,B2B,In Transit
+1363,ORD-0001363,Standard,Critical,B2B,Delivered
+1364,ORD-0001364,Backorder,Low,EDI,Delivered
+1365,ORD-0001365,Standard,Low,B2B,Delivered
+1366,ORD-0001366,Express,High,E-commerce,In Transit
+1367,ORD-0001367,Express,High,E-commerce,In Transit
+1368,ORD-0001368,Backorder,Medium,EDI,Delivered
+1369,ORD-0001369,Express,High,E-commerce,Delivered
+1370,ORD-0001370,Backorder,Medium,EDI,Delivered
+1371,ORD-0001371,Standard,High,B2B,Delivered
+1372,ORD-0001372,Standard,Low,B2B,Delivered
+1373,ORD-0001373,Standard,Low,B2B,Delivered
+1374,ORD-0001374,Express,Medium,E-commerce,Delivered
+1375,ORD-0001375,Standard,High,B2B,Delivered
+1376,ORD-0001376,Backorder,High,EDI,Delivered
+1377,ORD-0001377,Express,Critical,E-commerce,Delivered
+1378,ORD-0001378,Express,Critical,E-commerce,Delivered
+1379,ORD-0001379,Backorder,Critical,EDI,Delivered
+1380,ORD-0001380,Express,High,E-commerce,In Transit
+1381,ORD-0001381,Express,Low,E-commerce,In Transit
+1382,ORD-0001382,Backorder,Medium,EDI,Returned
+1383,ORD-0001383,Express,Critical,E-commerce,Delivered
+1384,ORD-0001384,Standard,High,B2B,Delivered
+1385,ORD-0001385,Express,Low,E-commerce,Delivered
+1386,ORD-0001386,Standard,High,B2B,Delivered
+1387,ORD-0001387,Backorder,Critical,EDI,Delivered
+1388,ORD-0001388,Express,Critical,E-commerce,Delivered
+1389,ORD-0001389,Standard,Critical,B2B,Delivered
+1390,ORD-0001390,Backorder,Critical,EDI,Delivered
+1391,ORD-0001391,Express,Critical,E-commerce,In Transit
+1392,ORD-0001392,Backorder,Low,EDI,Delivered
+1393,ORD-0001393,Backorder,Low,EDI,Returned
+1394,ORD-0001394,Express,Low,E-commerce,In Transit
+1395,ORD-0001395,Backorder,Medium,EDI,Delivered
+1396,ORD-0001396,Standard,High,B2B,In Transit
+1397,ORD-0001397,Backorder,Critical,EDI,Cancelled
+1398,ORD-0001398,Standard,Medium,B2B,Delivered
+1399,ORD-0001399,Backorder,Medium,EDI,Delivered
+1400,ORD-0001400,Standard,Medium,B2B,In Transit
+1401,ORD-0001401,Standard,Medium,B2B,Delivered
+1402,ORD-0001402,Express,Low,E-commerce,Delivered
+1403,ORD-0001403,Express,Critical,E-commerce,In Transit
+1404,ORD-0001404,Express,Critical,E-commerce,In Transit
+1405,ORD-0001405,Express,Critical,E-commerce,Delivered
+1406,ORD-0001406,Express,Low,E-commerce,Delivered
+1407,ORD-0001407,Backorder,High,EDI,Delivered
+1408,ORD-0001408,Backorder,Critical,EDI,Delivered
+1409,ORD-0001409,Backorder,Medium,EDI,In Transit
+1410,ORD-0001410,Express,High,E-commerce,Delivered
+1411,ORD-0001411,Express,Medium,E-commerce,Delivered
+1412,ORD-0001412,Express,Low,E-commerce,Delivered
+1413,ORD-0001413,Backorder,Medium,EDI,In Transit
+1414,ORD-0001414,Standard,Critical,B2B,Delivered
+1415,ORD-0001415,Standard,Critical,B2B,Delivered
+1416,ORD-0001416,Standard,Critical,B2B,Delivered
+1417,ORD-0001417,Express,Low,E-commerce,In Transit
+1418,ORD-0001418,Backorder,High,EDI,Delivered
+1419,ORD-0001419,Express,High,E-commerce,Delivered
+1420,ORD-0001420,Backorder,Medium,EDI,Returned
+1421,ORD-0001421,Express,Medium,E-commerce,Delivered
+1422,ORD-0001422,Express,Low,E-commerce,Delivered
+1423,ORD-0001423,Standard,Critical,B2B,Delivered
+1424,ORD-0001424,Backorder,Medium,EDI,Delivered
+1425,ORD-0001425,Backorder,Low,EDI,Delivered
+1426,ORD-0001426,Express,High,E-commerce,In Transit
+1427,ORD-0001427,Express,High,E-commerce,Delivered
+1428,ORD-0001428,Standard,Medium,B2B,Delivered
+1429,ORD-0001429,Express,Critical,E-commerce,Delivered
+1430,ORD-0001430,Standard,Medium,B2B,Delivered
+1431,ORD-0001431,Express,High,E-commerce,In Transit
+1432,ORD-0001432,Backorder,Medium,EDI,In Transit
+1433,ORD-0001433,Standard,Critical,B2B,Returned
+1434,ORD-0001434,Express,Medium,E-commerce,Delivered
+1435,ORD-0001435,Express,High,E-commerce,Delivered
+1436,ORD-0001436,Standard,Medium,B2B,Delivered
+1437,ORD-0001437,Express,Low,E-commerce,Delivered
+1438,ORD-0001438,Standard,Critical,B2B,Returned
+1439,ORD-0001439,Standard,High,B2B,In Transit
+1440,ORD-0001440,Express,Medium,E-commerce,Delivered
+1441,ORD-0001441,Standard,Low,B2B,Delivered
+1442,ORD-0001442,Backorder,Critical,EDI,Delivered
+1443,ORD-0001443,Backorder,High,EDI,Delivered
+1444,ORD-0001444,Standard,High,B2B,Cancelled
+1445,ORD-0001445,Standard,Critical,B2B,Delivered
+1446,ORD-0001446,Backorder,Critical,EDI,Returned
+1447,ORD-0001447,Express,Low,E-commerce,Delivered
+1448,ORD-0001448,Standard,Medium,B2B,In Transit
+1449,ORD-0001449,Standard,Critical,B2B,Delivered
+1450,ORD-0001450,Standard,Low,B2B,Delivered
+1451,ORD-0001451,Express,Medium,E-commerce,Delivered
+1452,ORD-0001452,Express,Low,E-commerce,Delivered
+1453,ORD-0001453,Backorder,Critical,EDI,Delivered
+1454,ORD-0001454,Express,High,E-commerce,Delivered
+1455,ORD-0001455,Express,Medium,E-commerce,Delivered
+1456,ORD-0001456,Backorder,High,EDI,Delivered
+1457,ORD-0001457,Standard,High,B2B,Cancelled
+1458,ORD-0001458,Backorder,High,EDI,In Transit
+1459,ORD-0001459,Standard,Critical,B2B,Delivered
+1460,ORD-0001460,Backorder,High,EDI,In Transit
+1461,ORD-0001461,Standard,Critical,B2B,In Transit
+1462,ORD-0001462,Standard,High,B2B,Delivered
+1463,ORD-0001463,Standard,Low,B2B,In Transit
+1464,ORD-0001464,Express,Critical,E-commerce,In Transit
+1465,ORD-0001465,Backorder,Critical,EDI,In Transit
+1466,ORD-0001466,Backorder,High,EDI,Delivered
+1467,ORD-0001467,Backorder,Critical,EDI,Delivered
+1468,ORD-0001468,Standard,Critical,B2B,Delivered
+1469,ORD-0001469,Standard,High,B2B,Delivered
+1470,ORD-0001470,Standard,Low,B2B,Delivered
+1471,ORD-0001471,Express,Critical,E-commerce,Delivered
+1472,ORD-0001472,Backorder,Critical,EDI,Delivered
+1473,ORD-0001473,Standard,Low,B2B,Delivered
+1474,ORD-0001474,Standard,Medium,B2B,Returned
+1475,ORD-0001475,Backorder,Low,EDI,Delivered
+1476,ORD-0001476,Standard,Critical,B2B,Delivered
+1477,ORD-0001477,Standard,High,B2B,Delivered
+1478,ORD-0001478,Backorder,High,EDI,Delivered
+1479,ORD-0001479,Express,Medium,E-commerce,In Transit
+1480,ORD-0001480,Backorder,Low,EDI,Delivered
+1481,ORD-0001481,Standard,Medium,B2B,Delivered
+1482,ORD-0001482,Express,Critical,E-commerce,Delivered
+1483,ORD-0001483,Backorder,Medium,EDI,In Transit
+1484,ORD-0001484,Backorder,Critical,EDI,In Transit
+1485,ORD-0001485,Backorder,High,EDI,Delivered
+1486,ORD-0001486,Express,Low,E-commerce,Delivered
+1487,ORD-0001487,Standard,High,B2B,Delivered
+1488,ORD-0001488,Standard,Critical,B2B,Delivered
+1489,ORD-0001489,Express,Critical,E-commerce,Delivered
+1490,ORD-0001490,Standard,High,B2B,Delivered
+1491,ORD-0001491,Express,Low,E-commerce,Delivered
+1492,ORD-0001492,Backorder,High,EDI,Delivered
+1493,ORD-0001493,Express,Low,E-commerce,Delivered
+1494,ORD-0001494,Standard,Critical,B2B,In Transit
+1495,ORD-0001495,Express,Low,E-commerce,In Transit
+1496,ORD-0001496,Standard,Medium,B2B,Delivered
+1497,ORD-0001497,Express,Medium,E-commerce,Delivered
+1498,ORD-0001498,Backorder,Low,EDI,In Transit
+1499,ORD-0001499,Standard,High,B2B,Delivered
+1500,ORD-0001500,Express,Critical,E-commerce,Delivered
+1501,ORD-0001501,Backorder,High,EDI,Delivered
+1502,ORD-0001502,Backorder,Critical,EDI,Returned
+1503,ORD-0001503,Backorder,Critical,EDI,Delivered
+1504,ORD-0001504,Express,Medium,E-commerce,Delivered
+1505,ORD-0001505,Backorder,Medium,EDI,Delivered
+1506,ORD-0001506,Standard,Medium,B2B,Delivered
+1507,ORD-0001507,Standard,Medium,B2B,Delivered
+1508,ORD-0001508,Express,Medium,E-commerce,Delivered
+1509,ORD-0001509,Backorder,Critical,EDI,Delivered
+1510,ORD-0001510,Backorder,High,EDI,Delivered
+1511,ORD-0001511,Backorder,Low,EDI,Delivered
+1512,ORD-0001512,Standard,Critical,B2B,Delivered
+1513,ORD-0001513,Standard,Critical,B2B,Delivered
+1514,ORD-0001514,Express,Critical,E-commerce,Delivered
+1515,ORD-0001515,Backorder,Medium,EDI,Delivered
+1516,ORD-0001516,Express,Critical,E-commerce,Delivered
+1517,ORD-0001517,Backorder,Medium,EDI,Delivered
+1518,ORD-0001518,Express,Medium,E-commerce,Delivered
+1519,ORD-0001519,Express,Medium,E-commerce,Delivered
+1520,ORD-0001520,Standard,High,B2B,In Transit
+1521,ORD-0001521,Standard,Low,B2B,Delivered
+1522,ORD-0001522,Express,Low,E-commerce,Delivered
+1523,ORD-0001523,Express,High,E-commerce,In Transit
+1524,ORD-0001524,Standard,High,B2B,In Transit
+1525,ORD-0001525,Express,Critical,E-commerce,Delivered
+1526,ORD-0001526,Standard,Critical,B2B,Delivered
+1527,ORD-0001527,Standard,Medium,B2B,In Transit
+1528,ORD-0001528,Standard,Medium,B2B,Returned
+1529,ORD-0001529,Express,Medium,E-commerce,Delivered
+1530,ORD-0001530,Standard,High,B2B,Delivered
+1531,ORD-0001531,Standard,Medium,B2B,Delivered
+1532,ORD-0001532,Express,Low,E-commerce,Delivered
+1533,ORD-0001533,Backorder,Medium,EDI,Delivered
+1534,ORD-0001534,Express,High,E-commerce,Delivered
+1535,ORD-0001535,Express,Medium,E-commerce,In Transit
+1536,ORD-0001536,Standard,Critical,B2B,Delivered
+1537,ORD-0001537,Express,Medium,E-commerce,Delivered
+1538,ORD-0001538,Backorder,Medium,EDI,Delivered
+1539,ORD-0001539,Express,Critical,E-commerce,Delivered
+1540,ORD-0001540,Backorder,Medium,EDI,Delivered
+1541,ORD-0001541,Standard,Critical,B2B,Delivered
+1542,ORD-0001542,Backorder,Critical,EDI,Delivered
+1543,ORD-0001543,Backorder,Medium,EDI,Delivered
+1544,ORD-0001544,Express,Low,E-commerce,Delivered
+1545,ORD-0001545,Standard,Critical,B2B,In Transit
+1546,ORD-0001546,Standard,Low,B2B,Delivered
+1547,ORD-0001547,Standard,Critical,B2B,Delivered
+1548,ORD-0001548,Backorder,Low,EDI,Delivered
+1549,ORD-0001549,Express,Medium,E-commerce,Delivered
+1550,ORD-0001550,Standard,High,B2B,Delivered
+1551,ORD-0001551,Standard,Low,B2B,Delivered
+1552,ORD-0001552,Express,Critical,E-commerce,Delivered
+1553,ORD-0001553,Express,High,E-commerce,Delivered
+1554,ORD-0001554,Express,Critical,E-commerce,Delivered
+1555,ORD-0001555,Backorder,High,EDI,Delivered
+1556,ORD-0001556,Express,High,E-commerce,In Transit
+1557,ORD-0001557,Express,Low,E-commerce,Delivered
+1558,ORD-0001558,Standard,Critical,B2B,Delivered
+1559,ORD-0001559,Standard,High,B2B,In Transit
+1560,ORD-0001560,Backorder,Low,EDI,Delivered
+1561,ORD-0001561,Backorder,Low,EDI,Delivered
+1562,ORD-0001562,Express,Critical,E-commerce,Delivered
+1563,ORD-0001563,Express,Medium,E-commerce,In Transit
+1564,ORD-0001564,Express,Medium,E-commerce,Delivered
+1565,ORD-0001565,Standard,Low,B2B,Delivered
+1566,ORD-0001566,Standard,Low,B2B,Delivered
+1567,ORD-0001567,Standard,High,B2B,Delivered
+1568,ORD-0001568,Standard,High,B2B,Delivered
+1569,ORD-0001569,Backorder,Critical,EDI,Delivered
+1570,ORD-0001570,Express,Medium,E-commerce,Delivered
+1571,ORD-0001571,Standard,High,B2B,Delivered
+1572,ORD-0001572,Express,High,E-commerce,Delivered
+1573,ORD-0001573,Express,High,E-commerce,Delivered
+1574,ORD-0001574,Express,High,E-commerce,Delivered
+1575,ORD-0001575,Backorder,Critical,EDI,Delivered
+1576,ORD-0001576,Backorder,High,EDI,Delivered
+1577,ORD-0001577,Express,Medium,E-commerce,Delivered
+1578,ORD-0001578,Backorder,High,EDI,Delivered
+1579,ORD-0001579,Express,Critical,E-commerce,Delivered
+1580,ORD-0001580,Standard,High,B2B,Delivered
+1581,ORD-0001581,Standard,Low,B2B,Delivered
+1582,ORD-0001582,Standard,Critical,B2B,Delivered
+1583,ORD-0001583,Backorder,Low,EDI,Delivered
+1584,ORD-0001584,Backorder,Medium,EDI,Delivered
+1585,ORD-0001585,Express,Medium,E-commerce,Delivered
+1586,ORD-0001586,Standard,Low,B2B,Delivered
+1587,ORD-0001587,Standard,Medium,B2B,In Transit
+1588,ORD-0001588,Express,Medium,E-commerce,Delivered
+1589,ORD-0001589,Standard,Medium,B2B,Returned
+1590,ORD-0001590,Backorder,Low,EDI,In Transit
+1591,ORD-0001591,Standard,Low,B2B,Delivered
+1592,ORD-0001592,Backorder,High,EDI,In Transit
+1593,ORD-0001593,Backorder,High,EDI,Delivered
+1594,ORD-0001594,Express,High,E-commerce,Delivered
+1595,ORD-0001595,Standard,High,B2B,Delivered
+1596,ORD-0001596,Express,Critical,E-commerce,Delivered
+1597,ORD-0001597,Standard,Low,B2B,Delivered
+1598,ORD-0001598,Express,Low,E-commerce,In Transit
+1599,ORD-0001599,Standard,Medium,B2B,Delivered
+1600,ORD-0001600,Standard,Low,B2B,Delivered
+1601,ORD-0001601,Backorder,High,EDI,Delivered
+1602,ORD-0001602,Backorder,Critical,EDI,Delivered
+1603,ORD-0001603,Backorder,High,EDI,Delivered
+1604,ORD-0001604,Standard,Critical,B2B,Delivered
+1605,ORD-0001605,Express,Medium,E-commerce,Delivered
+1606,ORD-0001606,Backorder,Medium,EDI,Delivered
+1607,ORD-0001607,Express,Medium,E-commerce,In Transit
+1608,ORD-0001608,Express,Low,E-commerce,Delivered
+1609,ORD-0001609,Backorder,Critical,EDI,Cancelled
+1610,ORD-0001610,Backorder,Critical,EDI,Delivered
+1611,ORD-0001611,Backorder,Low,EDI,Delivered
+1612,ORD-0001612,Standard,Medium,B2B,Delivered
+1613,ORD-0001613,Standard,Low,B2B,Delivered
+1614,ORD-0001614,Backorder,High,EDI,Delivered
+1615,ORD-0001615,Backorder,High,EDI,Delivered
+1616,ORD-0001616,Express,Medium,E-commerce,Delivered
+1617,ORD-0001617,Standard,Low,B2B,Delivered
+1618,ORD-0001618,Express,Medium,E-commerce,Delivered
+1619,ORD-0001619,Express,Critical,E-commerce,Delivered
+1620,ORD-0001620,Express,Critical,E-commerce,Delivered
+1621,ORD-0001621,Backorder,Low,EDI,In Transit
+1622,ORD-0001622,Express,Medium,E-commerce,Delivered
+1623,ORD-0001623,Express,Critical,E-commerce,Delivered
+1624,ORD-0001624,Express,Critical,E-commerce,Delivered
+1625,ORD-0001625,Express,Low,E-commerce,Delivered
+1626,ORD-0001626,Standard,High,B2B,In Transit
+1627,ORD-0001627,Express,High,E-commerce,In Transit
+1628,ORD-0001628,Backorder,Low,EDI,Delivered
+1629,ORD-0001629,Backorder,Medium,EDI,Delivered
+1630,ORD-0001630,Standard,Medium,B2B,In Transit
+1631,ORD-0001631,Standard,Critical,B2B,Cancelled
+1632,ORD-0001632,Backorder,High,EDI,Delivered
+1633,ORD-0001633,Express,Low,E-commerce,Delivered
+1634,ORD-0001634,Standard,Low,B2B,Delivered
+1635,ORD-0001635,Express,High,E-commerce,Delivered
+1636,ORD-0001636,Backorder,High,EDI,Delivered
+1637,ORD-0001637,Backorder,Critical,EDI,Returned
+1638,ORD-0001638,Express,Low,E-commerce,In Transit
+1639,ORD-0001639,Standard,Critical,B2B,Delivered
+1640,ORD-0001640,Express,Critical,E-commerce,Delivered
+1641,ORD-0001641,Standard,Medium,B2B,Delivered
+1642,ORD-0001642,Standard,Medium,B2B,Delivered
+1643,ORD-0001643,Standard,Low,B2B,Delivered
+1644,ORD-0001644,Express,Medium,E-commerce,Delivered
+1645,ORD-0001645,Backorder,High,EDI,In Transit
+1646,ORD-0001646,Express,Medium,E-commerce,Delivered
+1647,ORD-0001647,Standard,Low,B2B,Delivered
+1648,ORD-0001648,Backorder,High,EDI,Delivered
+1649,ORD-0001649,Standard,Medium,B2B,In Transit
+1650,ORD-0001650,Standard,High,B2B,Delivered
+1651,ORD-0001651,Backorder,Medium,EDI,Delivered
+1652,ORD-0001652,Express,High,E-commerce,Delivered
+1653,ORD-0001653,Standard,High,B2B,In Transit
+1654,ORD-0001654,Express,High,E-commerce,Delivered
+1655,ORD-0001655,Standard,Medium,B2B,Delivered
+1656,ORD-0001656,Express,Medium,E-commerce,Delivered
+1657,ORD-0001657,Express,Critical,E-commerce,Cancelled
+1658,ORD-0001658,Standard,Medium,B2B,Delivered
+1659,ORD-0001659,Standard,Critical,B2B,Delivered
+1660,ORD-0001660,Backorder,Medium,EDI,Delivered
+1661,ORD-0001661,Express,Medium,E-commerce,Delivered
+1662,ORD-0001662,Express,Low,E-commerce,Delivered
+1663,ORD-0001663,Express,Critical,E-commerce,Cancelled
+1664,ORD-0001664,Express,High,E-commerce,Delivered
+1665,ORD-0001665,Backorder,Low,EDI,Delivered
+1666,ORD-0001666,Standard,Critical,B2B,Delivered
+1667,ORD-0001667,Express,Low,E-commerce,Returned
+1668,ORD-0001668,Backorder,Medium,EDI,Delivered
+1669,ORD-0001669,Express,Medium,E-commerce,Delivered
+1670,ORD-0001670,Standard,High,B2B,Delivered
+1671,ORD-0001671,Backorder,Medium,EDI,Returned
+1672,ORD-0001672,Backorder,Critical,EDI,Delivered
+1673,ORD-0001673,Standard,Low,B2B,Delivered
+1674,ORD-0001674,Standard,Medium,B2B,Delivered
+1675,ORD-0001675,Express,High,E-commerce,In Transit
+1676,ORD-0001676,Standard,High,B2B,Delivered
+1677,ORD-0001677,Standard,Critical,B2B,Delivered
+1678,ORD-0001678,Backorder,Critical,EDI,Delivered
+1679,ORD-0001679,Backorder,Critical,EDI,Delivered
+1680,ORD-0001680,Backorder,Low,EDI,In Transit
+1681,ORD-0001681,Backorder,High,EDI,Delivered
+1682,ORD-0001682,Backorder,Low,EDI,Delivered
+1683,ORD-0001683,Express,Critical,E-commerce,Delivered
+1684,ORD-0001684,Backorder,Low,EDI,Delivered
+1685,ORD-0001685,Standard,Low,B2B,Delivered
+1686,ORD-0001686,Express,High,E-commerce,Delivered
+1687,ORD-0001687,Express,High,E-commerce,Delivered
+1688,ORD-0001688,Standard,Critical,B2B,Delivered
+1689,ORD-0001689,Standard,Medium,B2B,Delivered
+1690,ORD-0001690,Backorder,Low,EDI,Delivered
+1691,ORD-0001691,Backorder,Critical,EDI,Delivered
+1692,ORD-0001692,Standard,Medium,B2B,Delivered
+1693,ORD-0001693,Backorder,Low,EDI,Delivered
+1694,ORD-0001694,Backorder,High,EDI,Delivered
+1695,ORD-0001695,Backorder,Low,EDI,Delivered
+1696,ORD-0001696,Backorder,Medium,EDI,Delivered
+1697,ORD-0001697,Standard,Low,B2B,In Transit
+1698,ORD-0001698,Standard,Critical,B2B,Delivered
+1699,ORD-0001699,Express,Medium,E-commerce,In Transit
+1700,ORD-0001700,Standard,High,B2B,Delivered
+1701,ORD-0001701,Standard,Critical,B2B,Delivered
+1702,ORD-0001702,Standard,Medium,B2B,Delivered
+1703,ORD-0001703,Backorder,Low,EDI,Delivered
+1704,ORD-0001704,Standard,Low,B2B,Delivered
+1705,ORD-0001705,Backorder,Low,EDI,Delivered
+1706,ORD-0001706,Backorder,Medium,EDI,Delivered
+1707,ORD-0001707,Express,Medium,E-commerce,Delivered
+1708,ORD-0001708,Standard,Critical,B2B,Delivered
+1709,ORD-0001709,Standard,High,B2B,Delivered
+1710,ORD-0001710,Express,High,E-commerce,Delivered
+1711,ORD-0001711,Express,Low,E-commerce,Delivered
+1712,ORD-0001712,Standard,Low,B2B,Delivered
+1713,ORD-0001713,Express,High,E-commerce,Delivered
+1714,ORD-0001714,Backorder,Low,EDI,Delivered
+1715,ORD-0001715,Standard,High,B2B,Delivered
+1716,ORD-0001716,Standard,High,B2B,Delivered
+1717,ORD-0001717,Standard,High,B2B,In Transit
+1718,ORD-0001718,Express,Medium,E-commerce,In Transit
+1719,ORD-0001719,Standard,High,B2B,In Transit
+1720,ORD-0001720,Express,Medium,E-commerce,Delivered
+1721,ORD-0001721,Backorder,Critical,EDI,Delivered
+1722,ORD-0001722,Standard,High,B2B,In Transit
+1723,ORD-0001723,Standard,Critical,B2B,Cancelled
+1724,ORD-0001724,Backorder,Medium,EDI,Delivered
+1725,ORD-0001725,Standard,Low,B2B,Delivered
+1726,ORD-0001726,Standard,Critical,B2B,In Transit
+1727,ORD-0001727,Backorder,Medium,EDI,Delivered
+1728,ORD-0001728,Backorder,Medium,EDI,Delivered
+1729,ORD-0001729,Backorder,Critical,EDI,Delivered
+1730,ORD-0001730,Express,Low,E-commerce,Delivered
+1731,ORD-0001731,Express,High,E-commerce,Delivered
+1732,ORD-0001732,Backorder,Critical,EDI,Delivered
+1733,ORD-0001733,Express,High,E-commerce,Delivered
+1734,ORD-0001734,Standard,Medium,B2B,Returned
+1735,ORD-0001735,Backorder,Critical,EDI,Delivered
+1736,ORD-0001736,Backorder,High,EDI,Delivered
+1737,ORD-0001737,Standard,Medium,B2B,In Transit
+1738,ORD-0001738,Standard,High,B2B,Delivered
+1739,ORD-0001739,Standard,Critical,B2B,Delivered
+1740,ORD-0001740,Express,High,E-commerce,Delivered
+1741,ORD-0001741,Express,High,E-commerce,Delivered
+1742,ORD-0001742,Backorder,Low,EDI,In Transit
+1743,ORD-0001743,Standard,Medium,B2B,In Transit
+1744,ORD-0001744,Express,Medium,E-commerce,Delivered
+1745,ORD-0001745,Backorder,Medium,EDI,In Transit
+1746,ORD-0001746,Standard,Critical,B2B,Delivered
+1747,ORD-0001747,Express,Critical,E-commerce,Delivered
+1748,ORD-0001748,Express,Critical,E-commerce,Delivered
+1749,ORD-0001749,Backorder,Medium,EDI,Delivered
+1750,ORD-0001750,Express,High,E-commerce,Delivered
+1751,ORD-0001751,Express,Low,E-commerce,Delivered
+1752,ORD-0001752,Standard,Critical,B2B,Delivered
+1753,ORD-0001753,Express,Medium,E-commerce,Delivered
+1754,ORD-0001754,Backorder,Medium,EDI,Delivered
+1755,ORD-0001755,Express,High,E-commerce,In Transit
+1756,ORD-0001756,Express,Medium,E-commerce,Delivered
+1757,ORD-0001757,Backorder,Low,EDI,Delivered
+1758,ORD-0001758,Standard,Low,B2B,Delivered
+1759,ORD-0001759,Backorder,Low,EDI,In Transit
+1760,ORD-0001760,Express,Low,E-commerce,In Transit
+1761,ORD-0001761,Express,Low,E-commerce,Delivered
+1762,ORD-0001762,Express,Critical,E-commerce,In Transit
+1763,ORD-0001763,Backorder,High,EDI,Delivered
+1764,ORD-0001764,Express,High,E-commerce,Delivered
+1765,ORD-0001765,Standard,Low,B2B,Delivered
+1766,ORD-0001766,Express,Low,E-commerce,Delivered
+1767,ORD-0001767,Express,Low,E-commerce,Delivered
+1768,ORD-0001768,Backorder,High,EDI,Delivered
+1769,ORD-0001769,Backorder,Critical,EDI,Delivered
+1770,ORD-0001770,Backorder,Critical,EDI,Delivered
+1771,ORD-0001771,Express,Critical,E-commerce,Delivered
+1772,ORD-0001772,Standard,Medium,B2B,In Transit
+1773,ORD-0001773,Backorder,High,EDI,Delivered
+1774,ORD-0001774,Backorder,High,EDI,Delivered
+1775,ORD-0001775,Express,Medium,E-commerce,Delivered
+1776,ORD-0001776,Standard,Critical,B2B,Delivered
+1777,ORD-0001777,Backorder,Medium,EDI,Delivered
+1778,ORD-0001778,Standard,High,B2B,Delivered
+1779,ORD-0001779,Express,Medium,E-commerce,In Transit
+1780,ORD-0001780,Backorder,High,EDI,Delivered
+1781,ORD-0001781,Express,Critical,E-commerce,Delivered
+1782,ORD-0001782,Standard,High,B2B,Delivered
+1783,ORD-0001783,Express,Medium,E-commerce,In Transit
+1784,ORD-0001784,Backorder,Medium,EDI,In Transit
+1785,ORD-0001785,Standard,Medium,B2B,Returned
+1786,ORD-0001786,Express,Medium,E-commerce,Delivered
+1787,ORD-0001787,Standard,Medium,B2B,Delivered
+1788,ORD-0001788,Backorder,High,EDI,Delivered
+1789,ORD-0001789,Standard,Critical,B2B,Delivered
+1790,ORD-0001790,Backorder,Low,EDI,Delivered
+1791,ORD-0001791,Express,Critical,E-commerce,Delivered
+1792,ORD-0001792,Backorder,Critical,EDI,Delivered
+1793,ORD-0001793,Express,High,E-commerce,Delivered
+1794,ORD-0001794,Express,High,E-commerce,Delivered
+1795,ORD-0001795,Express,Medium,E-commerce,Delivered
+1796,ORD-0001796,Express,Critical,E-commerce,In Transit
+1797,ORD-0001797,Standard,Critical,B2B,Delivered
+1798,ORD-0001798,Standard,Medium,B2B,Delivered
+1799,ORD-0001799,Express,Medium,E-commerce,Delivered
+1800,ORD-0001800,Standard,Critical,B2B,Delivered
+1801,ORD-0001801,Express,Medium,E-commerce,In Transit
+1802,ORD-0001802,Express,Medium,E-commerce,Delivered
+1803,ORD-0001803,Express,Low,E-commerce,Delivered
+1804,ORD-0001804,Express,Medium,E-commerce,Delivered
+1805,ORD-0001805,Express,Critical,E-commerce,Delivered
+1806,ORD-0001806,Backorder,Low,EDI,In Transit
+1807,ORD-0001807,Backorder,High,EDI,Delivered
+1808,ORD-0001808,Express,High,E-commerce,Delivered
+1809,ORD-0001809,Backorder,Critical,EDI,Delivered
+1810,ORD-0001810,Express,Critical,E-commerce,Delivered
+1811,ORD-0001811,Standard,Medium,B2B,Delivered
+1812,ORD-0001812,Backorder,Low,EDI,Delivered
+1813,ORD-0001813,Standard,Medium,B2B,Delivered
+1814,ORD-0001814,Standard,Critical,B2B,Delivered
+1815,ORD-0001815,Backorder,Low,EDI,Delivered
+1816,ORD-0001816,Standard,Medium,B2B,In Transit
+1817,ORD-0001817,Express,High,E-commerce,Delivered
+1818,ORD-0001818,Express,Medium,E-commerce,Delivered
+1819,ORD-0001819,Backorder,High,EDI,Delivered
+1820,ORD-0001820,Standard,High,B2B,Delivered
+1821,ORD-0001821,Backorder,Critical,EDI,Delivered
+1822,ORD-0001822,Express,Medium,E-commerce,Delivered
+1823,ORD-0001823,Standard,Low,B2B,Delivered
+1824,ORD-0001824,Backorder,Medium,EDI,Delivered
+1825,ORD-0001825,Standard,Critical,B2B,Delivered
+1826,ORD-0001826,Backorder,Medium,EDI,Delivered
+1827,ORD-0001827,Backorder,High,EDI,In Transit
+1828,ORD-0001828,Backorder,High,EDI,Delivered
+1829,ORD-0001829,Backorder,Critical,EDI,Delivered
+1830,ORD-0001830,Standard,High,B2B,Delivered
+1831,ORD-0001831,Backorder,Low,EDI,Delivered
+1832,ORD-0001832,Standard,High,B2B,Delivered
+1833,ORD-0001833,Express,High,E-commerce,Delivered
+1834,ORD-0001834,Express,Medium,E-commerce,Delivered
+1835,ORD-0001835,Express,Medium,E-commerce,Delivered
+1836,ORD-0001836,Express,Low,E-commerce,Delivered
+1837,ORD-0001837,Standard,Low,B2B,Delivered
+1838,ORD-0001838,Standard,Low,B2B,Delivered
+1839,ORD-0001839,Backorder,Low,EDI,Delivered
+1840,ORD-0001840,Standard,Low,B2B,Delivered
+1841,ORD-0001841,Standard,High,B2B,Delivered
+1842,ORD-0001842,Standard,Medium,B2B,Delivered
+1843,ORD-0001843,Standard,Low,B2B,Delivered
+1844,ORD-0001844,Standard,Critical,B2B,Delivered
+1845,ORD-0001845,Backorder,High,EDI,Delivered
+1846,ORD-0001846,Express,Critical,E-commerce,In Transit
+1847,ORD-0001847,Express,Medium,E-commerce,Delivered
+1848,ORD-0001848,Backorder,Low,EDI,Delivered
+1849,ORD-0001849,Standard,High,B2B,Delivered
+1850,ORD-0001850,Backorder,Critical,EDI,Delivered
+1851,ORD-0001851,Standard,Critical,B2B,Returned
+1852,ORD-0001852,Backorder,Low,EDI,In Transit
+1853,ORD-0001853,Express,Critical,E-commerce,Delivered
+1854,ORD-0001854,Express,Medium,E-commerce,Delivered
+1855,ORD-0001855,Express,Critical,E-commerce,Delivered
+1856,ORD-0001856,Standard,Medium,B2B,Delivered
+1857,ORD-0001857,Backorder,Critical,EDI,Delivered
+1858,ORD-0001858,Backorder,Critical,EDI,Delivered
+1859,ORD-0001859,Backorder,High,EDI,Delivered
+1860,ORD-0001860,Standard,Medium,B2B,Delivered
+1861,ORD-0001861,Express,Low,E-commerce,In Transit
+1862,ORD-0001862,Backorder,Medium,EDI,Returned
+1863,ORD-0001863,Express,Critical,E-commerce,Delivered
+1864,ORD-0001864,Backorder,High,EDI,Cancelled
+1865,ORD-0001865,Express,Critical,E-commerce,Delivered
+1866,ORD-0001866,Backorder,Low,EDI,Delivered
+1867,ORD-0001867,Backorder,Medium,EDI,Delivered
+1868,ORD-0001868,Express,Critical,E-commerce,Delivered
+1869,ORD-0001869,Express,High,E-commerce,Delivered
+1870,ORD-0001870,Backorder,High,EDI,Delivered
+1871,ORD-0001871,Express,Medium,E-commerce,Delivered
+1872,ORD-0001872,Backorder,High,EDI,Delivered
+1873,ORD-0001873,Express,Critical,E-commerce,Delivered
+1874,ORD-0001874,Backorder,High,EDI,Delivered
+1875,ORD-0001875,Express,Medium,E-commerce,Delivered
+1876,ORD-0001876,Backorder,Critical,EDI,Cancelled
+1877,ORD-0001877,Backorder,Medium,EDI,Delivered
+1878,ORD-0001878,Express,Critical,E-commerce,Delivered
+1879,ORD-0001879,Backorder,Low,EDI,In Transit
+1880,ORD-0001880,Express,Critical,E-commerce,Delivered
+1881,ORD-0001881,Standard,Critical,B2B,Delivered
+1882,ORD-0001882,Standard,High,B2B,Delivered
+1883,ORD-0001883,Express,Medium,E-commerce,Delivered
+1884,ORD-0001884,Standard,Critical,B2B,Delivered
+1885,ORD-0001885,Backorder,Critical,EDI,Delivered
+1886,ORD-0001886,Standard,High,B2B,Delivered
+1887,ORD-0001887,Backorder,Low,EDI,Delivered
+1888,ORD-0001888,Express,Low,E-commerce,Returned
+1889,ORD-0001889,Backorder,Medium,EDI,Delivered
+1890,ORD-0001890,Backorder,Medium,EDI,Delivered
+1891,ORD-0001891,Standard,High,B2B,Delivered
+1892,ORD-0001892,Standard,Critical,B2B,Delivered
+1893,ORD-0001893,Backorder,Critical,EDI,In Transit
+1894,ORD-0001894,Express,Medium,E-commerce,Delivered
+1895,ORD-0001895,Backorder,Critical,EDI,In Transit
+1896,ORD-0001896,Backorder,Low,EDI,Delivered
+1897,ORD-0001897,Standard,Medium,B2B,Delivered
+1898,ORD-0001898,Standard,Low,B2B,Delivered
+1899,ORD-0001899,Backorder,Low,EDI,Delivered
+1900,ORD-0001900,Express,Critical,E-commerce,Delivered
+1901,ORD-0001901,Express,Critical,E-commerce,Returned
+1902,ORD-0001902,Backorder,Medium,EDI,In Transit
+1903,ORD-0001903,Express,Critical,E-commerce,Delivered
+1904,ORD-0001904,Backorder,Critical,EDI,Returned
+1905,ORD-0001905,Express,Medium,E-commerce,Delivered
+1906,ORD-0001906,Backorder,Medium,EDI,Delivered
+1907,ORD-0001907,Standard,Critical,B2B,Returned
+1908,ORD-0001908,Standard,Low,B2B,Delivered
+1909,ORD-0001909,Express,High,E-commerce,In Transit
+1910,ORD-0001910,Standard,Critical,B2B,In Transit
+1911,ORD-0001911,Backorder,Critical,EDI,In Transit
+1912,ORD-0001912,Express,Critical,E-commerce,Delivered
+1913,ORD-0001913,Standard,Low,B2B,Delivered
+1914,ORD-0001914,Backorder,Low,EDI,Delivered
+1915,ORD-0001915,Standard,Critical,B2B,Delivered
+1916,ORD-0001916,Express,Low,E-commerce,Delivered
+1917,ORD-0001917,Express,Low,E-commerce,Delivered
+1918,ORD-0001918,Express,Low,E-commerce,Delivered
+1919,ORD-0001919,Express,Medium,E-commerce,Delivered
+1920,ORD-0001920,Backorder,High,EDI,In Transit
+1921,ORD-0001921,Express,Critical,E-commerce,Delivered
+1922,ORD-0001922,Standard,Medium,B2B,Delivered
+1923,ORD-0001923,Standard,Low,B2B,Delivered
+1924,ORD-0001924,Express,Medium,E-commerce,In Transit
+1925,ORD-0001925,Express,Medium,E-commerce,Delivered
+1926,ORD-0001926,Express,Low,E-commerce,Delivered
+1927,ORD-0001927,Express,Critical,E-commerce,Delivered
+1928,ORD-0001928,Standard,Low,B2B,Delivered
+1929,ORD-0001929,Express,High,E-commerce,Delivered
+1930,ORD-0001930,Standard,Critical,B2B,Delivered
+1931,ORD-0001931,Standard,Medium,B2B,Delivered
+1932,ORD-0001932,Standard,Low,B2B,Delivered
+1933,ORD-0001933,Backorder,Critical,EDI,Delivered
+1934,ORD-0001934,Backorder,Medium,EDI,Delivered
+1935,ORD-0001935,Express,Low,E-commerce,Delivered
+1936,ORD-0001936,Standard,High,B2B,Delivered
+1937,ORD-0001937,Backorder,Low,EDI,Delivered
+1938,ORD-0001938,Express,High,E-commerce,Delivered
+1939,ORD-0001939,Standard,Critical,B2B,Delivered
+1940,ORD-0001940,Standard,Critical,B2B,In Transit
+1941,ORD-0001941,Standard,Low,B2B,Returned
+1942,ORD-0001942,Backorder,Critical,EDI,In Transit
+1943,ORD-0001943,Standard,High,B2B,In Transit
+1944,ORD-0001944,Backorder,Critical,EDI,Cancelled
+1945,ORD-0001945,Express,Low,E-commerce,Delivered
+1946,ORD-0001946,Express,Medium,E-commerce,Delivered
+1947,ORD-0001947,Express,Critical,E-commerce,Delivered
+1948,ORD-0001948,Backorder,Low,EDI,Delivered
+1949,ORD-0001949,Express,Critical,E-commerce,Delivered
+1950,ORD-0001950,Express,Medium,E-commerce,In Transit
+1951,ORD-0001951,Standard,Medium,B2B,Delivered
+1952,ORD-0001952,Express,Medium,E-commerce,Delivered
+1953,ORD-0001953,Standard,Low,B2B,Delivered
+1954,ORD-0001954,Standard,Critical,B2B,Delivered
+1955,ORD-0001955,Backorder,High,EDI,Delivered
+1956,ORD-0001956,Standard,Critical,B2B,Delivered
+1957,ORD-0001957,Backorder,Low,EDI,Delivered
+1958,ORD-0001958,Standard,Medium,B2B,Returned
+1959,ORD-0001959,Standard,Low,B2B,Delivered
+1960,ORD-0001960,Backorder,High,EDI,Delivered
+1961,ORD-0001961,Standard,Critical,B2B,In Transit
+1962,ORD-0001962,Express,Medium,E-commerce,Delivered
+1963,ORD-0001963,Standard,High,B2B,Delivered
+1964,ORD-0001964,Backorder,Low,EDI,Returned
+1965,ORD-0001965,Express,Critical,E-commerce,Delivered
+1966,ORD-0001966,Standard,High,B2B,Delivered
+1967,ORD-0001967,Standard,Medium,B2B,Delivered
+1968,ORD-0001968,Standard,Low,B2B,In Transit
+1969,ORD-0001969,Standard,High,B2B,Delivered
+1970,ORD-0001970,Express,High,E-commerce,Delivered
+1971,ORD-0001971,Standard,Medium,B2B,Delivered
+1972,ORD-0001972,Express,Medium,E-commerce,Delivered
+1973,ORD-0001973,Backorder,Critical,EDI,Delivered
+1974,ORD-0001974,Express,Low,E-commerce,Delivered
+1975,ORD-0001975,Express,Medium,E-commerce,Delivered
+1976,ORD-0001976,Standard,Low,B2B,Returned
+1977,ORD-0001977,Standard,Medium,B2B,Delivered
+1978,ORD-0001978,Express,High,E-commerce,Delivered
+1979,ORD-0001979,Standard,Medium,B2B,Delivered
+1980,ORD-0001980,Standard,Critical,B2B,Delivered
+1981,ORD-0001981,Express,Medium,E-commerce,Delivered
+1982,ORD-0001982,Backorder,Critical,EDI,Delivered
+1983,ORD-0001983,Backorder,Critical,EDI,Delivered
+1984,ORD-0001984,Backorder,Low,EDI,Delivered
+1985,ORD-0001985,Express,Medium,E-commerce,Returned
+1986,ORD-0001986,Express,Medium,E-commerce,Delivered
+1987,ORD-0001987,Backorder,Critical,EDI,Delivered
+1988,ORD-0001988,Backorder,Critical,EDI,Delivered
+1989,ORD-0001989,Standard,Low,B2B,Delivered
+1990,ORD-0001990,Express,Medium,E-commerce,Delivered
+1991,ORD-0001991,Backorder,High,EDI,In Transit
+1992,ORD-0001992,Backorder,Medium,EDI,Returned
+1993,ORD-0001993,Express,Critical,E-commerce,Delivered
+1994,ORD-0001994,Standard,High,B2B,In Transit
+1995,ORD-0001995,Standard,Critical,B2B,Delivered
+1996,ORD-0001996,Express,Medium,E-commerce,Delivered
+1997,ORD-0001997,Express,Medium,E-commerce,Delivered
+1998,ORD-0001998,Express,High,E-commerce,Delivered
+1999,ORD-0001999,Standard,Critical,B2B,Delivered
+2000,ORD-0002000,Backorder,High,EDI,Delivered
+2001,ORD-0002001,Backorder,Low,EDI,In Transit
+2002,ORD-0002002,Backorder,High,EDI,Delivered
+2003,ORD-0002003,Express,Low,E-commerce,In Transit
+2004,ORD-0002004,Standard,Low,B2B,Delivered
+2005,ORD-0002005,Standard,Critical,B2B,Delivered
+2006,ORD-0002006,Express,High,E-commerce,Delivered
+2007,ORD-0002007,Express,Medium,E-commerce,Delivered
+2008,ORD-0002008,Standard,Low,B2B,Delivered
+2009,ORD-0002009,Standard,High,B2B,Delivered
+2010,ORD-0002010,Express,High,E-commerce,Delivered
+2011,ORD-0002011,Standard,Low,B2B,Delivered
+2012,ORD-0002012,Backorder,High,EDI,Delivered
+2013,ORD-0002013,Standard,High,B2B,Delivered
+2014,ORD-0002014,Express,Medium,E-commerce,Delivered
+2015,ORD-0002015,Express,Critical,E-commerce,Delivered
+2016,ORD-0002016,Backorder,High,EDI,Delivered
+2017,ORD-0002017,Standard,Critical,B2B,Delivered
+2018,ORD-0002018,Express,Critical,E-commerce,Delivered
+2019,ORD-0002019,Backorder,Medium,EDI,Returned
+2020,ORD-0002020,Backorder,High,EDI,Delivered
+2021,ORD-0002021,Standard,Medium,B2B,In Transit
+2022,ORD-0002022,Backorder,Medium,EDI,Delivered
+2023,ORD-0002023,Backorder,Low,EDI,Delivered
+2024,ORD-0002024,Express,Critical,E-commerce,Delivered
+2025,ORD-0002025,Standard,Critical,B2B,In Transit
+2026,ORD-0002026,Standard,Critical,B2B,Delivered
+2027,ORD-0002027,Standard,Critical,B2B,Delivered
+2028,ORD-0002028,Standard,Critical,B2B,Delivered
+2029,ORD-0002029,Backorder,High,EDI,Delivered
+2030,ORD-0002030,Backorder,Critical,EDI,Delivered
+2031,ORD-0002031,Backorder,Low,EDI,Delivered
+2032,ORD-0002032,Standard,Low,B2B,Delivered
+2033,ORD-0002033,Express,Medium,E-commerce,Delivered
+2034,ORD-0002034,Express,Medium,E-commerce,Delivered
+2035,ORD-0002035,Express,High,E-commerce,Delivered
+2036,ORD-0002036,Backorder,Critical,EDI,Delivered
+2037,ORD-0002037,Backorder,Low,EDI,Delivered
+2038,ORD-0002038,Express,Critical,E-commerce,In Transit
+2039,ORD-0002039,Express,Medium,E-commerce,Delivered
+2040,ORD-0002040,Standard,Medium,B2B,Delivered
+2041,ORD-0002041,Standard,Critical,B2B,Delivered
+2042,ORD-0002042,Standard,High,B2B,Delivered
+2043,ORD-0002043,Backorder,Low,EDI,Delivered
+2044,ORD-0002044,Backorder,Critical,EDI,Delivered
+2045,ORD-0002045,Express,Low,E-commerce,Delivered
+2046,ORD-0002046,Backorder,Medium,EDI,In Transit
+2047,ORD-0002047,Backorder,Low,EDI,In Transit
+2048,ORD-0002048,Backorder,High,EDI,Delivered
+2049,ORD-0002049,Standard,Medium,B2B,In Transit
+2050,ORD-0002050,Standard,Medium,B2B,Delivered
+2051,ORD-0002051,Backorder,Critical,EDI,Delivered
+2052,ORD-0002052,Backorder,Medium,EDI,Delivered
+2053,ORD-0002053,Backorder,Medium,EDI,In Transit
+2054,ORD-0002054,Express,High,E-commerce,Delivered
+2055,ORD-0002055,Standard,Critical,B2B,Delivered
+2056,ORD-0002056,Backorder,Medium,EDI,Delivered
+2057,ORD-0002057,Backorder,High,EDI,Delivered
+2058,ORD-0002058,Standard,Low,B2B,Delivered
+2059,ORD-0002059,Standard,High,B2B,Delivered
+2060,ORD-0002060,Express,Medium,E-commerce,Delivered
+2061,ORD-0002061,Backorder,Low,EDI,Delivered
+2062,ORD-0002062,Standard,Medium,B2B,Delivered
+2063,ORD-0002063,Express,Medium,E-commerce,Delivered
+2064,ORD-0002064,Standard,Critical,B2B,Delivered
+2065,ORD-0002065,Backorder,Medium,EDI,In Transit
+2066,ORD-0002066,Express,Low,E-commerce,In Transit
+2067,ORD-0002067,Express,Medium,E-commerce,Delivered
+2068,ORD-0002068,Backorder,High,EDI,Delivered
+2069,ORD-0002069,Standard,Medium,B2B,Delivered
+2070,ORD-0002070,Backorder,Critical,EDI,Delivered
+2071,ORD-0002071,Standard,High,B2B,Cancelled
+2072,ORD-0002072,Express,High,E-commerce,Delivered
+2073,ORD-0002073,Backorder,High,EDI,Delivered
+2074,ORD-0002074,Backorder,High,EDI,Delivered
+2075,ORD-0002075,Express,Critical,E-commerce,In Transit
+2076,ORD-0002076,Backorder,High,EDI,Delivered
+2077,ORD-0002077,Backorder,Critical,EDI,Cancelled
+2078,ORD-0002078,Express,Medium,E-commerce,In Transit
+2079,ORD-0002079,Standard,High,B2B,Delivered
+2080,ORD-0002080,Express,Medium,E-commerce,Delivered
+2081,ORD-0002081,Backorder,Low,EDI,Delivered
+2082,ORD-0002082,Express,Low,E-commerce,Delivered
+2083,ORD-0002083,Express,Medium,E-commerce,Delivered
+2084,ORD-0002084,Express,Medium,E-commerce,Returned
+2085,ORD-0002085,Standard,Medium,B2B,Delivered
+2086,ORD-0002086,Standard,High,B2B,Delivered
+2087,ORD-0002087,Standard,Medium,B2B,Delivered
+2088,ORD-0002088,Backorder,Critical,EDI,In Transit
+2089,ORD-0002089,Express,Medium,E-commerce,In Transit
+2090,ORD-0002090,Backorder,Low,EDI,Delivered
+2091,ORD-0002091,Backorder,Critical,EDI,In Transit
+2092,ORD-0002092,Standard,Critical,B2B,Delivered
+2093,ORD-0002093,Standard,High,B2B,Delivered
+2094,ORD-0002094,Express,Critical,E-commerce,Delivered
+2095,ORD-0002095,Standard,Critical,B2B,Delivered
+2096,ORD-0002096,Standard,Medium,B2B,Delivered
+2097,ORD-0002097,Backorder,Critical,EDI,Delivered
+2098,ORD-0002098,Backorder,Critical,EDI,Delivered
+2099,ORD-0002099,Backorder,High,EDI,Delivered
+2100,ORD-0002100,Express,High,E-commerce,Delivered
+2101,ORD-0002101,Backorder,High,EDI,Cancelled
+2102,ORD-0002102,Standard,High,B2B,In Transit
+2103,ORD-0002103,Standard,Low,B2B,Delivered
+2104,ORD-0002104,Standard,Low,B2B,In Transit
+2105,ORD-0002105,Backorder,Medium,EDI,In Transit
+2106,ORD-0002106,Backorder,Medium,EDI,Delivered
+2107,ORD-0002107,Backorder,High,EDI,In Transit
+2108,ORD-0002108,Express,Low,E-commerce,Delivered
+2109,ORD-0002109,Standard,Critical,B2B,Delivered
+2110,ORD-0002110,Backorder,Critical,EDI,In Transit
+2111,ORD-0002111,Standard,High,B2B,Delivered
+2112,ORD-0002112,Express,High,E-commerce,Delivered
+2113,ORD-0002113,Standard,Low,B2B,Delivered
+2114,ORD-0002114,Standard,High,B2B,In Transit
+2115,ORD-0002115,Standard,Medium,B2B,Delivered
+2116,ORD-0002116,Standard,Low,B2B,Delivered
+2117,ORD-0002117,Standard,Low,B2B,In Transit
+2118,ORD-0002118,Express,High,E-commerce,Delivered
+2119,ORD-0002119,Standard,Low,B2B,Delivered
+2120,ORD-0002120,Standard,Low,B2B,Delivered
+2121,ORD-0002121,Express,Critical,E-commerce,Delivered
+2122,ORD-0002122,Standard,High,B2B,Delivered
+2123,ORD-0002123,Backorder,Low,EDI,Delivered
+2124,ORD-0002124,Standard,High,B2B,Delivered
+2125,ORD-0002125,Backorder,Medium,EDI,In Transit
+2126,ORD-0002126,Express,Medium,E-commerce,Delivered
+2127,ORD-0002127,Express,High,E-commerce,In Transit
+2128,ORD-0002128,Express,High,E-commerce,Delivered
+2129,ORD-0002129,Express,Critical,E-commerce,Delivered
+2130,ORD-0002130,Backorder,High,EDI,Delivered
+2131,ORD-0002131,Express,Critical,E-commerce,Delivered
+2132,ORD-0002132,Express,Critical,E-commerce,Delivered
+2133,ORD-0002133,Express,Critical,E-commerce,Delivered
+2134,ORD-0002134,Express,Critical,E-commerce,Delivered
+2135,ORD-0002135,Standard,Medium,B2B,Delivered
+2136,ORD-0002136,Express,High,E-commerce,In Transit
+2137,ORD-0002137,Backorder,Critical,EDI,Delivered
+2138,ORD-0002138,Express,Medium,E-commerce,Delivered
+2139,ORD-0002139,Backorder,Medium,EDI,Delivered
+2140,ORD-0002140,Backorder,High,EDI,In Transit
+2141,ORD-0002141,Backorder,Critical,EDI,In Transit
+2142,ORD-0002142,Express,High,E-commerce,Delivered
+2143,ORD-0002143,Express,Medium,E-commerce,Delivered
+2144,ORD-0002144,Backorder,Critical,EDI,Delivered
+2145,ORD-0002145,Standard,Medium,B2B,Delivered
+2146,ORD-0002146,Backorder,High,EDI,Cancelled
+2147,ORD-0002147,Express,Medium,E-commerce,Delivered
+2148,ORD-0002148,Express,Low,E-commerce,Delivered
+2149,ORD-0002149,Standard,Medium,B2B,Delivered
+2150,ORD-0002150,Backorder,High,EDI,Delivered
+2151,ORD-0002151,Standard,Critical,B2B,Delivered
+2152,ORD-0002152,Backorder,Low,EDI,Delivered
+2153,ORD-0002153,Express,Low,E-commerce,Returned
+2154,ORD-0002154,Express,Medium,E-commerce,In Transit
+2155,ORD-0002155,Standard,Medium,B2B,Delivered
+2156,ORD-0002156,Backorder,Medium,EDI,In Transit
+2157,ORD-0002157,Express,Medium,E-commerce,Delivered
+2158,ORD-0002158,Express,Critical,E-commerce,Delivered
+2159,ORD-0002159,Backorder,Low,EDI,Delivered
+2160,ORD-0002160,Express,Low,E-commerce,Delivered
+2161,ORD-0002161,Standard,Critical,B2B,Cancelled
+2162,ORD-0002162,Backorder,Medium,EDI,Delivered
+2163,ORD-0002163,Express,Critical,E-commerce,Delivered
+2164,ORD-0002164,Express,Low,E-commerce,Delivered
+2165,ORD-0002165,Standard,High,B2B,Delivered
+2166,ORD-0002166,Backorder,Medium,EDI,Delivered
+2167,ORD-0002167,Express,High,E-commerce,Delivered
+2168,ORD-0002168,Standard,High,B2B,Delivered
+2169,ORD-0002169,Express,Medium,E-commerce,Delivered
+2170,ORD-0002170,Backorder,Low,EDI,In Transit
+2171,ORD-0002171,Standard,High,B2B,Delivered
+2172,ORD-0002172,Backorder,High,EDI,Delivered
+2173,ORD-0002173,Standard,High,B2B,Delivered
+2174,ORD-0002174,Express,Low,E-commerce,Delivered
+2175,ORD-0002175,Standard,Low,B2B,Delivered
+2176,ORD-0002176,Backorder,High,EDI,Delivered
+2177,ORD-0002177,Backorder,Low,EDI,Delivered
+2178,ORD-0002178,Express,High,E-commerce,Delivered
+2179,ORD-0002179,Express,Critical,E-commerce,In Transit
+2180,ORD-0002180,Backorder,High,EDI,Delivered
+2181,ORD-0002181,Express,High,E-commerce,In Transit
+2182,ORD-0002182,Standard,Low,B2B,In Transit
+2183,ORD-0002183,Standard,Low,B2B,Delivered
+2184,ORD-0002184,Backorder,Low,EDI,Delivered
+2185,ORD-0002185,Standard,High,B2B,Delivered
+2186,ORD-0002186,Backorder,High,EDI,Delivered
+2187,ORD-0002187,Express,Critical,E-commerce,Delivered
+2188,ORD-0002188,Express,Low,E-commerce,Delivered
+2189,ORD-0002189,Express,High,E-commerce,Delivered
+2190,ORD-0002190,Standard,Low,B2B,Delivered
+2191,ORD-0002191,Express,Critical,E-commerce,Delivered
+2192,ORD-0002192,Standard,Low,B2B,Delivered
+2193,ORD-0002193,Standard,Medium,B2B,Delivered
+2194,ORD-0002194,Express,High,E-commerce,Delivered
+2195,ORD-0002195,Standard,Low,B2B,In Transit
+2196,ORD-0002196,Express,Critical,E-commerce,Delivered
+2197,ORD-0002197,Backorder,Critical,EDI,Delivered
+2198,ORD-0002198,Backorder,High,EDI,Delivered
+2199,ORD-0002199,Standard,Medium,B2B,Delivered
+2200,ORD-0002200,Express,Low,E-commerce,Delivered
+2201,ORD-0002201,Express,High,E-commerce,In Transit
+2202,ORD-0002202,Express,Low,E-commerce,Delivered
+2203,ORD-0002203,Express,Low,E-commerce,Delivered
+2204,ORD-0002204,Express,Low,E-commerce,Delivered
+2205,ORD-0002205,Express,Medium,E-commerce,Delivered
+2206,ORD-0002206,Standard,High,B2B,Cancelled
+2207,ORD-0002207,Standard,High,B2B,Delivered
+2208,ORD-0002208,Backorder,Medium,EDI,Delivered
+2209,ORD-0002209,Express,Critical,E-commerce,Delivered
+2210,ORD-0002210,Standard,Critical,B2B,Delivered
+2211,ORD-0002211,Standard,Critical,B2B,Delivered
+2212,ORD-0002212,Standard,Critical,B2B,Delivered
+2213,ORD-0002213,Backorder,Critical,EDI,Delivered
+2214,ORD-0002214,Backorder,High,EDI,Delivered
+2215,ORD-0002215,Express,High,E-commerce,Delivered
+2216,ORD-0002216,Express,High,E-commerce,Delivered
+2217,ORD-0002217,Express,Critical,E-commerce,Delivered
+2218,ORD-0002218,Express,High,E-commerce,Delivered
+2219,ORD-0002219,Backorder,High,EDI,Delivered
+2220,ORD-0002220,Backorder,High,EDI,Delivered
+2221,ORD-0002221,Backorder,Critical,EDI,Delivered
+2222,ORD-0002222,Backorder,Critical,EDI,Cancelled
+2223,ORD-0002223,Backorder,High,EDI,In Transit
+2224,ORD-0002224,Backorder,Low,EDI,Delivered
+2225,ORD-0002225,Backorder,High,EDI,Delivered
+2226,ORD-0002226,Express,Low,E-commerce,Delivered
+2227,ORD-0002227,Express,Critical,E-commerce,Delivered
+2228,ORD-0002228,Express,Medium,E-commerce,In Transit
+2229,ORD-0002229,Backorder,Medium,EDI,In Transit
+2230,ORD-0002230,Standard,Medium,B2B,Delivered
+2231,ORD-0002231,Backorder,Critical,EDI,Delivered
+2232,ORD-0002232,Backorder,High,EDI,Delivered
+2233,ORD-0002233,Backorder,Medium,EDI,Delivered
+2234,ORD-0002234,Backorder,Low,EDI,Delivered
+2235,ORD-0002235,Backorder,High,EDI,Delivered
+2236,ORD-0002236,Backorder,High,EDI,Delivered
+2237,ORD-0002237,Backorder,Low,EDI,Delivered
+2238,ORD-0002238,Express,Medium,E-commerce,Delivered
+2239,ORD-0002239,Express,High,E-commerce,In Transit
+2240,ORD-0002240,Backorder,Critical,EDI,Delivered
+2241,ORD-0002241,Standard,Low,B2B,Delivered
+2242,ORD-0002242,Express,Critical,E-commerce,Delivered
+2243,ORD-0002243,Express,Low,E-commerce,Delivered
+2244,ORD-0002244,Backorder,Low,EDI,Delivered
+2245,ORD-0002245,Express,Low,E-commerce,In Transit
+2246,ORD-0002246,Backorder,Medium,EDI,Delivered
+2247,ORD-0002247,Backorder,Critical,EDI,Delivered
+2248,ORD-0002248,Standard,Medium,B2B,Delivered
+2249,ORD-0002249,Standard,Critical,B2B,Delivered
+2250,ORD-0002250,Backorder,Medium,EDI,Delivered
+2251,ORD-0002251,Standard,Critical,B2B,Returned
+2252,ORD-0002252,Express,High,E-commerce,Delivered
+2253,ORD-0002253,Express,Low,E-commerce,Delivered
+2254,ORD-0002254,Express,Low,E-commerce,Delivered
+2255,ORD-0002255,Backorder,High,EDI,In Transit
+2256,ORD-0002256,Standard,Critical,B2B,Delivered
+2257,ORD-0002257,Standard,High,B2B,Delivered
+2258,ORD-0002258,Express,Low,E-commerce,Returned
+2259,ORD-0002259,Standard,Medium,B2B,Delivered
+2260,ORD-0002260,Backorder,High,EDI,Delivered
+2261,ORD-0002261,Express,Medium,E-commerce,Delivered
+2262,ORD-0002262,Standard,High,B2B,In Transit
+2263,ORD-0002263,Backorder,Critical,EDI,Delivered
+2264,ORD-0002264,Backorder,High,EDI,Delivered
+2265,ORD-0002265,Backorder,Critical,EDI,Delivered
+2266,ORD-0002266,Backorder,Medium,EDI,Delivered
+2267,ORD-0002267,Backorder,Medium,EDI,Delivered
+2268,ORD-0002268,Standard,Critical,B2B,Delivered
+2269,ORD-0002269,Standard,High,B2B,Delivered
+2270,ORD-0002270,Backorder,High,EDI,In Transit
+2271,ORD-0002271,Backorder,High,EDI,Delivered
+2272,ORD-0002272,Standard,Low,B2B,In Transit
+2273,ORD-0002273,Standard,Critical,B2B,Delivered
+2274,ORD-0002274,Standard,Medium,B2B,Delivered
+2275,ORD-0002275,Express,Medium,E-commerce,Delivered
+2276,ORD-0002276,Backorder,Low,EDI,Delivered
+2277,ORD-0002277,Express,High,E-commerce,Delivered
+2278,ORD-0002278,Backorder,Medium,EDI,Delivered
+2279,ORD-0002279,Backorder,Critical,EDI,Delivered
+2280,ORD-0002280,Express,High,E-commerce,Delivered
+2281,ORD-0002281,Standard,Critical,B2B,Delivered
+2282,ORD-0002282,Standard,Low,B2B,In Transit
+2283,ORD-0002283,Express,High,E-commerce,In Transit
+2284,ORD-0002284,Backorder,Low,EDI,Delivered
+2285,ORD-0002285,Backorder,Critical,EDI,Delivered
+2286,ORD-0002286,Express,Low,E-commerce,Delivered
+2287,ORD-0002287,Express,Medium,E-commerce,Delivered
+2288,ORD-0002288,Standard,High,B2B,Delivered
+2289,ORD-0002289,Backorder,Low,EDI,In Transit
+2290,ORD-0002290,Backorder,Critical,EDI,Delivered
+2291,ORD-0002291,Express,Critical,E-commerce,Delivered
+2292,ORD-0002292,Express,High,E-commerce,Delivered
+2293,ORD-0002293,Express,High,E-commerce,Delivered
+2294,ORD-0002294,Backorder,Critical,EDI,Delivered
+2295,ORD-0002295,Standard,Low,B2B,Delivered
+2296,ORD-0002296,Express,Medium,E-commerce,Delivered
+2297,ORD-0002297,Standard,Low,B2B,Delivered
+2298,ORD-0002298,Express,Medium,E-commerce,In Transit
+2299,ORD-0002299,Backorder,Critical,EDI,Delivered
+2300,ORD-0002300,Standard,Low,B2B,Delivered
+2301,ORD-0002301,Standard,Medium,B2B,Delivered
+2302,ORD-0002302,Standard,High,B2B,In Transit
+2303,ORD-0002303,Backorder,Medium,EDI,Delivered
+2304,ORD-0002304,Backorder,Low,EDI,Delivered
+2305,ORD-0002305,Express,Critical,E-commerce,In Transit
+2306,ORD-0002306,Backorder,Medium,EDI,Delivered
+2307,ORD-0002307,Standard,Low,B2B,Delivered
+2308,ORD-0002308,Express,High,E-commerce,Delivered
+2309,ORD-0002309,Express,Critical,E-commerce,Returned
+2310,ORD-0002310,Standard,Low,B2B,Delivered
+2311,ORD-0002311,Express,Medium,E-commerce,Delivered
+2312,ORD-0002312,Standard,Low,B2B,In Transit
+2313,ORD-0002313,Standard,Low,B2B,Delivered
+2314,ORD-0002314,Express,Medium,E-commerce,In Transit
+2315,ORD-0002315,Express,High,E-commerce,Delivered
+2316,ORD-0002316,Backorder,Medium,EDI,In Transit
+2317,ORD-0002317,Express,Critical,E-commerce,Delivered
+2318,ORD-0002318,Standard,Critical,B2B,Returned
+2319,ORD-0002319,Standard,Medium,B2B,Delivered
+2320,ORD-0002320,Backorder,Critical,EDI,Delivered
+2321,ORD-0002321,Backorder,Low,EDI,Delivered
+2322,ORD-0002322,Backorder,Critical,EDI,Delivered
+2323,ORD-0002323,Standard,Medium,B2B,Delivered
+2324,ORD-0002324,Express,High,E-commerce,Delivered
+2325,ORD-0002325,Standard,Critical,B2B,Delivered
+2326,ORD-0002326,Backorder,Low,EDI,Delivered
+2327,ORD-0002327,Backorder,Critical,EDI,Delivered
+2328,ORD-0002328,Express,Critical,E-commerce,Returned
+2329,ORD-0002329,Backorder,Critical,EDI,Delivered
+2330,ORD-0002330,Backorder,Medium,EDI,Delivered
+2331,ORD-0002331,Standard,Medium,B2B,Delivered
+2332,ORD-0002332,Standard,High,B2B,Delivered
+2333,ORD-0002333,Standard,Low,B2B,Delivered
+2334,ORD-0002334,Backorder,High,EDI,Delivered
+2335,ORD-0002335,Express,Critical,E-commerce,Delivered
+2336,ORD-0002336,Standard,Critical,B2B,Delivered
+2337,ORD-0002337,Backorder,Critical,EDI,Delivered
+2338,ORD-0002338,Backorder,Medium,EDI,Delivered
+2339,ORD-0002339,Standard,Critical,B2B,Delivered
+2340,ORD-0002340,Backorder,Low,EDI,Delivered
+2341,ORD-0002341,Standard,Medium,B2B,Delivered
+2342,ORD-0002342,Backorder,Critical,EDI,Delivered
+2343,ORD-0002343,Backorder,Medium,EDI,Delivered
+2344,ORD-0002344,Backorder,Critical,EDI,Delivered
+2345,ORD-0002345,Express,High,E-commerce,Delivered
+2346,ORD-0002346,Standard,High,B2B,In Transit
+2347,ORD-0002347,Backorder,Low,EDI,Delivered
+2348,ORD-0002348,Standard,Critical,B2B,Delivered
+2349,ORD-0002349,Standard,Medium,B2B,Delivered
+2350,ORD-0002350,Standard,Low,B2B,Delivered
+2351,ORD-0002351,Standard,Medium,B2B,Delivered
+2352,ORD-0002352,Backorder,High,EDI,Delivered
+2353,ORD-0002353,Express,Medium,E-commerce,In Transit
+2354,ORD-0002354,Backorder,Medium,EDI,In Transit
+2355,ORD-0002355,Express,Critical,E-commerce,Delivered
+2356,ORD-0002356,Backorder,High,EDI,Delivered
+2357,ORD-0002357,Express,Low,E-commerce,Delivered
+2358,ORD-0002358,Express,High,E-commerce,Delivered
+2359,ORD-0002359,Standard,High,B2B,Delivered
+2360,ORD-0002360,Standard,Critical,B2B,Delivered
+2361,ORD-0002361,Standard,Critical,B2B,Delivered
+2362,ORD-0002362,Backorder,Low,EDI,Delivered
+2363,ORD-0002363,Backorder,Low,EDI,Delivered
+2364,ORD-0002364,Express,Low,E-commerce,Delivered
+2365,ORD-0002365,Backorder,High,EDI,Delivered
+2366,ORD-0002366,Backorder,High,EDI,Delivered
+2367,ORD-0002367,Standard,Critical,B2B,Delivered
+2368,ORD-0002368,Backorder,Critical,EDI,Delivered
+2369,ORD-0002369,Express,Medium,E-commerce,Delivered
+2370,ORD-0002370,Express,Critical,E-commerce,Delivered
+2371,ORD-0002371,Backorder,Medium,EDI,Delivered
+2372,ORD-0002372,Backorder,Low,EDI,Delivered
+2373,ORD-0002373,Express,Low,E-commerce,Delivered
+2374,ORD-0002374,Backorder,High,EDI,In Transit
+2375,ORD-0002375,Standard,Medium,B2B,Delivered
+2376,ORD-0002376,Standard,Low,B2B,Delivered
+2377,ORD-0002377,Standard,Low,B2B,Delivered
+2378,ORD-0002378,Express,High,E-commerce,In Transit
+2379,ORD-0002379,Backorder,High,EDI,Delivered
+2380,ORD-0002380,Backorder,High,EDI,Delivered
+2381,ORD-0002381,Standard,Medium,B2B,Delivered
+2382,ORD-0002382,Backorder,Low,EDI,Delivered
+2383,ORD-0002383,Standard,High,B2B,In Transit
+2384,ORD-0002384,Express,Critical,E-commerce,In Transit
+2385,ORD-0002385,Express,Low,E-commerce,Delivered
+2386,ORD-0002386,Express,High,E-commerce,Delivered
+2387,ORD-0002387,Backorder,Medium,EDI,In Transit
+2388,ORD-0002388,Standard,Critical,B2B,In Transit
+2389,ORD-0002389,Express,Medium,E-commerce,Delivered
+2390,ORD-0002390,Backorder,Critical,EDI,Delivered
+2391,ORD-0002391,Backorder,Medium,EDI,In Transit
+2392,ORD-0002392,Express,Low,E-commerce,Delivered
+2393,ORD-0002393,Backorder,Critical,EDI,Delivered
+2394,ORD-0002394,Backorder,Critical,EDI,Delivered
+2395,ORD-0002395,Standard,Low,B2B,Delivered
+2396,ORD-0002396,Standard,Medium,B2B,In Transit
+2397,ORD-0002397,Standard,Medium,B2B,Delivered
+2398,ORD-0002398,Standard,Medium,B2B,Delivered
+2399,ORD-0002399,Express,Low,E-commerce,Delivered
+2400,ORD-0002400,Express,Medium,E-commerce,Delivered
+2401,ORD-0002401,Backorder,Low,EDI,In Transit
+2402,ORD-0002402,Express,High,E-commerce,Delivered
+2403,ORD-0002403,Backorder,Medium,EDI,Delivered
+2404,ORD-0002404,Backorder,Low,EDI,Delivered
+2405,ORD-0002405,Backorder,Medium,EDI,Delivered
+2406,ORD-0002406,Standard,Critical,B2B,Delivered
+2407,ORD-0002407,Standard,Medium,B2B,Delivered
+2408,ORD-0002408,Backorder,Medium,EDI,Delivered
+2409,ORD-0002409,Express,Critical,E-commerce,Returned
+2410,ORD-0002410,Backorder,Medium,EDI,Delivered
+2411,ORD-0002411,Express,Low,E-commerce,Delivered
+2412,ORD-0002412,Backorder,Critical,EDI,Delivered
+2413,ORD-0002413,Backorder,Critical,EDI,Cancelled
+2414,ORD-0002414,Standard,High,B2B,Delivered
+2415,ORD-0002415,Backorder,Low,EDI,Delivered
+2416,ORD-0002416,Express,Low,E-commerce,In Transit
+2417,ORD-0002417,Express,Critical,E-commerce,Delivered
+2418,ORD-0002418,Standard,High,B2B,Delivered
+2419,ORD-0002419,Express,Medium,E-commerce,Delivered
+2420,ORD-0002420,Express,Low,E-commerce,Delivered
+2421,ORD-0002421,Standard,Critical,B2B,Delivered
+2422,ORD-0002422,Backorder,Low,EDI,Delivered
+2423,ORD-0002423,Express,Medium,E-commerce,In Transit
+2424,ORD-0002424,Backorder,Medium,EDI,Delivered
+2425,ORD-0002425,Standard,High,B2B,Delivered
+2426,ORD-0002426,Backorder,Critical,EDI,Returned
+2427,ORD-0002427,Express,Medium,E-commerce,Delivered
+2428,ORD-0002428,Express,Low,E-commerce,Delivered
+2429,ORD-0002429,Standard,High,B2B,In Transit
+2430,ORD-0002430,Standard,Critical,B2B,Delivered
+2431,ORD-0002431,Standard,Medium,B2B,Delivered
+2432,ORD-0002432,Backorder,Critical,EDI,In Transit
+2433,ORD-0002433,Backorder,High,EDI,Delivered
+2434,ORD-0002434,Express,Low,E-commerce,In Transit
+2435,ORD-0002435,Express,High,E-commerce,Delivered
+2436,ORD-0002436,Backorder,High,EDI,Delivered
+2437,ORD-0002437,Backorder,High,EDI,Delivered
+2438,ORD-0002438,Express,Critical,E-commerce,In Transit
+2439,ORD-0002439,Standard,High,B2B,Cancelled
+2440,ORD-0002440,Express,Medium,E-commerce,Delivered
+2441,ORD-0002441,Express,Low,E-commerce,Delivered
+2442,ORD-0002442,Standard,High,B2B,Delivered
+2443,ORD-0002443,Standard,Low,B2B,Delivered
+2444,ORD-0002444,Standard,Medium,B2B,In Transit
+2445,ORD-0002445,Standard,Critical,B2B,Delivered
+2446,ORD-0002446,Standard,Low,B2B,In Transit
+2447,ORD-0002447,Express,Low,E-commerce,Delivered
+2448,ORD-0002448,Standard,Critical,B2B,Delivered
+2449,ORD-0002449,Express,Low,E-commerce,In Transit
+2450,ORD-0002450,Standard,High,B2B,In Transit
+2451,ORD-0002451,Express,Medium,E-commerce,Returned
+2452,ORD-0002452,Express,Low,E-commerce,Delivered
+2453,ORD-0002453,Backorder,High,EDI,In Transit
+2454,ORD-0002454,Backorder,Low,EDI,In Transit
+2455,ORD-0002455,Standard,Medium,B2B,Delivered
+2456,ORD-0002456,Standard,Low,B2B,Delivered
+2457,ORD-0002457,Standard,High,B2B,Delivered
+2458,ORD-0002458,Backorder,Critical,EDI,Delivered
+2459,ORD-0002459,Standard,Low,B2B,Delivered
+2460,ORD-0002460,Express,Low,E-commerce,Delivered
+2461,ORD-0002461,Backorder,High,EDI,In Transit
+2462,ORD-0002462,Backorder,High,EDI,Delivered
+2463,ORD-0002463,Express,High,E-commerce,Delivered
+2464,ORD-0002464,Express,Critical,E-commerce,Delivered
+2465,ORD-0002465,Standard,Low,B2B,Delivered
+2466,ORD-0002466,Standard,Critical,B2B,Delivered
+2467,ORD-0002467,Backorder,High,EDI,Delivered
+2468,ORD-0002468,Express,Critical,E-commerce,Delivered
+2469,ORD-0002469,Backorder,Medium,EDI,Delivered
+2470,ORD-0002470,Express,Low,E-commerce,Delivered
+2471,ORD-0002471,Express,Low,E-commerce,Delivered
+2472,ORD-0002472,Backorder,Low,EDI,Delivered
+2473,ORD-0002473,Backorder,Low,EDI,In Transit
+2474,ORD-0002474,Express,Critical,E-commerce,Cancelled
+2475,ORD-0002475,Backorder,Critical,EDI,Delivered
+2476,ORD-0002476,Standard,Critical,B2B,Delivered
+2477,ORD-0002477,Backorder,High,EDI,In Transit
+2478,ORD-0002478,Backorder,Low,EDI,Delivered
+2479,ORD-0002479,Express,Medium,E-commerce,Delivered
+2480,ORD-0002480,Standard,Low,B2B,In Transit
+2481,ORD-0002481,Backorder,Low,EDI,Delivered
+2482,ORD-0002482,Standard,High,B2B,Delivered
+2483,ORD-0002483,Express,Low,E-commerce,In Transit
+2484,ORD-0002484,Backorder,Medium,EDI,Delivered
+2485,ORD-0002485,Express,Medium,E-commerce,Delivered
+2486,ORD-0002486,Standard,High,B2B,In Transit
+2487,ORD-0002487,Backorder,Low,EDI,Delivered
+2488,ORD-0002488,Standard,Medium,B2B,Delivered
+2489,ORD-0002489,Express,High,E-commerce,Delivered
+2490,ORD-0002490,Standard,Low,B2B,Delivered
+2491,ORD-0002491,Backorder,Medium,EDI,In Transit
+2492,ORD-0002492,Standard,High,B2B,Delivered
+2493,ORD-0002493,Express,High,E-commerce,In Transit
+2494,ORD-0002494,Backorder,Medium,EDI,Delivered
+2495,ORD-0002495,Standard,Critical,B2B,Delivered
+2496,ORD-0002496,Express,Low,E-commerce,Delivered
+2497,ORD-0002497,Backorder,High,EDI,Delivered
+2498,ORD-0002498,Standard,Medium,B2B,Delivered
+2499,ORD-0002499,Express,Medium,E-commerce,Delivered
+2500,ORD-0002500,Express,Low,E-commerce,Delivered

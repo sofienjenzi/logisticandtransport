@@ -1,0 +1,139 @@
+{
+  "profiles": {
+    "dim_carrier": {
+      "rows": 15,
+      "columns": 7,
+      "null_cells": 0
+    },
+    "dim_client": {
+      "rows": 30,
+      "columns": 16,
+      "null_cells": 0
+    },
+    "dim_date": {
+      "rows": 2193,
+      "columns": 16,
+      "null_cells": 0
+    },
+    "dim_driver": {
+      "rows": 54,
+      "columns": 14,
+      "null_cells": 0
+    },
+    "dim_employee": {
+      "rows": 30,
+      "columns": 11,
+      "null_cells": 0
+    },
+    "dim_incident": {
+      "rows": 5,
+      "columns": 6,
+      "null_cells": 0
+    },
+    "dim_order": {
+      "rows": 2500,
+      "columns": 6,
+      "null_cells": 0
+    },
+    "dim_product": {
+      "rows": 5,
+      "columns": 14,
+      "null_cells": 0
+    },
+    "dim_route": {
+      "rows": 12,
+      "columns": 10,
+      "null_cells": 0
+    },
+    "dim_supplier": {
+      "rows": 24,
+      "columns": 14,
+      "null_cells": 0
+    },
+    "dim_transport_mode": {
+      "rows": 4,
+      "columns": 6,
+      "null_cells": 0
+    },
+    "dim_vehicle": {
+      "rows": 12,
+      "columns": 15,
+      "null_cells": 0
+    },
+    "dim_warehouse": {
+      "rows": 9,
+      "columns": 10,
+      "null_cells": 0
+    },
+    "fact_customer_satisfaction": {
+      "rows": 2400,
+      "columns": 9,
+      "null_cells": 0
+    },
+    "fact_delivery": {
+      "rows": 2400,
+      "columns": 13,
+      "null_cells": 0
+    },
+    "fact_driver_presence": {
+      "rows": 2400,
+      "columns": 8,
+      "null_cells": 0
+    },
+    "fact_fuel": {
+      "rows": 2400,
+      "columns": 7,
+      "null_cells": 0
+    },
+    "fact_incident": {
+      "rows": 2400,
+      "columns": 11,
+      "null_cells": 0
+    },
+    "fact_maintenance": {
+      "rows": 2400,
+      "columns": 6,
+      "null_cells": 0
+    },
+    "fact_purchase": {
+      "rows": 2400,
+      "columns": 11,
+      "null_cells": 0
+    },
+    "fact_sales": {
+      "rows": 2400,
+      "columns": 13,
+      "null_cells": 0
+    },
+    "fact_stock": {
+      "rows": 2400,
+      "columns": 10,
+      "null_cells": 0
+    },
+    "fact_transport": {
+      "rows": 2400,
+      "columns": 14,
+      "null_cells": 0
+    }
+  },
+  "relationships": {
+    "fact_sales.sk_date->dim_date": 0,
+    "fact_sales.sk_client->dim_client": 0,
+    "fact_sales.sk_product->dim_product": 0,
+    "fact_sales.sk_order->dim_order": 0,
+    "fact_purchase.sk_supplier->dim_supplier": 0,
+    "fact_delivery.sk_driver->dim_driver": 0,
+    "fact_delivery.sk_vehicle->dim_vehicle": 0,
+    "fact_delivery.sk_route->dim_route": 0,
+    "fact_transport.sk_carrier->dim_carrier": 0,
+    "fact_transport.sk_transport_mode->dim_transport_mode": 0,
+    "fact_stock.sk_warehouse->dim_warehouse": 0,
+    "fact_incident.sk_incident->dim_incident": 0
+  },
+  "business_rules": {
+    "fact_sales.margin_consistency_errors": 0,
+    "fact_driver_presence.consistency_errors": 0,
+    "fact_delivery.negative_delay_errors": 0,
+    "fact_stock.stockout_flag_errors": 0
+  }
+}
