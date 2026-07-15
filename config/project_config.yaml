@@ -1,0 +1,143 @@
+project:
+  seed: 20260701
+  output_format: csv
+  start_date: 2024-01-01
+  end_date: 2025-12-31
+
+countries:
+  - code: FR
+    name: France
+    iso3: FRA
+    currency: EUR
+    cities:
+      - Paris
+      - Lyon
+      - Marseille
+      - Lille
+      - Bordeaux
+  - code: DE
+    name: Germany
+    iso3: DEU
+    currency: EUR
+    cities:
+      - Berlin
+      - Hamburg
+      - Munich
+      - Frankfurt
+      - Cologne
+  - code: ES
+    name: Spain
+    iso3: ESP
+    currency: EUR
+    cities:
+      - Madrid
+      - Barcelona
+      - Valencia
+      - Seville
+      - Bilbao
+
+clients:
+  - Carrefour
+  - Decathlon
+  - Leroy Merlin
+  - Aldi
+  - Lidl
+  - El Corte Ingles
+  - Mercadona
+  - MediaMarkt
+  - Zalando
+  - Metro AG
+
+suppliers:
+  - DHL Supply Chain
+  - DB Schenker
+  - Geodis
+  - FM Logistic
+  - Kuehne+Nagel
+  - XPO Logistics
+  - ID Logistics
+  - Rhenus Logistics
+
+transporters:
+  - DHL Freight
+  - DB Schenker Road
+  - Gefco
+  - Rhenus Road
+  - XPO Connect Europe
+
+products:
+  - code: P001
+    name: Palletized Food Dry
+    category: Food
+    sub_category: Dry Goods
+    unit: pallet
+    weight_kg: 450
+    volume_m3: 1.2
+    storage_temp_c: 18
+    fragile: false
+  - code: P002
+    name: Chilled Dairy
+    category: Food
+    sub_category: Chilled
+    unit: pallet
+    weight_kg: 400
+    volume_m3: 1.1
+    storage_temp_c: 4
+    fragile: true
+  - code: P003
+    name: Consumer Electronics
+    category: NonFood
+    sub_category: Electronics
+    unit: pallet
+    weight_kg: 320
+    volume_m3: 1.0
+    storage_temp_c: 20
+    fragile: true
+  - code: P004
+    name: Home Care
+    category: FMCG
+    sub_category: Cleaning
+    unit: pallet
+    weight_kg: 500
+    volume_m3: 1.3
+    storage_temp_c: 18
+    fragile: false
+  - code: P005
+    name: Textile Batch
+    category: NonFood
+    sub_category: Textile
+    unit: pallet
+    weight_kg: 280
+    volume_m3: 1.4
+    storage_temp_c: 20
+    fragile: false
+
+vehicles:
+  - type: Tractor + Trailer
+    brand: Volvo
+    model: FH16
+    fuel_type: Diesel
+    capacity_weight_kg: 24000
+    capacity_volume_m3: 90
+    consumption_l_per_100km: 29
+  - type: Tractor + Trailer
+    brand: Mercedes-Benz
+    model: Actros
+    fuel_type: Diesel
+    capacity_weight_kg: 24000
+    capacity_volume_m3: 90
+    consumption_l_per_100km: 28
+  - type: Rigid Truck
+    brand: MAN
+    model: TGS
+    fuel_type: Diesel
+    capacity_weight_kg: 12000
+    capacity_volume_m3: 45
+    consumption_l_per_100km: 22
+  - type: Van
+    brand: Iveco
+    model: Daily
+    fuel_type: Diesel
+    capacity_weight_kg: 3500
+    capacity_volume_m3: 18
+    consumption_l_per_100km: 12

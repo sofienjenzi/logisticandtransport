@@ -1,0 +1,16 @@
+sk_carrier,carrier_code,carrier_name,carrier_type,cost_per_km,performance_score,sla_level
+1,CAR-FR-001,DHL Freight,Road,1.25,88,Standard
+2,CAR-FR-002,DB Schenker Road,Road,1.56,79,Critical
+3,CAR-FR-003,Gefco,Road,1.52,95,Premium
+4,CAR-FR-004,Rhenus Road,Road,1.13,96,Premium
+5,CAR-FR-005,XPO Connect Europe,Road,0.97,80,Standard
+6,CAR-DE-001,DHL Freight,Road,1.28,91,Critical
+7,CAR-DE-002,DB Schenker Road,Road,1.07,90,Premium
+8,CAR-DE-003,Gefco,Road,1.09,92,Premium
+9,CAR-DE-004,Rhenus Road,Road,1.6,83,Critical
+10,CAR-DE-005,XPO Connect Europe,Road,1.57,80,Standard
+11,CAR-ES-001,DHL Freight,Road,1.37,80,Critical
+12,CAR-ES-002,DB Schenker Road,Road,1.0,83,Critical
+13,CAR-ES-003,Gefco,Road,1.04,87,Critical
+14,CAR-ES-004,Rhenus Road,Road,1.52,95,Premium
+15,CAR-ES-005,XPO Connect Europe,Road,1.11,94,Critical

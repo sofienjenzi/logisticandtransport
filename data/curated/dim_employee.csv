@@ -1,0 +1,31 @@
+sk_employee,employee_code,last_name,first_name,department,role_name,manager_name,hire_date,salary_monthly,status,country_code
+1,EMP-FR-001,Last1,First1,Operations,Dispatcher,Manager FR-1,2020-01-07,4796.0,Active,FR
+2,EMP-FR-002,Last2,First2,Procurement,Planner,Manager FR-2,2019-02-02,4025.0,Active,FR
+3,EMP-FR-003,Last3,First3,Sales,Data Analyst,Manager FR-3,2018-11-23,4894.0,Active,FR
+4,EMP-FR-004,Last4,First4,Operations,Data Analyst,Manager FR-1,2018-01-07,3004.0,Active,FR
+5,EMP-FR-005,Last5,First5,Finance,Procurement Specialist,Manager FR-2,2017-08-02,2643.0,Active,FR
+6,EMP-FR-006,Last6,First6,Finance,Dispatcher,Manager FR-3,2015-08-20,3111.0,Active,FR
+7,EMP-FR-007,Last7,First7,Sales,Data Analyst,Manager FR-1,2018-03-21,3774.0,Active,FR
+8,EMP-FR-008,Last8,First8,Sales,Dispatcher,Manager FR-2,2020-07-07,3806.0,Active,FR
+9,EMP-FR-009,Last9,First9,Sales,Dispatcher,Manager FR-3,2020-11-05,2506.0,Active,FR
+10,EMP-FR-010,Last10,First10,Procurement,Dispatcher,Manager FR-1,2015-06-27,4441.0,Active,FR
+11,EMP-DE-001,Last1,First1,Finance,Procurement Specialist,Manager DE-1,2017-08-05,3903.0,Active,DE
+12,EMP-DE-002,Last2,First2,Operations,Procurement Specialist,Manager DE-2,2022-09-24,4048.0,Active,DE
+13,EMP-DE-003,Last3,First3,Operations,Planner,Manager DE-3,2014-09-27,4720.0,Active,DE
+14,EMP-DE-004,Last4,First4,Procurement,Procurement Specialist,Manager DE-1,2017-10-07,2653.0,Active,DE
+15,EMP-DE-005,Last5,First5,Sales,Planner,Manager DE-2,2014-11-17,4330.0,Active,DE
+16,EMP-DE-006,Last6,First6,Finance,Dispatcher,Manager DE-3,2015-08-17,3951.0,Active,DE
+17,EMP-DE-007,Last7,First7,Sales,Procurement Specialist,Manager DE-1,2022-11-26,4358.0,Active,DE
+18,EMP-DE-008,Last8,First8,Procurement,Procurement Specialist,Manager DE-2,2017-06-09,3873.0,Active,DE
+19,EMP-DE-009,Last9,First9,Procurement,Procurement Specialist,Manager DE-3,2017-02-08,4053.0,Active,DE
+20,EMP-DE-010,Last10,First10,Operations,Planner,Manager DE-1,2014-09-09,4660.0,Active,DE
+21,EMP-ES-001,Last1,First1,Operations,Warehouse Supervisor,Manager ES-1,2016-01-07,2912.0,Active,ES
+22,EMP-ES-002,Last2,First2,Finance,Warehouse Supervisor,Manager ES-2,2021-04-10,3627.0,Active,ES
+23,EMP-ES-003,Last3,First3,Operations,Dispatcher,Manager ES-3,2020-05-23,2656.0,Active,ES
+24,EMP-ES-004,Last4,First4,Sales,Planner,Manager ES-1,2014-07-25,4430.0,Active,ES
+25,EMP-ES-005,Last5,First5,Sales,Planner,Manager ES-2,2014-07-19,4010.0,Active,ES
+26,EMP-ES-006,Last6,First6,Sales,Dispatcher,Manager ES-3,2020-11-11,3206.0,Active,ES
+27,EMP-ES-007,Last7,First7,Procurement,Procurement Specialist,Manager ES-1,2017-10-22,4413.0,Active,ES
+28,EMP-ES-008,Last8,First8,Operations,Warehouse Supervisor,Manager ES-2,2016-01-01,2632.0,Active,ES
+29,EMP-ES-009,Last9,First9,Finance,Dispatcher,Manager ES-3,2015-04-22,3111.0,Active,ES
+30,EMP-ES-010,Last10,First10,Operations,Planner,Manager ES-1,2014-01-07,4080.0,Active,ES

@@ -1,0 +1,6 @@
+sk_incident,incident_code,incident_type,category,severity_level,main_cause
+1,INC-001,Delay,Operational,Low,Traffic congestion
+2,INC-002,Accident,Safety,High,Road collision
+3,INC-003,Breakdown,Technical,Medium,Engine fault
+4,INC-004,Damaged Goods,Quality,Medium,Handling issue
+5,INC-005,Documentation,Administrative,Low,Missing papers

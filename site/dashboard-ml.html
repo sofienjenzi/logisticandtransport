@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard IA & ML - ITESLAB8LOGISTIC8ANALITYCS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css?v=ml-20260711" />
+  <style>
+    .hero { padding: 18px; margin-bottom: 10px; }
+    .hero h2 { margin: 0 0 8px; font-size: 24px; }
+    .hero p { margin: 0; color: var(--muted); }
+    .hero-note { margin-top: 12px; padding: 10px 12px; border-radius: 8px; background: #f8fafc; border: 1px solid var(--border); font-size: 13px; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .badge { background: rgba(15,118,110,.08); color: var(--brand); padding: 6px 10px; border-radius: 999px; font-weight: 800; font-size: 12px; }
+    .ml-grid { display: grid; grid-template-columns: repeat(3, minmax(250px, 1fr)); gap: 10px; }
+    .ml-card { padding: 14px; }
+    .ml-card h3 { margin: 0 0 8px; font-size: 16px; }
+    .ml-card p { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+    .metric { display: flex; justify-content: space-between; gap: 8px; padding: 8px 0; border-bottom: 1px dashed var(--border); font-size: 13px; }
+    .metric:last-child { border-bottom: 0; }
+    .forms-grid { display: grid; grid-template-columns: repeat(3, minmax(280px, 1fr)); gap: 10px; margin-top: 10px; }
+    .form-card { padding: 14px; }
+    .form-card h3 { margin: 0 0 8px; }
+    .form-card p { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .form-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); font-weight: 700; }
+    .form-grid input, .form-grid select { width: 100%; }
+    .full { grid-column: 1 / -1; }
+    .result { margin-top: 12px; padding: 12px; border-radius: 8px; background: linear-gradient(135deg, rgba(15,118,110,.06), rgba(217,119,6,.08)); border: 1px solid var(--border); min-height: 88px; }
+    .result strong { display: block; font-size: 18px; margin-bottom: 6px; }
+    .hint { margin-top: 10px; font-size: 12px; color: var(--muted); }
+    .chip-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .chip { padding: 5px 8px; border-radius: 999px; border: 1px solid var(--border); background: #fff; font-size: 11px; font-weight: 700; }
+    @media (max-width: 1180px) { .ml-grid, .forms-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 760px) { .form-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="topbar">
+      <div class="title-wrap">
+        <a class="back-link" href="index.html">Portail</a>
+        <h1>Dashboard IA & ML</h1>
+        <p>Prédiction des délais, scoring client et maintenance prédictive intégrés au site.</p>
+      </div>
+      <div class="nav-wrap">
+        <a class="nav-btn active" href="dashboard-ml.html">IA & ML</a>
+      </div>
+    </header>
+
+    <section class="panel hero">
+      <h2>Couche intelligente pour une plateforme logistique plus professionnelle</h2>
+      <p>Cette page ajoute 3 cas d'usage business à forte valeur : estimation du temps réel de livraison, classification automatique des clients et détection précoce du risque de panne.</p>
+      <div class="badge-row">
+        <span class="badge">Régression livraison</span>
+        <span class="badge">Segmentation client</span>
+        <span class="badge">Maintenance prédictive</span>
+      </div>
+      <div class="hero-note" id="dataScopeNote">Chargement du périmètre IA...</div>
+    </section>
+
+    <section class="ml-grid">
+      <article class="panel ml-card">
+        <h3>1. Livraison</h3>
+        <p>Mesure le délai total estimé à partir des caractéristiques opérationnelles disponibles.</p>
+        <div id="deliveryMetrics"></div>
+      </article>
+      <article class="panel ml-card">
+        <h3>2. Client</h3>
+        <p>Classe automatiquement le portefeuille client en segments actionnables.</p>
+        <div id="clientMetrics"></div>
+      </article>
+      <article class="panel ml-card">
+        <h3>3. Maintenance</h3>
+        <p>Détecte les véhicules à risque de panne pour anticiper l'arrêt d'exploitation.</p>
+        <div id="maintenanceMetrics"></div>
+      </article>
+    </section>
+
+    <section class="forms-grid">
+      <article class="panel form-card">
+        <h3>Prédiction des délais de livraison</h3>
+        <p>Variables réellement branchées : distance, type véhicule, poids, volume, région, chauffeur, jour, type client et priorité.</p>
+        <form id="deliveryForm" class="form-grid">
+          <label>Distance (km)<input type="number" step="0.1" name="distance_km" value="420" /></label>
+          <label>Type véhicule
+            <select name="vehicle_type">
+              <option>Truck</option>
+              <option>Van</option>
+              <option>Tractor + Trailer</option>
+              <option>Rigid Truck</option>
+            </select>
+          </label>
+          <label>Poids total (kg)<input type="number" step="0.1" name="total_weight_kg" value="1250" /></label>
+          <label>Volume total (m3)<input type="number" step="0.1" name="total_volume_m3" value="8.5" /></label>
+          <label>Région client<input type="text" name="region" value="Paris" /></label>
+          <label>Code chauffeur<input type="text" name="driver_code" value="DRV-FR-001" /></label>
+          <label>Expérience chauffeur (ans)<input type="number" step="1" name="experience_years" value="8" /></label>
+          <label>Jour de semaine
+            <select name="day_name">
+              <option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option selected>Friday</option><option>Saturday</option><option>Sunday</option>
+            </select>
+          </label>
+          <label>Mois<input type="number" step="1" min="1" max="12" name="month_num" value="7" /></label>
+          <label>Weekend
+            <select name="is_weekend"><option value="0" selected>Non</option><option value="1">Oui</option></select>
+          </label>
+          <label>Type client
+            <select name="client_type"><option selected>B2B</option><option>B2C</option></select>
+          </label>
+          <label>Priorité
+            <select name="priority_level"><option>Low</option><option>Medium</option><option>High</option><option selected>Critical</option></select>
+          </label>
+          <label>Difficulté route
+            <select name="difficulty_level"><option>Low</option><option selected>Medium</option><option>High</option></select>
+          </label>
+          <label>Zone
+            <select name="zone_type"><option selected>Domestic</option><option>Cross-border</option></select>
+          </label>
+          <label>Temps planifié (h)<input type="number" step="0.1" name="planned_time_hours" value="5.4" /></label>
+          <div class="full"><button class="btn" type="submit">Prédire</button></div>
+        </form>
+        <div class="result" id="deliveryResult"><strong>En attente</strong><span>Lance une prédiction pour obtenir le temps estimé de livraison.</span></div>
+        <div class="hint">Trafic, météo et heure de départ sont préparés comme extension de données, mais non encore présents dans les CSV du projet.</div>
+      </article>
+
+      <article class="panel form-card">
+        <h3>Classification des clients</h3>
+        <p>Variables branchées : commandes, chiffre d'affaires, réclamations, satisfaction et solvabilité.</p>
+        <form id="clientForm" class="form-grid">
+          <label>Nombre de commandes<input type="number" step="1" name="nombre_commandes" value="85" /></label>
+          <label>Chiffre d'affaires (€)<input type="number" step="0.1" name="chiffre_affaires" value="135000" /></label>
+          <label>Réclamations<input type="number" step="1" name="reclamations" value="1" /></label>
+          <label>Satisfaction moyenne<input type="number" step="0.1" min="0" max="5" name="satisfaction_moyenne" value="4.4" /></label>
+          <label>Résolution moyenne (h)<input type="number" step="0.1" name="resolution_moyenne_h" value="14" /></label>
+          <label>Credit score<input type="number" step="1" name="credit_score" value="720" /></label>
+          <label>Credit limit<input type="number" step="0.1" name="credit_limit" value="250000" /></label>
+          <label>Loyalty level
+            <select name="loyalty_level"><option>Bronze</option><option>Silver</option><option selected>Gold</option></select>
+          </label>
+          <label>Type client
+            <select name="client_type"><option selected>B2B</option><option>B2C</option></select>
+          </label>
+          <label>Région<input type="text" name="region" value="Paris" /></label>
+          <label class="full">Secteur d'activité<input type="text" name="sector_activity" value="Retail" /></label>
+          <div class="full"><button class="btn" type="submit">Classer</button></div>
+        </form>
+        <div class="result" id="clientResult"><strong>En attente</strong><span>Lance une classification pour obtenir un segment client.</span></div>
+        <div class="hint">Paiement et retours pourront être ajoutés dès que ces données existeront dans le warehouse.</div>
+      </article>
+
+      <article class="panel form-card">
+        <h3>Maintenance prédictive</h3>
+        <p>Variables branchées : kilométrage, âge, historique de réparations, consommation et contexte véhicule.</p>
+        <form id="maintenanceForm" class="form-grid">
+          <label>Kilométrage<input type="number" step="1" name="kilometrage" value="285000" /></label>
+          <label>Âge véhicule (ans)<input type="number" step="1" name="age" value="6" /></label>
+          <label>Nombre de réparations<input type="number" step="1" name="nombre_reparations" value="7" /></label>
+          <label>Consommation (L/100km)<input type="number" step="0.1" name="consommation" value="31.5" /></label>
+          <label>Immobilisation (h)<input type="number" step="0.1" name="immobilization_hours" value="9.2" /></label>
+          <label>Coût maintenance (€)<input type="number" step="0.1" name="maintenance_cost_amount" value="980" /></label>
+          <label>Type véhicule
+            <select name="vehicle_type"><option>Truck</option><option selected>Tractor + Trailer</option><option>Van</option><option>Rigid Truck</option></select>
+          </label>
+          <label>Carburant
+            <select name="fuel_type"><option selected>Diesel</option><option>Electric</option><option>LNG</option></select>
+          </label>
+          <label>Marque
+            <select name="brand"><option selected>Volvo</option><option>Mercedes-Benz</option><option>Scania</option><option>MAN</option></select>
+          </label>
+          <label>Statut
+            <select name="status"><option selected>Active</option><option>Maintenance</option><option>Standby</option></select>
+          </label>
+          <div class="full"><button class="btn" type="submit">Évaluer le risque</button></div>
+        </form>
+        <div class="result" id="maintenanceResult"><strong>En attente</strong><span>Lance une prédiction pour estimer le risque de panne.</span></div>
+        <div class="hint">Température moteur, pression pneus et vibrations sont prévus pour une v2 IoT/capteurs.</div>
+      </article>
+    </section>
+  </main>
+  <script src="js/ml-dashboard.js?v=ml-20260711"></script>
+</body>
+</html>

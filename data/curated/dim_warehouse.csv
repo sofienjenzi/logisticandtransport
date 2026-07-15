@@ -1,0 +1,10 @@
+sk_warehouse,warehouse_code,warehouse_name,city,region,country_code,warehouse_type,area_m2,capacity_pallets,manager_name
+1,WH-FR-01,Hub Paris,Paris,Paris,FR,Regional DC,9367.0,6367,Manager FR-1
+2,WH-FR-02,Hub Lyon,Lyon,Lyon,FR,Urban DC,12939.0,15939,Manager FR-2
+3,WH-FR-03,Hub Marseille,Marseille,Marseille,FR,Urban DC,11588.0,8588,Manager FR-3
+4,WH-DE-01,Hub Berlin,Berlin,Berlin,DE,Regional DC,10058.0,7058,Manager DE-1
+5,WH-DE-02,Hub Hamburg,Hamburg,Hamburg,DE,Urban DC,7649.0,4649,Manager DE-2
+6,WH-DE-03,Hub Munich,Munich,Munich,DE,Urban DC,12381.0,15381,Manager DE-3
+7,WH-ES-01,Hub Madrid,Madrid,Madrid,ES,Regional DC,13565.0,7565,Manager ES-1
+8,WH-ES-02,Hub Barcelona,Barcelona,Barcelona,ES,Urban DC,13103.0,10103,Manager ES-2
+9,WH-ES-03,Hub Valencia,Valencia,Valencia,ES,Urban DC,8413.0,14413,Manager ES-3

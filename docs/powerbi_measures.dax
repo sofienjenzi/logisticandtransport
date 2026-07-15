@@ -1,0 +1,796 @@
+-- =========================================================
+-- LOGISTICS POWER BI - PROFESSIONAL MEASURES
+-- Source: data/logistics_exports.zip
+-- Create these as MEASURES in a dedicated table named _Measures.
+--
+-- Important:
+-- 1. Do not use rate measures such as [Promoter Rate %] as the value of a pie chart by nps_class.
+--    Use count measures or the dedicated "... Share %" measures below.
+-- 2. dim_date contains one row per date and country. For time intelligence, create dim_calendar
+--    from docs/powerbi_model_calculated_tables.dax and use dim_calendar[full_date].
+-- =========================================================
+
+-- -------------------------
+-- 0. Generic helpers
+-- -------------------------
+
+Selected Country Label =
+IF(
+    HASONEVALUE(dim_date[country_code]),
+    SELECTEDVALUE(dim_date[country_code]),
+    "Tous pays"
+)
+
+Selected Year Label =
+IF(
+    HASONEVALUE(dim_date[year_num]),
+    FORMAT(SELECTEDVALUE(dim_date[year_num]), "0"),
+    "Toutes annees"
+)
+
+Report Context Title =
+[Selected Country Label] & " | " & [Selected Year Label]
+
+-- -------------------------
+-- 1. Sales and margin
+-- -------------------------
+
+Total Revenue = SUM(fact_sales[revenue_amount])
+
+Total Cost = SUM(fact_sales[cost_amount])
+
+Total Margin = SUM(fact_sales[margin_amount])
+
+Margin % = DIVIDE([Total Margin], [Total Revenue])
+
+Sales Lines = COUNTROWS(fact_sales)
+
+Average Selling Price = AVERAGE(fact_sales[unit_sale_price])
+
+Average Discount % =
+DIVIDE(
+    SUM(fact_sales[discount_amount]),
+    SUM(fact_sales[revenue_amount]) + SUM(fact_sales[discount_amount])
+)
+
+Revenue PY =
+CALCULATE(
+    [Total Revenue],
+    SAMEPERIODLASTYEAR(dim_calendar[full_date])
+)
+
+Revenue YoY % =
+DIVIDE([Total Revenue] - [Revenue PY], [Revenue PY])
+
+Revenue YTD =
+TOTALYTD([Total Revenue], dim_calendar[full_date])
+
+Revenue 3M Moving Avg =
+VAR LastVisibleDate = MAX(dim_calendar[full_date])
+RETURN
+AVERAGEX(
+    DATESINPERIOD(dim_calendar[full_date], LastVisibleDate, -3, MONTH),
+    [Total Revenue]
+)
+
+Margin Target % = 0.18
+
+Margin Gap % = [Margin %] - [Margin Target %]
+
+Margin Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([Margin %]), "No Data",
+    [Margin %] >= 0.22, "Excellent",
+    [Margin %] >= 0.15, "Good",
+    [Margin %] >= 0.08, "Watch",
+    "Critical"
+)
+
+Margin Status Color =
+SWITCH(
+    [Margin Status],
+    "Excellent", "#16A34A",
+    "Good", "#0F766E",
+    "Watch", "#F59E0B",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+Margin Band Lines = COUNTROWS(fact_sales)
+
+Margin Band Share % =
+DIVIDE(
+    [Margin Band Lines],
+    CALCULATE(
+        [Margin Band Lines],
+        ALLSELECTED(fact_sales[margin_band])
+    )
+)
+
+Sales Channel Lines = COUNTROWS(fact_sales)
+
+Sales Channel Share % =
+DIVIDE(
+    [Sales Channel Lines],
+    CALCULATE(
+        [Sales Channel Lines],
+        ALLSELECTED(dim_order[sales_channel])
+    )
+)
+
+Revenue % of Selected Clients =
+DIVIDE(
+    [Total Revenue],
+    CALCULATE(
+        [Total Revenue],
+        ALLSELECTED(dim_client[client_name])
+    )
+)
+
+Revenue Rank Client =
+IF(
+    ISINSCOPE(dim_client[client_name]),
+    RANKX(
+        ALLSELECTED(dim_client[client_name]),
+        [Total Revenue],
+        ,
+        DESC,
+        Dense
+    )
+)
+
+Top Client Flag =
+IF([Revenue Rank Client] <= 10, "Top 10", "Others")
+
+-- -------------------------
+-- 2. Purchases and suppliers
+-- -------------------------
+
+Purchase Amount = SUM(fact_purchase[purchase_amount])
+
+Purchase Count = COUNTROWS(fact_purchase)
+
+Average Real Purchase Delay = AVERAGE(fact_purchase[real_delay_days])
+
+Average Purchase Delay Gap = AVERAGE(fact_purchase[delay_gap_days])
+
+Purchase On Time Count =
+CALCULATE(
+    [Purchase Count],
+    fact_purchase[delay_gap_days] <= 0
+)
+
+Purchase On Time Rate % = DIVIDE([Purchase On Time Count], [Purchase Count])
+
+Purchase Late Count =
+CALCULATE(
+    [Purchase Count],
+    fact_purchase[delay_gap_days] > 0
+)
+
+Purchase Delay Class Lines = COUNTROWS(fact_purchase)
+
+Purchase Delay Class Share % =
+DIVIDE(
+    [Purchase Delay Class Lines],
+    CALCULATE(
+        [Purchase Delay Class Lines],
+        ALLSELECTED(fact_purchase[Purchase Delay Class])
+    )
+)
+
+Purchase Delay Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([Average Purchase Delay Gap]), "No Data",
+    [Average Purchase Delay Gap] <= 0, "Ahead",
+    [Average Purchase Delay Gap] <= 1, "Acceptable",
+    [Average Purchase Delay Gap] <= 2, "Late",
+    "Critical"
+)
+
+Purchase Delay Color =
+SWITCH(
+    [Purchase Delay Status],
+    "Ahead", "#16A34A",
+    "Acceptable", "#0F766E",
+    "Late", "#F59E0B",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+Supplier Cost Rank =
+IF(
+    ISINSCOPE(dim_supplier[supplier_name]),
+    RANKX(
+        ALLSELECTED(dim_supplier[supplier_name]),
+        [Purchase Amount],
+        ,
+        DESC,
+        Dense
+    )
+)
+
+-- -------------------------
+-- 3. Stock
+-- -------------------------
+
+Stock Value = SUM(fact_stock[stock_value_amount])
+
+Stock Lines = COUNTROWS(fact_stock)
+
+Stockout Count =
+CALCULATE(
+    [Stock Lines],
+    fact_stock[stockout_flag] = 1
+)
+
+Stockout Rate % = DIVIDE([Stockout Count], [Stock Lines])
+
+Stock Availability % = 1 - [Stockout Rate %]
+
+Stock Gap Units =
+SUMX(
+    fact_stock,
+    fact_stock[stock_real] - fact_stock[stock_theoretical]
+)
+
+Stock Coverage Index =
+DIVIDE(
+    SUM(fact_stock[stock_real]),
+    SUM(fact_stock[safety_stock])
+)
+
+Stock Status Lines = COUNTROWS(fact_stock)
+
+Stock Status Share % =
+DIVIDE(
+    [Stock Status Lines],
+    CALCULATE(
+        [Stock Status Lines],
+        ALLSELECTED(fact_stock[stock_status])
+    )
+)
+
+Stock Risk Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([Stockout Rate %]), "No Data",
+    [Stockout Rate %] <= 0.05 && [Stock Coverage Index] >= 1.20, "Healthy",
+    [Stockout Rate %] <= 0.12 && [Stock Coverage Index] >= 1.00, "Watch",
+    [Stockout Rate %] <= 0.20, "Risk",
+    "Critical"
+)
+
+Stock Risk Color =
+SWITCH(
+    [Stock Risk Status],
+    "Healthy", "#16A34A",
+    "Watch", "#F59E0B",
+    "Risk", "#EA580C",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+-- -------------------------
+-- 4. Delivery service
+-- -------------------------
+
+Delivery Count = COUNTROWS(fact_delivery)
+
+On Time Deliveries =
+CALCULATE(
+    [Delivery Count],
+    fact_delivery[delivered_on_time_flag] = 1
+)
+
+Late Delivery Count =
+CALCULATE(
+    [Delivery Count],
+    fact_delivery[delivered_on_time_flag] = 0
+)
+
+On Time Rate % = DIVIDE([On Time Deliveries], [Delivery Count])
+
+Late Delivery % = DIVIDE([Late Delivery Count], [Delivery Count])
+
+Average Service Rate = AVERAGE(fact_delivery[service_rate])
+
+Average Delay Minutes = AVERAGE(fact_delivery[delay_minutes])
+
+Delivery Target % = 0.90
+
+Delivery Target Gap % = [On Time Rate %] - [Delivery Target %]
+
+Delay Category Lines = COUNTROWS(fact_delivery)
+
+Delay Category Share % =
+DIVIDE(
+    [Delay Category Lines],
+    CALCULATE(
+        [Delay Category Lines],
+        ALLSELECTED(fact_delivery[delay_category])
+    )
+)
+
+Delivery Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([On Time Rate %]), "No Data",
+    [On Time Rate %] >= 0.90, "Excellent",
+    [On Time Rate %] >= 0.78, "Good",
+    [On Time Rate %] >= 0.65, "Watch",
+    "Critical"
+)
+
+Delivery Status Color =
+SWITCH(
+    [Delivery Status],
+    "Excellent", "#16A34A",
+    "Good", "#0F766E",
+    "Watch", "#F59E0B",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+Client Service Rank =
+IF(
+    ISINSCOPE(dim_client[client_name]),
+    RANKX(
+        ALLSELECTED(dim_client[client_name]),
+        [On Time Rate %],
+        ,
+        DESC,
+        Dense
+    )
+)
+
+Worst Client Service Rank =
+IF(
+    ISINSCOPE(dim_client[client_name]),
+    RANKX(
+        ALLSELECTED(dim_client[client_name]),
+        [On Time Rate %],
+        ,
+        ASC,
+        Dense
+    )
+)
+
+-- -------------------------
+-- 5. Transport
+-- -------------------------
+
+Transport Count = COUNTROWS(fact_transport)
+
+Transport Cost = SUM(fact_transport[transport_cost_amount])
+
+Distance Km = SUM(fact_transport[distance_km])
+
+Cost per Km = DIVIDE([Transport Cost], [Distance Km])
+
+Average Fill Rate = AVERAGE(fact_transport[fill_rate])
+
+CO2 Kg = SUM(fact_transport[co2_kg])
+
+CO2 per Km = DIVIDE([CO2 Kg], [Distance Km])
+
+Transport Cost PY =
+CALCULATE(
+    [Transport Cost],
+    SAMEPERIODLASTYEAR(dim_calendar[full_date])
+)
+
+Transport Cost YoY % =
+DIVIDE([Transport Cost] - [Transport Cost PY], [Transport Cost PY])
+
+Transport Mode Lines = COUNTROWS(fact_transport)
+
+Transport Mode Share % =
+DIVIDE(
+    [Transport Mode Lines],
+    CALCULATE(
+        [Transport Mode Lines],
+        ALLSELECTED(dim_transport_mode[transport_mode])
+    )
+)
+
+Fill Band Lines = COUNTROWS(fact_transport)
+
+Fill Band Share % =
+DIVIDE(
+    [Fill Band Lines],
+    CALCULATE(
+        [Fill Band Lines],
+        ALLSELECTED(fact_transport[fill_rate_band])
+    )
+)
+
+Fill Rate Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([Average Fill Rate]), "No Data",
+    [Average Fill Rate] >= 0.85, "Optimized",
+    [Average Fill Rate] >= 0.72, "Good",
+    [Average Fill Rate] >= 0.60, "Underused",
+    "Critical"
+)
+
+Fill Rate Color =
+SWITCH(
+    [Fill Rate Status],
+    "Optimized", "#16A34A",
+    "Good", "#0F766E",
+    "Underused", "#F59E0B",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+Carrier Cost Rank =
+IF(
+    ISINSCOPE(dim_carrier[carrier_name]),
+    RANKX(
+        ALLSELECTED(dim_carrier[carrier_name]),
+        [Transport Cost],
+        ,
+        DESC,
+        Dense
+    )
+)
+
+-- -------------------------
+-- 6. Vehicles
+-- -------------------------
+
+Maintenance Cost = SUM(fact_maintenance[maintenance_cost_amount])
+
+Maintenance Lines = COUNTROWS(fact_maintenance)
+
+Breakdown Count =
+CALCULATE(
+    [Maintenance Lines],
+    fact_maintenance[breakdown_flag] = 1
+)
+
+Breakdown Rate % = DIVIDE([Breakdown Count], [Maintenance Lines])
+
+Fleet Reliability % = 1 - [Breakdown Rate %]
+
+Immobilization Hours = SUM(fact_maintenance[immobilization_hours])
+
+Fuel Cost = SUM(fact_fuel[fuel_cost_amount])
+
+Fuel Liters = SUM(fact_fuel[liters])
+
+Average Consumption L100 = AVERAGE(fact_fuel[consumption_l_100km])
+
+Vehicle TCO = [Maintenance Cost] + [Fuel Cost]
+
+Vehicle Type TCO Share % =
+DIVIDE(
+    [Vehicle TCO],
+    CALCULATE(
+        [Vehicle TCO],
+        ALLSELECTED(dim_vehicle[vehicle_type])
+    )
+)
+
+Fleet Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([Fleet Reliability %]), "No Data",
+    [Fleet Reliability %] >= 0.95, "Excellent",
+    [Fleet Reliability %] >= 0.88, "Stable",
+    [Fleet Reliability %] >= 0.78, "Watch",
+    "Critical"
+)
+
+Fleet Status Color =
+SWITCH(
+    [Fleet Status],
+    "Excellent", "#16A34A",
+    "Stable", "#0F766E",
+    "Watch", "#F59E0B",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+Vehicle TCO Rank =
+IF(
+    ISINSCOPE(dim_vehicle[vehicle_id]),
+    RANKX(
+        ALLSELECTED(dim_vehicle[vehicle_id]),
+        [Vehicle TCO],
+        ,
+        DESC,
+        Dense
+    )
+)
+
+-- -------------------------
+-- 7. Drivers and HR
+-- -------------------------
+
+Presence Lines = COUNTROWS(fact_driver_presence)
+
+Worked Hours = SUM(fact_driver_presence[worked_hours])
+
+Present Count =
+CALCULATE(
+    [Presence Lines],
+    fact_driver_presence[present_flag] = 1
+)
+
+Absence Count =
+CALCULATE(
+    [Presence Lines],
+    fact_driver_presence[absence_flag] = 1
+)
+
+Late Presence Count =
+CALCULATE(
+    [Presence Lines],
+    fact_driver_presence[late_flag] = 1
+)
+
+Presence Rate % = DIVIDE([Present Count], [Presence Lines])
+
+Absence Rate % = DIVIDE([Absence Count], [Presence Lines])
+
+Late Presence Rate % = DIVIDE([Late Presence Count], [Presence Lines])
+
+Attendance Status Lines = COUNTROWS(fact_driver_presence)
+
+Attendance Status Share % =
+DIVIDE(
+    [Attendance Status Lines],
+    CALCULATE(
+        [Attendance Status Lines],
+        ALLSELECTED(fact_driver_presence[attendance_status])
+    )
+)
+
+HR Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([Presence Rate %]), "No Data",
+    [Presence Rate %] >= 0.95 && [Late Presence Rate %] <= 0.08, "Excellent",
+    [Presence Rate %] >= 0.90 && [Late Presence Rate %] <= 0.14, "Stable",
+    [Presence Rate %] >= 0.84, "Watch",
+    "Critical"
+)
+
+HR Status Color =
+SWITCH(
+    [HR Status],
+    "Excellent", "#16A34A",
+    "Stable", "#0F766E",
+    "Watch", "#F59E0B",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+Driver Late Rank =
+IF(
+    ISINSCOPE(dim_driver[Driver Full Name]),
+    RANKX(
+        ALLSELECTED(dim_driver[Driver Full Name]),
+        [Late Presence Rate %],
+        ,
+        DESC,
+        Dense
+    )
+)
+
+-- -------------------------
+-- 8. Incidents
+-- -------------------------
+
+Incident Count = COUNTROWS(fact_incident)
+
+Incident Cost = SUM(fact_incident[incident_cost_amount])
+
+Average Resolution Hours = AVERAGE(fact_incident[resolution_hours])
+
+Average Severity Score = AVERAGE(fact_incident[severity_score])
+
+Accident Count =
+CALCULATE(
+    [Incident Count],
+    fact_incident[accident_flag] = 1
+)
+
+Accident Rate % = DIVIDE([Accident Count], [Incident Count])
+
+No Accident Rate % = 1 - [Accident Rate %]
+
+Incident Severity Lines = COUNTROWS(fact_incident)
+
+Incident Severity Share % =
+DIVIDE(
+    [Incident Severity Lines],
+    CALCULATE(
+        [Incident Severity Lines],
+        ALLSELECTED(fact_incident[severity_band])
+    )
+)
+
+Incident Type Share % =
+DIVIDE(
+    [Incident Count],
+    CALCULATE(
+        [Incident Count],
+        ALLSELECTED(dim_incident[incident_type])
+    )
+)
+
+Incident Risk Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([Accident Rate %]), "No Data",
+    [Accident Rate %] <= 0.05 && [Average Severity Score] < 2.2, "Controlled",
+    [Accident Rate %] <= 0.10 && [Average Severity Score] < 2.8, "Watch",
+    [Accident Rate %] <= 0.16, "High",
+    "Critical"
+)
+
+Incident Risk Color =
+SWITCH(
+    [Incident Risk Status],
+    "Controlled", "#16A34A",
+    "Watch", "#F59E0B",
+    "High", "#EA580C",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+Incident Cost Rank Type =
+IF(
+    ISINSCOPE(dim_incident[incident_type]),
+    RANKX(
+        ALLSELECTED(dim_incident[incident_type]),
+        [Incident Cost],
+        ,
+        DESC,
+        Dense
+    )
+)
+
+-- -------------------------
+-- 9. Customer satisfaction
+-- -------------------------
+
+Satisfaction Responses = COUNTROWS(fact_customer_satisfaction)
+
+Average Satisfaction Score = AVERAGE(fact_customer_satisfaction[satisfaction_score])
+
+Satisfaction Target Score = 4
+
+Satisfaction Target Gap = [Average Satisfaction Score] - [Satisfaction Target Score]
+
+Complaint Count =
+CALCULATE(
+    [Satisfaction Responses],
+    fact_customer_satisfaction[complaint_flag] = 1
+)
+
+Complaint Rate % = DIVIDE([Complaint Count], [Satisfaction Responses])
+
+Promoter Count =
+CALCULATE(
+    [Satisfaction Responses],
+    fact_customer_satisfaction[nps_class] = "Promoter"
+)
+
+Passive Count =
+CALCULATE(
+    [Satisfaction Responses],
+    fact_customer_satisfaction[nps_class] = "Passive"
+)
+
+Detractor Count =
+CALCULATE(
+    [Satisfaction Responses],
+    fact_customer_satisfaction[nps_class] = "Detractor"
+)
+
+Promoter Rate % = DIVIDE([Promoter Count], [Satisfaction Responses])
+
+Detractor Rate % = DIVIDE([Detractor Count], [Satisfaction Responses])
+
+NPS Score = ([Promoter Rate %] - [Detractor Rate %]) * 100
+
+NPS Class Lines = COUNTROWS(fact_customer_satisfaction)
+
+NPS Class Share % =
+DIVIDE(
+    [NPS Class Lines],
+    CALCULATE(
+        [NPS Class Lines],
+        ALLSELECTED(fact_customer_satisfaction[nps_class])
+    )
+)
+
+Satisfaction Band Lines = COUNTROWS(fact_customer_satisfaction)
+
+Satisfaction Band Share % =
+DIVIDE(
+    [Satisfaction Band Lines],
+    CALCULATE(
+        [Satisfaction Band Lines],
+        ALLSELECTED(fact_customer_satisfaction[satisfaction_band])
+    )
+)
+
+Customer Experience Status =
+SWITCH(
+    TRUE(),
+    ISBLANK([Average Satisfaction Score]), "No Data",
+    [Average Satisfaction Score] >= 4.3 && [Complaint Rate %] <= 0.10, "Excellent",
+    [Average Satisfaction Score] >= 4.0 && [Complaint Rate %] <= 0.25, "Good",
+    [Average Satisfaction Score] >= 3.5, "Watch",
+    "Critical"
+)
+
+Customer Experience Color =
+SWITCH(
+    [Customer Experience Status],
+    "Excellent", "#16A34A",
+    "Good", "#0F766E",
+    "Watch", "#F59E0B",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+Client Complaint Rank =
+IF(
+    ISINSCOPE(dim_client[client_name]),
+    RANKX(
+        ALLSELECTED(dim_client[client_name]),
+        [Complaint Rate %],
+        ,
+        DESC,
+        Dense
+    )
+)
+
+-- -------------------------
+-- 10. Executive composite score
+-- -------------------------
+
+Executive Score =
+VAR MarginScore = MIN(DIVIDE([Margin %], 0.18), 1)
+VAR DeliveryScore = MIN(DIVIDE([On Time Rate %], 0.90), 1)
+VAR StockScore = MIN(DIVIDE([Stock Availability %], 0.85), 1)
+VAR SatisfactionScore = MIN(DIVIDE([Average Satisfaction Score], 4.2), 1)
+VAR FillScore = MIN(DIVIDE([Average Fill Rate], 0.80), 1)
+RETURN
+    (MarginScore * 0.25)
+    + (DeliveryScore * 0.25)
+    + (StockScore * 0.15)
+    + (SatisfactionScore * 0.20)
+    + (FillScore * 0.15)
+
+Executive Health =
+SWITCH(
+    TRUE(),
+    ISBLANK([Executive Score]), "No Data",
+    [Executive Score] >= 0.90, "Excellent",
+    [Executive Score] >= 0.78, "Stable",
+    [Executive Score] >= 0.62, "Watch",
+    "Critical"
+)
+
+Executive Health Color =
+SWITCH(
+    [Executive Health],
+    "Excellent", "#16A34A",
+    "Stable", "#0F766E",
+    "Watch", "#F59E0B",
+    "Critical", "#DC2626",
+    "#94A3B8"
+)
+
+KPI Dynamic Title =
+[Report Context Title] & " | " & [Executive Health]

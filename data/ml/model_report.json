@@ -1,0 +1,147 @@
+{
+  "delivery": {
+    "problem_type": "regression",
+    "target": "actual_delivery_hours",
+    "records": 2400,
+    "supported_fields": [
+      "distance",
+      "type_vehicule",
+      "poids",
+      "volume",
+      "region",
+      "conducteur",
+      "jour_semaine",
+      "type_client",
+      "priorite"
+    ],
+    "missing_requested_fields": [
+      "trafic",
+      "meteo",
+      "heure_depart"
+    ],
+    "best_model": "RandomForestRegressor",
+    "leaderboard": {
+      "RandomForestRegressor": {
+        "mae_cv": 1.0959,
+        "r2_cv": 0.9245
+      },
+      "XGBoostRegressor": {
+        "mae_cv": 1.117,
+        "r2_cv": 0.9198
+      }
+    }
+  },
+  "client": {
+    "problem_type": "classification",
+    "target": "client_segment",
+    "records": 30,
+    "supported_fields": [
+      "nombre_commandes",
+      "chiffre_affaires",
+      "reclamations"
+    ],
+    "missing_requested_fields": [
+      "paiement",
+      "retours"
+    ],
+    "best_model": "XGBoostClassifier",
+    "leaderboard": {
+      "DecisionTreeClassifier": {
+        "f1_macro_cv": 0.3902,
+        "accuracy_cv": 0.5667
+      },
+      "RandomForestClassifier": {
+        "f1_macro_cv": 0.6729,
+        "accuracy_cv": 0.8667
+      },
+      "XGBoostClassifier": {
+        "f1_macro_cv": 0.6948,
+        "accuracy_cv": 0.7667
+      }
+    },
+    "labels": [
+      "Normal",
+      "Occasionnel",
+      "Risque",
+      "VIP"
+    ]
+  },
+  "maintenance": {
+    "problem_type": "binary_classification",
+    "target": "breakdown_flag",
+    "records": 2400,
+    "supported_fields": [
+      "kilometrage",
+      "age",
+      "nombre_reparations",
+      "consommation"
+    ],
+    "missing_requested_fields": [
+      "temperature_moteur",
+      "pression_pneus",
+      "vibrations"
+    ],
+    "best_model": "RandomForestClassifier",
+    "leaderboard": {
+      "RandomForestClassifier": {
+        "roc_auc_cv": 1.0,
+        "f1_cv": 1.0,
+        "accuracy_cv": 1.0
+      },
+      "XGBoostClassifier": {
+        "roc_auc_cv": 1.0,
+        "f1_cv": 1.0,
+        "accuracy_cv": 1.0
+      },
+      "LightGBMClassifier": {
+        "roc_auc_cv": 1.0,
+        "f1_cv": 0.9935,
+        "accuracy_cv": 0.9983
+      }
+    }
+  },
+  "default_inputs": {
+    "delivery": {
+      "distance_km": 465.31,
+      "total_weight_kg": 17100.0,
+      "total_volume_m3": 48.7,
+      "experience_years": 15.0,
+      "month_num": 7.0,
+      "is_weekend": 0.0,
+      "planned_time_hours": 4.94,
+      "vehicle_type": "Tractor + Trailer",
+      "region": "Frankfurt",
+      "driver_code": "DRV-DE-016",
+      "day_name": "Friday",
+      "client_type": "B2B",
+      "priority_level": "Critical",
+      "difficulty_level": "Medium",
+      "zone_type": "Domestic"
+    },
+    "client": {
+      "nombre_commandes": 81.5,
+      "chiffre_affaires": 1737494.12,
+      "reclamations": 23.0,
+      "satisfaction_moyenne": 4.171796338672769,
+      "resolution_moyenne_h": 58.647901219052414,
+      "credit_score": 698.0,
+      "credit_limit": 300000.0,
+      "loyalty_level": "Silver",
+      "client_type": "B2B",
+      "region": "Barcelona",
+      "sector_activity": "E-commerce"
+    },
+    "maintenance": {
+      "kilometrage": 189009.69,
+      "age": 4.0,
+      "nombre_reparations": 117.0,
+      "consommation": 28.41,
+      "immobilization_hours": 5.84,
+      "maintenance_cost_amount": 1056.45,
+      "vehicle_type": "Tractor + Trailer",
+      "fuel_type": "Diesel",
+      "brand": "Volvo",
+      "status": "Active"
+    }
+  }
+}

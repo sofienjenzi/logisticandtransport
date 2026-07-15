@@ -1,0 +1,5 @@
+sk_transport_mode,transport_mode_code,transport_mode,vehicle_type,standard_delay_hours,avg_cost_per_km
+1,MOD-ROAD,Road,Truck,24,1.25
+2,MOD-RAIL,Rail,Cargo Train,36,0.8
+3,MOD-SEA,Maritime,Container Ship,120,0.35
+4,MOD-AIR,Air,Cargo Plane,8,3.9

@@ -1,0 +1,95 @@
+-- =========================================================
+-- LOGISTICS POWER BI - CALCULATED TABLES AND COLUMNS
+-- Source: data/logistics_exports.zip
+--
+-- Create these objects in Power BI Desktop before using
+-- docs/powerbi_measures.dax.
+-- =========================================================
+
+-- ---------------------------------------------------------
+-- 1. Calendar table
+-- ---------------------------------------------------------
+-- Why:
+-- dim_date contains country-specific rows, so dim_date[full_date]
+-- is not unique. A marked date table in Power BI must have a unique
+-- date column. Use this table for time intelligence measures.
+
+dim_calendar =
+DISTINCT(
+    SELECTCOLUMNS(
+        dim_date,
+        "full_date", dim_date[full_date],
+        "year_num", dim_date[year_num],
+        "year_month", dim_date[year_month],
+        "month_sort_key", dim_date[month_sort_key],
+        "year_quarter", dim_date[year_quarter],
+        "quarter_num", dim_date[quarter_num],
+        "month_num", dim_date[month_num],
+        "month_name", dim_date[month_name]
+    )
+)
+
+-- After creating dim_calendar:
+-- 1. Set dim_calendar[full_date] as Date.
+-- 2. Sort dim_calendar[year_month] by dim_calendar[month_sort_key].
+-- 3. Mark dim_calendar as the Date table.
+-- 4. Create relationship:
+--    dim_calendar[full_date] 1 -> * dim_date[full_date]
+-- 5. Keep cross-filter direction single:
+--    dim_calendar filters dim_date, dim_date filters fact tables.
+
+-- ---------------------------------------------------------
+-- 2. Calculated columns
+-- ---------------------------------------------------------
+
+-- Table: fact_purchase
+Purchase Delay Class =
+SWITCH(
+    TRUE(),
+    fact_purchase[delay_gap_days] <= 0, "En avance",
+    fact_purchase[delay_gap_days] <= 1, "0-1 jour",
+    fact_purchase[delay_gap_days] <= 2, "1-2 jours",
+    "> 2 jours"
+)
+
+-- Table: dim_driver
+Driver Full Name =
+dim_driver[first_name] & " " & dim_driver[last_name]
+
+-- Table: dim_driver
+Driver Experience Band =
+SWITCH(
+    TRUE(),
+    dim_driver[experience_years] < 5, "0-4 ans",
+    dim_driver[experience_years] < 10, "5-9 ans",
+    dim_driver[experience_years] < 15, "10-14 ans",
+    "15+ ans"
+)
+
+-- Table: fact_delivery
+Delivery SLA Class =
+SWITCH(
+    TRUE(),
+    fact_delivery[delivered_on_time_flag] = 1, "A temps",
+    fact_delivery[delay_minutes] <= 45, "Retard leger",
+    fact_delivery[delay_minutes] <= 180, "Retard moyen",
+    "Retard critique"
+)
+
+-- Table: fact_transport
+Cost per Km Class =
+SWITCH(
+    TRUE(),
+    fact_transport[transport_cost_per_km] <= 1.25, "Economique",
+    fact_transport[transport_cost_per_km] <= 2.50, "Standard",
+    fact_transport[transport_cost_per_km] <= 4.00, "Couteux",
+    "Critique"
+)
+
+-- Table: fact_customer_satisfaction
+Complaint Class =
+IF(
+    fact_customer_satisfaction[complaint_flag] = 1,
+    "Avec reclamation",
+    "Sans reclamation"
+)
