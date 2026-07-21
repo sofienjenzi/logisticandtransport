@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Shell from '../layout/Shell.jsx';
 import Loading from '../components/Loading.jsx';
 import ErrorPanel from '../components/ErrorPanel.jsx';
@@ -12,7 +13,9 @@ import dashboards from '../dashboards/registry.js';
 
 export default function DashboardPage() {
   const { key } = useParams();
+  const { t } = useTranslation();
   const config = dashboards[key] ?? dashboards.executif;
+  const dashKey = config.key;
   const { model, loading, error } = useLogisticsData();
   const [filters, setFilters] = useState(() => defaultFilters(config.filters));
 
@@ -23,8 +26,8 @@ export default function DashboardPage() {
   const header = (
     <header className="topbar">
       <div className="title-wrap">
-        <h1>{config.title}</h1>
-        <p>{config.subtitle}</p>
+        <h1>{t(`dashboards.${dashKey}.title`)}</h1>
+        <p>{t(`dashboards.${dashKey}.subtitle`)}</p>
       </div>
     </header>
   );
@@ -44,8 +47,8 @@ export default function DashboardPage() {
     <Shell>
       {header}
       <FilterBar specs={config.filters} model={model} filters={filters} onChange={setFilters} />
-      <KpiGrid kpis={config.kpis(filtered)} />
-      <ChartGrid charts={config.charts(filtered)} />
+      <KpiGrid kpis={config.kpis(filtered, t)} />
+      <ChartGrid charts={config.charts(filtered, t)} />
     </Shell>
   );
 }

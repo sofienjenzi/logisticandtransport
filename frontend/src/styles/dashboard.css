@@ -60,12 +60,12 @@
 
 .kpi {
   padding: 9px 10px;
-  border-left: 4px solid var(--border);
+  border-inline-start: 4px solid var(--border);
 }
 
-.kpi.good { border-left-color: var(--good); }
-.kpi.warn { border-left-color: var(--warn); }
-.kpi.bad { border-left-color: var(--bad); }
+.kpi.good { border-inline-start-color: var(--good); }
+.kpi.warn { border-inline-start-color: var(--warn); }
+.kpi.bad { border-inline-start-color: var(--bad); }
 
 .kpi p {
   margin: 0;

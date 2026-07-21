@@ -1,7 +1,10 @@
-export default function Footer({ text = "ITESLAB LOGISTICS ANALYTICS © 2026 — Plateforme de visualisation et d'intelligence artificielle" }) {
+import { useTranslation } from 'react-i18next';
+
+export default function Footer({ text }) {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
-      <p>{text}</p>
+      <p>{text ?? t('footer.default')}</p>
     </footer>
   );
 }

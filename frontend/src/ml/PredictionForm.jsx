@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Lightbulb } from 'lucide-react';
 import Loading from '../components/Loading.jsx';
 import { buildPayload, postJson } from '../lib/mlApi';
@@ -8,6 +9,7 @@ function defaultsFor(fields) {
 }
 
 export default function PredictionForm({ fields, endpoint, submitLabel, submitIcon: SubmitIcon, submitVariant = 'primary', heading, description, placeholder, hint, renderResult }) {
+  const { t } = useTranslation();
   const [values, setValues] = useState(() => defaultsFor(fields));
   const [status, setStatus] = useState('idle'); // idle | loading | done | error
   const [result, setResult] = useState(null);
@@ -22,7 +24,7 @@ export default function PredictionForm({ fields, endpoint, submitLabel, submitIc
       setResult(renderResult(data));
       setStatus('done');
     } catch (err) {
-      setResult({ title: 'Erreur', detail: err.message });
+      setResult({ title: t('common.error'), detail: err.message });
       setStatus('error');
     }
   }
@@ -40,12 +42,12 @@ export default function PredictionForm({ fields, endpoint, submitLabel, submitIc
       <form className="form-grid" onSubmit={onSubmit}>
         {fields.map((field) => (
           <label key={field.name} className={field.full ? 'full' : undefined}>
-            {field.label}
+            {t(field.label)}
             {field.type === 'select' ? (
               <select value={values[field.name]} onChange={(e) => setField(field.name, e.target.value)}>
                 {field.options.map((opt) => {
                   const optValue = typeof opt === 'string' ? opt : opt.value;
-                  const optLabel = typeof opt === 'string' ? opt : opt.label;
+                  const optLabel = typeof opt === 'string' ? opt : t(opt.label);
                   return <option key={optValue} value={optValue}>{optLabel}</option>;
                 })}
               </select>
@@ -66,12 +68,12 @@ export default function PredictionForm({ fields, endpoint, submitLabel, submitIc
             {SubmitIcon && <SubmitIcon size={16} strokeWidth={2} />}
             {submitLabel}
           </button>
-          <button className="btn btn-outline" type="button" onClick={onReset}>Réinitialiser</button>
+          <button className="btn btn-outline" type="button" onClick={onReset}>{t('common.reset')}</button>
         </div>
       </form>
       <div className="result">
         {status === 'loading' ? (
-          <Loading text="Calcul en cours..." />
+          <Loading text={t('common.calculating')} />
         ) : result ? (
           <>
             <strong style={result.color ? { color: result.color } : undefined}>{result.title}</strong>
@@ -79,12 +81,12 @@ export default function PredictionForm({ fields, endpoint, submitLabel, submitIc
           </>
         ) : (
           <>
-            <strong>En attente</strong>
+            <strong>{t('common.waiting')}</strong>
             <span>{placeholder}</span>
           </>
         )}
       </div>
-      <div className="hint"><Lightbulb size={13} strokeWidth={2} style={{ verticalAlign: 'middle', marginRight: 5 }} />{hint}</div>
+      <div className="hint"><Lightbulb size={13} strokeWidth={2} style={{ verticalAlign: 'middle', marginInlineEnd: 5 }} />{hint}</div>
     </article>
   );
 }

@@ -46,7 +46,7 @@ body {
   gap: 2px;
   padding: 18px 12px 24px;
   background: var(--surface-container-low);
-  border-right: 1px solid var(--border);
+  border-inline-end: 1px solid var(--border);
   position: sticky;
   top: 0;
   height: 100vh;
@@ -114,31 +114,87 @@ body {
 }
 
 .sidebar-link-sub {
-  margin-left: 12px;
+  margin-inline-start: 12px;
   font-size: 0.8rem;
+}
+
+/* Visually hidden but still available to screen readers/tooltips. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* === SIDEBAR FOOTER (theme + language) ===
+   A single settings row, visually demoted (divider + compact controls) so it
+   reads as app chrome, not another nav section competing with the dashboards. */
+.sidebar-footer {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.theme-toggle,
+.language-switcher {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-container);
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.theme-toggle:hover,
+.language-switcher:hover {
+  color: var(--primary);
+  background: var(--surface-container-high);
 }
 
 /* === THEME TOGGLE === */
 .theme-toggle {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 14px;
-  padding: 8px 10px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  background: var(--surface-container);
-  color: var(--text-muted);
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* === LANGUAGE SWITCHER === */
+.language-switcher {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+}
+
+.language-switcher select {
+  flex: 1;
+  min-width: 0;
+  height: 38px;
+  border: none;
+  background: transparent;
+  color: inherit;
   font-family: var(--font);
   font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--transition);
 }
 
-.theme-toggle:hover {
-  color: var(--primary);
-  background: var(--surface-container-high);
+.language-switcher select:focus {
+  outline: none;
 }
 
 /* === PAGE TITLE (landing / ML pages) === */
@@ -265,8 +321,8 @@ body {
   .sidebar-section { display: none; }
   .sidebar-link span { display: none; }
   .sidebar-link { padding: 8px; }
-  .theme-toggle { margin-top: 0; }
-  .theme-toggle span { display: none; }
+  .sidebar-footer { margin-top: 0; padding-top: 0; border-top: none; }
+  .language-switcher select { max-width: 90px; }
 }
 
 @media (max-width: 600px) {

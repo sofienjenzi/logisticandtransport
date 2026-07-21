@@ -1,9 +1,11 @@
 import { Chart } from 'react-chartjs-2';
+import { useTranslation } from 'react-i18next';
 import { gaugeState, gaugeCenterTextPlugin, chartTheme } from '../lib/charts';
 import { useTheme } from '../lib/theme';
 import ChartCard from './ChartCard.jsx';
 
 export default function GaugeCard({ title, description, value, target, label }) {
+  const { t } = useTranslation();
   const theme = useTheme();
   const { ratio, color } = gaugeState(value, target);
   const { gaugeTrack } = chartTheme(theme);
@@ -13,7 +15,7 @@ export default function GaugeCard({ title, description, value, target, label }) 
       <Chart
         type="doughnut"
         data={{
-          labels: [label, 'Ecart'],
+          labels: [label, t('common.gap')],
           datasets: [{ data: [ratio, 1 - ratio], backgroundColor: [color, gaugeTrack], borderWidth: 0 }],
         }}
         options={{
@@ -23,7 +25,7 @@ export default function GaugeCard({ title, description, value, target, label }) 
           cutout: '72%',
           plugins: {
             legend: { display: false },
-            tooltip: { callbacks: { label: () => `${label}: ${(value * 100).toFixed(1)}% / cible ${(target * 100).toFixed(0)}%` } },
+            tooltip: { callbacks: { label: () => `${label}: ${(value * 100).toFixed(1)}% / ${t('common.target')} ${(target * 100).toFixed(0)}%` } },
           },
         }}
         plugins={[gaugeCenterTextPlugin(value, label, color, theme)]}

@@ -4,27 +4,27 @@ import { palette } from '../lib/charts';
 
 const SHELF_ORDER = ['0-150 j', '151-250 j', '> 250 j'];
 
+const T = 'dashboards.stocks';
+
 export default {
   key: 'stocks',
-  title: 'Dashboard Stocks',
-  subtitle: 'Risque de rupture, valeur immobilisee, entrepots et statuts de stock.',
   filters: filterSpecs.stocks,
   datasets: ['stocks'],
 
-  kpis(f) {
+  kpis(f, t) {
     const s = f.stocks;
     const stockout = avg(s, (x) => x.stockout);
     const perishableValue = sum(s.filter((x) => x.shelfLifeDays > 0 && x.shelfLifeDays <= 150), (x) => x.value);
     return [
-      { label: 'Valeur stock', value: euro(sum(s, (x) => x.value)), status: 'neutral' },
-      { label: 'Rupture', value: pct(stockout), status: stockout <= 0.05 ? 'good' : stockout <= 0.12 ? 'warn' : 'bad' },
-      { label: 'Ecart stock', value: compact(sum(s, (x) => x.real - x.theoretical)), status: 'neutral' },
-      { label: 'Entrepots', value: String(new Set(s.map((x) => x.warehouse)).size), status: 'neutral' },
-      { label: 'Valeur courte duree de vie (<=150j)', value: euro(perishableValue), status: 'warn' },
+      { label: t(`${T}.kpis.valeurStock`), value: euro(sum(s, (x) => x.value)), status: 'neutral' },
+      { label: t(`${T}.kpis.rupture`), value: pct(stockout), status: stockout <= 0.05 ? 'good' : stockout <= 0.12 ? 'warn' : 'bad' },
+      { label: t(`${T}.kpis.ecartStock`), value: compact(sum(s, (x) => x.real - x.theoretical)), status: 'neutral' },
+      { label: t(`${T}.kpis.entrepots`), value: String(new Set(s.map((x) => x.warehouse)).size), status: 'neutral' },
+      { label: t(`${T}.kpis.valeurCourteDuree`), value: euro(perishableValue), status: 'warn' },
     ];
   },
 
-  charts(f) {
+  charts(f, t) {
     const s = f.stocks;
     const stockout = avg(s, (x) => x.stockout);
     const status = group(s, (x) => x.status);
@@ -35,17 +35,17 @@ export default {
     const shelfKeys = SHELF_ORDER.filter((k) => shelf.has(k));
 
     return [
-      { id: 'stGauge', kind: 'gauge', title: 'Jauge disponibilite stock', description: 'Couleur dynamique selon le niveau hors rupture.',
-        value: 1 - stockout, target: 0.95, label: 'Disponibilite' },
-      { id: 'stStatus', kind: 'chart', title: 'Statut stock', description: 'Repartition des stocks normaux, faibles ou critiques.',
+      { id: 'stGauge', kind: 'gauge', title: t(`${T}.charts.stGauge.title`), description: t(`${T}.charts.stGauge.description`),
+        value: 1 - stockout, target: 0.95, label: t(`${T}.charts.stGauge.label`) },
+      { id: 'stStatus', kind: 'chart', title: t(`${T}.charts.stStatus.title`), description: t(`${T}.charts.stStatus.description`),
         type: 'doughnut', labels: [...status.keys()], datasets: [{ data: [...status.values()], backgroundColor: [palette.green2, palette.amber, palette.red, palette.blue] }] },
-      { id: 'stWarehouse', kind: 'chart', title: 'Valeur par entrepot', description: 'Entrepots avec la plus forte valeur immobilisee.', wide: true,
+      { id: 'stWarehouse', kind: 'chart', title: t(`${T}.charts.stWarehouse.title`), description: t(`${T}.charts.stWarehouse.description`), wide: true,
         type: 'bar', labels: wh.map((x) => x[0]), datasets: [{ data: wh.map((x) => x[1]), backgroundColor: palette.green }], options: { indexAxis: 'y' } },
-      { id: 'stProduct', kind: 'chart', title: 'Valeur par produit', description: 'Produits qui concentrent le stock.',
+      { id: 'stProduct', kind: 'chart', title: t(`${T}.charts.stProduct.title`), description: t(`${T}.charts.stProduct.description`),
         type: 'bar', labels: [...prod.keys()], datasets: [{ data: [...prod.values()], backgroundColor: palette.orange }] },
-      { id: 'stGeo', kind: 'chart', title: 'Ruptures par pays', description: 'Nombre de ruptures par zone geographique.',
+      { id: 'stGeo', kind: 'chart', title: t(`${T}.charts.stGeo.title`), description: t(`${T}.charts.stGeo.description`),
         type: 'bar', labels: [...geo.keys()], datasets: [{ data: [...geo.values()], backgroundColor: palette.red }] },
-      { id: 'stShelfLife', kind: 'chart', title: 'Valeur par duree de vie', description: 'Exposition au risque de peremption par tranche de shelf-life.',
+      { id: 'stShelfLife', kind: 'chart', title: t(`${T}.charts.stShelfLife.title`), description: t(`${T}.charts.stShelfLife.description`),
         type: 'bar', labels: shelfKeys, datasets: [{ data: shelfKeys.map((k) => shelf.get(k)), backgroundColor: [palette.red, palette.amber, palette.green2] }], options: { valueFormat: 'currency' } },
     ];
   },

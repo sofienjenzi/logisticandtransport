@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Rocket, Globe, Database, LayoutDashboard, FlaskConical } from 'lucide-react';
 import Shell from '../layout/Shell.jsx';
 import KpiGrid from '../components/KpiGrid.jsx';
@@ -7,13 +8,13 @@ import { sum, avg } from '../lib/model';
 import { euro, pct, compact } from '../lib/format';
 
 const FEATURES = [
-  { icon: Globe, title: '3 pays couverts', description: 'France, Allemagne, Espagne — géolocalisation, distances routières et jours fériés réels par ville.' },
-  { icon: Database, title: 'Modèle en étoile', description: '13 dimensions et 10 tables de faits, chargées depuis data/logistics_exports.zip et jointes côté client.' },
-  { icon: LayoutDashboard, title: '10 dashboards', description: 'Exécutif, ventes, achats, stocks, livraisons, transport, véhicules, RH, incidents, satisfaction.' },
-  { icon: FlaskConical, title: '3 modèles ML', description: 'Délai de livraison, segmentation client et maintenance prédictive, entraînés sur les données du projet.' },
+  { key: 'countries', icon: Globe },
+  { key: 'model', icon: Database },
+  { key: 'dashboards', icon: LayoutDashboard },
+  { key: 'ml', icon: FlaskConical },
 ];
 
-function overviewKpis(model) {
+function overviewKpis(model, t) {
   const revenue = sum(model.sales, (x) => x.revenue);
   const onTime = avg(model.livraisons, (x) => x.onTime);
   const clients = new Set(model.sales.map((x) => x.client)).size;
@@ -21,56 +22,57 @@ function overviewKpis(model) {
   const drivers = new Set(model.presence.map((x) => x.driver)).size;
 
   return [
-    { label: 'CA cumulé', value: euro(revenue), status: 'good' },
-    { label: 'Livraisons suivies', value: compact(model.livraisons.length), status: 'neutral' },
-    { label: 'Taux à temps', value: pct(onTime), status: onTime >= 0.92 ? 'good' : onTime >= 0.85 ? 'warn' : 'bad' },
-    { label: 'Clients actifs', value: String(clients), status: 'neutral' },
-    { label: 'Véhicules suivis', value: String(vehicles), status: 'neutral' },
-    { label: 'Chauffeurs', value: String(drivers), status: 'neutral' },
+    { label: t('landing.kpis.revenue'), value: euro(revenue), status: 'good' },
+    { label: t('landing.kpis.deliveries'), value: compact(model.livraisons.length), status: 'neutral' },
+    { label: t('landing.kpis.onTime'), value: pct(onTime), status: onTime >= 0.92 ? 'good' : onTime >= 0.85 ? 'warn' : 'bad' },
+    { label: t('landing.kpis.clients'), value: String(clients), status: 'neutral' },
+    { label: t('landing.kpis.vehicles'), value: String(vehicles), status: 'neutral' },
+    { label: t('landing.kpis.drivers'), value: String(drivers), status: 'neutral' },
   ];
 }
 
 export default function LandingPage() {
+  const { t } = useTranslation();
   const { model, loading, error } = useLogisticsData();
 
   return (
     <Shell>
       <section className="hero-welcome animate-in">
-        <h1><Rocket size={30} strokeWidth={2} style={{ verticalAlign: 'middle', marginRight: 10 }} />Plateforme Logistique Intelligente</h1>
-        <p>Visualisez, analysez et optimisez l'intégralité de votre chaîne logistique avec des dashboards temps réel et des modèles de Machine Learning prédictifs.</p>
+        <h1><Rocket size={30} strokeWidth={2} style={{ verticalAlign: 'middle', marginInlineEnd: 10 }} />{t('landing.heroTitle')}</h1>
+        <p>{t('landing.heroSubtitle')}</p>
         <div className="hero-stats">
-          <div className="hero-stat"><h3>11</h3><p>Dashboards</p></div>
-          <div className="hero-stat"><h3>3</h3><p>Modèles ML</p></div>
-          <div className="hero-stat"><h3>24/7</h3><p>Disponibilité</p></div>
+          <div className="hero-stat"><h3>11</h3><p>{t('landing.statDashboards')}</p></div>
+          <div className="hero-stat"><h3>3</h3><p>{t('landing.statMlModels')}</p></div>
+          <div className="hero-stat"><h3>24/7</h3><p>{t('landing.statAvailability')}</p></div>
         </div>
       </section>
 
       <div className="page-header animate-in">
-        <h1>À propos de la plateforme</h1>
-        <p>Un entrepôt de données logistique calibré sur des indicateurs réels, exposé via des dashboards BI et des modèles prédictifs.</p>
+        <h1>{t('landing.aboutTitle')}</h1>
+        <p>{t('landing.aboutSubtitle')}</p>
       </div>
 
       <section className="feature-grid">
         {FEATURES.map((f) => (
-          <article key={f.title} className="card-solid feature-card animate-in">
+          <article key={f.key} className="card-solid feature-card animate-in">
             <div className="feature-icon"><f.icon size={20} strokeWidth={2} /></div>
             <div>
-              <h4>{f.title}</h4>
-              <p>{f.description}</p>
+              <h4>{t(`landing.features.${f.key}.title`)}</h4>
+              <p>{t(`landing.features.${f.key}.description`)}</p>
             </div>
           </article>
         ))}
       </section>
 
       <div className="page-header animate-in">
-        <h1>Vue d'ensemble des données</h1>
-        <p>Chiffres clés calculés en direct sur l'ensemble du jeu de données (toutes périodes, tous pays).</p>
+        <h1>{t('landing.overviewTitle')}</h1>
+        <p>{t('landing.overviewSubtitle')}</p>
       </div>
 
       {loading ? <Loading /> : error ? (
-        <div className="result"><strong>Erreur</strong><span>{error.message}</span></div>
+        <div className="result"><strong>{t('common.error')}</strong><span>{error.message}</span></div>
       ) : (
-        <KpiGrid kpis={overviewKpis(model)} />
+        <KpiGrid kpis={overviewKpis(model, t)} />
       )}
     </Shell>
   );

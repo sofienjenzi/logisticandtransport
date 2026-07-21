@@ -2,14 +2,14 @@ import { group, avg, sum, topEntries, avgGroup, filterSpecs } from '../lib/model
 import { euro, pct, compact } from '../lib/format';
 import { palette } from '../lib/charts';
 
+const T = 'dashboards.vehicules';
+
 export default {
   key: 'vehicules',
-  title: 'Dashboard Vehicules',
-  subtitle: 'Flotte, maintenance, carburant, pannes, immobilisation et efficacite vehicule.',
   filters: filterSpecs.vehicules,
   datasets: ['vehicules', 'fuel'],
 
-  kpis(f) {
+  kpis(f, t) {
     const v = f.vehicules;
     const fuel = f.fuel;
     const breakdown = avg(v, (x) => x.breakdown);
@@ -23,16 +23,16 @@ export default {
     }).length;
 
     return [
-      { label: 'Maintenance', value: euro(sum(v, (x) => x.maintenanceCost)), status: 'neutral' },
-      { label: 'Carburant', value: euro(sum(fuel, (x) => x.fuelCost)), status: 'neutral' },
-      { label: 'Taux pannes', value: pct(breakdown), status: breakdown <= 0.05 ? 'good' : breakdown <= 0.12 ? 'warn' : 'bad' },
-      { label: 'Immobilisation', value: `${compact(sum(v, (x) => x.immobilization))} h`, status: 'neutral' },
-      { label: 'Age moyen flotte', value: `${fleetAge.toFixed(1)} ans`, status: 'neutral' },
-      { label: 'Maintenance <=30j', value: String(dueSoon), status: dueSoon === 0 ? 'good' : dueSoon <= 3 ? 'warn' : 'bad' },
+      { label: t(`${T}.kpis.maintenance`), value: euro(sum(v, (x) => x.maintenanceCost)), status: 'neutral' },
+      { label: t(`${T}.kpis.carburant`), value: euro(sum(fuel, (x) => x.fuelCost)), status: 'neutral' },
+      { label: t(`${T}.kpis.tauxPannes`), value: pct(breakdown), status: breakdown <= 0.05 ? 'good' : breakdown <= 0.12 ? 'warn' : 'bad' },
+      { label: t(`${T}.kpis.immobilisation`), value: `${compact(sum(v, (x) => x.immobilization))} h`, status: 'neutral' },
+      { label: t(`${T}.kpis.ageMoyenFlotte`), value: `${fleetAge.toFixed(1)} ans`, status: 'neutral' },
+      { label: t(`${T}.kpis.maintenanceSous30j`), value: String(dueSoon), status: dueSoon === 0 ? 'good' : dueSoon <= 3 ? 'warn' : 'bad' },
     ];
   },
 
-  charts(f) {
+  charts(f, t) {
     const v = f.vehicules;
     const fuel = f.fuel;
     const breakdown = avg(v, (x) => x.breakdown);
@@ -43,16 +43,16 @@ export default {
     const odo = avgGroup(v, (x) => x.vehicleType, (x) => x.odometer);
 
     return [
-      { id: 'vhGauge', kind: 'gauge', title: 'Jauge fiabilite flotte', description: 'Part des lignes sans panne par rapport a la cible.', value: 1 - breakdown, target: 0.95, label: 'Fiabilite' },
-      { id: 'vhMaint', kind: 'chart', title: 'Maintenance par vehicule', description: 'Vehicules qui generent le plus de maintenance.',
+      { id: 'vhGauge', kind: 'gauge', title: t(`${T}.charts.vhGauge.title`), description: t(`${T}.charts.vhGauge.description`), value: 1 - breakdown, target: 0.95, label: t(`${T}.charts.vhGauge.label`) },
+      { id: 'vhMaint', kind: 'chart', title: t(`${T}.charts.vhMaint.title`), description: t(`${T}.charts.vhMaint.description`),
         type: 'bar', labels: maint.map((x) => x[0]), datasets: [{ data: maint.map((x) => x[1]), backgroundColor: palette.green }], options: { indexAxis: 'y' } },
-      { id: 'vhFuel', kind: 'chart', title: 'Carburant par vehicule', description: 'Comparaison des couts carburant.',
+      { id: 'vhFuel', kind: 'chart', title: t(`${T}.charts.vhFuel.title`), description: t(`${T}.charts.vhFuel.description`),
         type: 'bar', labels: fuelCost.map((x) => x[0]), datasets: [{ data: fuelCost.map((x) => x[1]), backgroundColor: palette.orange }] },
-      { id: 'vhType', kind: 'chart', title: 'Cout par type vehicule', description: 'Vue par typologie de flotte.',
+      { id: 'vhType', kind: 'chart', title: t(`${T}.charts.vhType.title`), description: t(`${T}.charts.vhType.description`),
         type: 'doughnut', labels: [...typeCost.keys()], datasets: [{ data: [...typeCost.values()], backgroundColor: [palette.green, palette.blue, palette.orange, palette.purple] }], options: { valueFormat: 'currency' } },
-      { id: 'vhImmobilization', kind: 'chart', title: 'Immobilisation par vehicule', description: 'Disponibilite reduite par vehicule.',
+      { id: 'vhImmobilization', kind: 'chart', title: t(`${T}.charts.vhImmobilization.title`), description: t(`${T}.charts.vhImmobilization.description`),
         type: 'bar', labels: imm.map((x) => x[0]), datasets: [{ data: imm.map((x) => x[1]), backgroundColor: palette.red }], options: { indexAxis: 'y' } },
-      { id: 'vhOdometer', kind: 'chart', title: 'Kilometrage moyen par type', description: 'Usure de la flotte par typologie de vehicule.',
+      { id: 'vhOdometer', kind: 'chart', title: t(`${T}.charts.vhOdometer.title`), description: t(`${T}.charts.vhOdometer.description`),
         type: 'bar', labels: [...odo.keys()], datasets: [{ data: [...odo.values()], backgroundColor: palette.slate }], options: { valueFormat: 'km' } },
     ];
   },
